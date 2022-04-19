@@ -1,0 +1,498 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Canvas.io | Polaris2021</title>
+	<style>
+		.left {
+			order: 1;
+			width: 100vh;
+			height: 100vh;
+			position: relative;
+			background-color: black;
+		}
+
+		.right {
+			order: 2;
+			height: 100vh;
+			flex-grow: 1;
+
+		}
+
+		.canva {
+			width: 90vh;
+			height: 90vh;
+			margin: 5vh 10vh;
+			background-color: white;
+		}
+
+		body {
+			background-color: black;
+			display: flex;
+			gap: 0px 0px;
+			margin: 0px;
+		}
+
+		.downcounter {
+			width: 40%;
+			margin: 6vh auto 0;
+			background-color: #202020;
+			border-radius: 10px;
+			padding: 0.2% 0%;
+			text-align: center;
+			font-size: larger;
+			color: white;
+		}
+
+		.btnCan {
+			border: none;
+			background-color: inherit;
+			padding: 14px 28px;
+			font-size: 24px;
+			cursor: pointer;
+			display: inline-block;
+			color: white;
+			background-color: cornflowerblue;
+			border-radius: 6px;
+			position: relative;
+			left: 30%;
+			top: 20px;
+		}
+
+		.btnCan:hover {
+			background-color: rgb(127, 168, 245);
+		}
+
+		#selectedHexColor,
+		#selectedRgbColor {
+			padding: 0.75em;
+			border-radius: 50%;
+			font-size: x-small;
+			margin: 0 0.5em;
+			border: 0.5px solid #9d9999;
+			border-style: dashed;
+		}
+
+		div.hexColorPicker {
+			width: fit-content;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 4%;
+
+		}
+
+		span.condensed-line {
+			text-align: center;
+			display: block;
+			font-size: 20px;
+			line-height: 14.65px;
+			font-stretch: ultra-condensed;
+		}
+
+		h1 {
+			display: block;
+			font-size: 2em;
+			margin-block-start: 0.2em;
+			margin-block-end: 0.2em;
+			margin-inline-start: 0px;
+			margin-inline-end: 0px;
+			font-weight: bold;
+		}
+
+		span.colorHex {
+			cursor: pointer;
+		}
+
+		span.colorHex.color-selected {
+			-webkit-text-stroke: 1.15px black !important;
+		}
+
+		.noselect {
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+
+		}
+
+		.form-control {
+			font-size: 1rem;
+			line-height: 1.5;
+			color: #495057;
+			background-color: #fff;
+			background-clip: padding-box;
+			border: 1px solid #ced4da;
+			border-radius: 0;
+			width: 6rem;
+			transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+		}
+
+		.rgb-form-control {
+			width: 3rem;
+		}
+
+		.p_ {
+			color: #fff;
+		}
+
+		.p__ {
+			color: #fff;
+			margin-top: 0%;
+			margin-bottom: 0%;
+		}
+
+		.coord {
+			margin-top: 10%;
+		}
+
+		.coordcon {
+			display: flex;
+		}
+
+		.preview {
+			margin-top: 10%;
+			width: 104px;
+			height: 104px;
+		}
+
+		.plot {
+			background-color: #202020;
+			color: white;
+			margin-top: 6%;
+			width: 100%;
+			height: 40%;
+			font-size: larger;
+			display: inline-block;
+			border-radius: 4px;
+		}
+	</style>
+</head>
+
+<body>
+	<noscript>Please enable JavaScript on your browser.</noscript>
+
+	<div class="left">
+		<canvas class="canva" width="1024" height="1024" id="imgCanva" alt="" onclick="storeGuess(event)">
+	</div>
+	</div>
+	<script>
+		var today = new Image();
+		//today.crossOrigin='';
+		today.height = 128;
+		today.width = 128;
+		today.src = "http://www.shitao.tech/canvas.io/today.png?" + new Date().getTime();
+		today.setAttribute('crossOrigin', '');
+		var canvae = document.getElementById("imgCanva").clientWidth;
+		var canvasSetup = document.getElementById("imgCanva");
+		var ctx = canvasSetup.getContext("2d");
+
+		guessX = 0;
+		guessY = 0;
+		var xc = -1; yc = -1;
+		today.onload = () => {
+			ctx.imageSmoothingEnabled = false;
+			ctx.drawImage(today, 0, 0, 1024, 1024);
+		}
+		function storeGuess(event) {
+			var x = event.offsetX;
+			var y = event.offsetY;
+			guessX = x;
+			guessY = y;
+			//console.log("x coords: " + guessX + ", y coords: " + guessY);
+			xc = Math.floor(x / canvae * 128);
+			yc = Math.floor(y / canvae * 128);
+			console.log("clicked x: " + xc + ", y: " + yc);
+			select();
+		}
+
+	</script>
+
+
+	<div class="right">
+		<div class="downcounter">
+			<h1><span id="downcount"></span></h1>
+			<script>
+				var now = new Date().getTime();
+				var d = 0;
+				var x = setInterval(function () {
+					d -= 1000;
+					if (d < 0) {
+						clearInterval(x);
+						document.getElementById("downcount").innerHTML = "0:00";
+					}
+				}, 1000);
+			</script>
+		</div>
+		<div class='hexColorPicker'>
+			<div id='output' class='noselect'></div>
+			<div id='colorInputs'>
+				<p class="p_">Hex <input id='hexInputVal' type='text' onchange="HEXchange()" class='form-control' />
+					<span id='selectedHexColor'>🎨</span>
+				<p class="p_">R <input id='rInputVal' type='text' onchange="RGBchange()"
+						class='form-control rgb-form-control' /> G
+					<input id='gInputVal' type='text' onchange="RGBchange()" class='form-control rgb-form-control' /> B
+					<input id='bInputVal' type='text' onchange="RGBchange()"
+						class='form-control rgb-form-control' /><span id='selectedRgbColor'>🎨</span> <input
+						id='rgbInputVal' type='hidden' />
+				</p>
+				<div class="coordcon">
+					<div class="coord">
+						<p class="p_">X: <input id="xCoord" type="text" onchange="xCoordChange()" class="form-control"
+								disabled>
+						</p>
+						<p class="p_">Y: <input id="yCoord" type="text" onchange="yCoordChange()" class="form-control"
+								disabled>
+						</p>
+					</div>
+					<div style="margin-top: 10%;width:20px;height:104px;"></div>
+					<canvas class="preview" id="preview" width="50" height="50"></canvas>
+				</div>
+				<p class="p__">notice that X,Y are ranging from 0 to 127</p>
+				<script>
+					var previewSetup = document.getElementById("preview");
+					var ctxP = previewSetup.getContext("2d");
+					/*
+					function xCoordChange(){
+						xc=document.getElementById("xCoord").value;
+						select();
+					}
+					function yCoordChange(){
+						yc=document.getElementById("yCoord").value;
+						select();
+					}
+					*/
+					function select() {
+						xCoord.value = xc;
+						yCoord.value = yc;
+						for (var i = 0; i < 5; i++) {
+							for (var j = 0; j < 5; j++) {
+								if (xc + i - 2 < 0 || xc + i - 2 > 127 || yc + j - 2 < 0 || yc + j - 2 > 127) {
+									ctxP.fillStyle = "rgba(" + 0 + "," + 0 + "," + 0 + "," + 1 + ")";
+									ctxP.fillRect(i * 10, j * 10, 10, 10);
+								} else {
+									var data = ctx.getImageData((xc + i - 2) * 8, (yc + j - 2) * 8, 1, 1).data;
+									var r = data[0], g = data[1], b = data[2];
+									ctxP.fillStyle = "rgba(" + r + "," + g + "," + b + "," + 1 + ")";
+									//console.log("rgba(" + r + "," + g + "," + b + "," + 1 + ")");
+									ctxP.fillRect(i * 10, j * 10, 10, 10);
+								}
+							}
+						}
+					}
+				</script>
+				<button class="plot" onclick="plot()">Plot!</button>
+				<script>
+					var HttpClient = function () {
+						this.get = function (aUrl, aCallback) {
+							var anHttpRequest = new XMLHttpRequest();
+							anHttpRequest.onreadystatechange = function () {
+								//console.log(anHttpRequest.readyState+" "+anHttpRequest.status);
+								if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+									aCallback(anHttpRequest.responseText);
+								else {
+									//take some time to process the error
+									ploting=0;
+								}
+							}
+
+							anHttpRequest.open("GET", aUrl, true);
+							anHttpRequest.send(null);
+						}
+					}
+					var ploting=0;
+					function plot() {
+						if(ploting==1){
+							alert("already ploting!");
+							return;
+						}
+						ploting=1;
+						var x = document.getElementById("xCoord").value;
+						var y = document.getElementById("yCoord").value;
+						if (xc == -1 || yc == -1) {
+							alert("please select a point!");
+							return;
+						}
+
+						var client = new HttpClient();
+						//console.log(document.getElementById("rInputVal").value);
+						client.get("http://www.shitao.tech/canvas.io/app.php?x=" + xc + "&y=" + yc 
+						+ "&r=" + document.getElementById("rInputVal").value
+						+ "&g=" + document.getElementById("gInputVal").value
+						+ "&b=" + document.getElementById("bInputVal").value
+						, function (response) {
+							//do something
+							if(response=="ok"){
+								alert("done, refreshing page. ");
+								window.location.reload();
+							}else if(response=="fail"){
+								alert("fail, please screenshot this and contact admin@shitao.tech. ");
+							}else{
+								alert("unknown error. ");
+							}
+							ploting=0;
+						});
+					}
+				</script>
+			</div>
+		</div>
+		<script>
+			const allColors = ['#003366', '#336699', '#3366CC', '#003399', '#000099', '#0000CC', '#000066', '#006666', '#006699', '#0099CC', '#0066CC', '#0033CC', '#0000FF', '#3333FF', '#333399', '#669999', '#009999', '#33CCCC', '#00CCFF', '#0099FF', '#0066FF', '#3366FF', '#3333CC', '#666699', '#339966', '#00CC99', '#00FFCC', '#00FFFF', '#33CCFF', '#3399FF', '#6699FF', '#6666FF', '#6600FF', '#6600CC', '#339933', '#00CC66', '#00FF99', '#66FFCC', '#66FFFF', '#66CCFF', '#99CCFF', '#9999FF', '#9966FF', '#9933FF', '#9900FF', '#006600', '#00CC00', '#00FF00', '#66FF99', '#99FFCC', '#CCFFFF', '#CCCCFF', '#CC99FF', '#CC66FF', '#CC33FF', '#CC00FF', '#9900CC', '#003300', '#009933', '#33CC33', '#66FF66', '#99FF99', '#CCFFCC', '#FFFFFF', '#FFCCFF', '#FF99FF', '#FF66FF', '#FF00FF', '#CC00CC', '#660066', '#336600', '#009900', '#66FF33', '#99FF66', '#CCFF99', '#FFFFCC', '#FFCCCC', '#FF99CC', '#FF66CC', '#FF33CC', '#CC0099', '#993399', '#333300', '#669900', '#99FF33', '#CCFF66', '#FFFF99', '#FFCC99', '#FF9999', '#FF6699', '#FF3399', '#CC3399', '#990099', '#666633', '#99CC00', '#CCFF33', '#FFFF66', '#FFCC66', '#FF9966', '#FF6666', '#FF0066', '#CC6699', '#993366', '#999966', '#CCCC00', '#FFFF00', '#FFCC00', '#FF9933', '#FF6600', '#FF5050', '#CC0066', '#660033', '#996633', '#CC9900', '#FF9900', '#CC6600', '#FF3300', '#FF0000', '#CC0000', '#990033', '#663300', '#996600', '#CC3300', '#993300', '#990000', '#800000', '#993333'];
+			const hexUnicode = '⬢';
+			var n = 0;
+			var hexNums = [7, 8, 9, 10, 11, 12];
+			var hexArrs = [];
+			var hexNum;
+			for (hexNum of hexNums) {
+				hexArr = [];
+				for (n = 0; n < hexNum; n++) hexArr.push(hexUnicode);
+				hexArrs.push(hexArr);
+			}
+			hexArr = [];
+			for (n = 0; n < 13; n++) hexArr.push(hexUnicode);
+			hexArrs.push(hexArr);
+			hexArr = [];
+			var hexNums2 = JSON.parse(JSON.stringify(hexNums));
+			hexNums2.reverse();
+			for (hexNum of hexNums2) {
+				hexArr = [];
+				for (n = 0; n < hexNum; n++) hexArr.push(hexUnicode);
+				hexArrs.push(hexArr);
+			}
+			var output = document.getElementById("output");
+			for (var hexArrLine of hexArrs) {
+				var hexLine = '<span class="colorHex">' + hexArrLine.join('</span><span class="colorHex">') + '</span>';
+				output.insertAdjacentHTML('beforeend', '<span class="condensed-line">' + hexLine + '</span>');
+			}
+			const hexToRGB = (hex) => {
+				let h = hex.slice(hex.startsWith('#') ? 1 : 0);
+				if (h.length === 3) h = [...h].map(x => x + x).join('');
+				h = parseInt(h, 16);
+				return {
+					'r': (h >>> 16),
+					'g': ((h & 0x00ff00) >>> 8),
+					'b': ((h & 0x0000ff) >>> 0)
+				};
+			};
+
+			function copyToClipboard(inputEleId) {
+				let copyText = document.getElementById(inputEleId);
+				navigator.clipboard.writeText(copyText.value);
+			}
+
+			var copyBtns = document.getElementsByClassName("copyBtn");
+			for (var copyBtn of copyBtns) {
+				copyBtn.addEventListener('click', (evt) => {
+					copyToClipboard(evt.target.value);
+				}, false);
+			}
+
+			var hexInputVal = document.getElementById('hexInputVal');
+
+			var rInputVal = document.getElementById('rInputVal');
+			var gInputVal = document.getElementById('gInputVal');
+			var bInputVal = document.getElementById('bInputVal');
+
+			var rgbInputVal = document.getElementById('rgbInputVal');
+
+			var selectedHexColor = document.getElementById('selectedHexColor');
+			var selectedRgbColor = document.getElementById('selectedRgbColor');
+
+			var colorHexs = document.getElementsByClassName('colorHex');
+			var h = 0;
+			for (var colorHex of colorHexs) {
+				colorHex['style']['webkit-text-fill-color'] = allColors[h];
+				colorHex['style']['color'] = allColors[h];
+				colorHex['style']['-webkit-text-stroke'] = '3.75px ' + allColors[h];
+
+				colorHex.setAttribute('data-hex', allColors[h]);
+				let rgbObj = hexToRGB(allColors[h]);
+				colorHex.setAttribute('data-r', rgbObj['r']);
+				colorHex.setAttribute('data-g', rgbObj['g']);
+				colorHex.setAttribute('data-b', rgbObj['b']);
+
+				colorHex.addEventListener('click', (evt) => {
+					let hexSrcElement = evt.srcElement;
+
+					let selectedColorHex = document.getElementsByClassName('color-selected');
+					if (selectedColorHex.length > 0) {
+						selectedColorHex[0].classList.remove('color-selected');
+					}
+					hexSrcElement.classList.add('color-selected');
+
+					let dataset = hexSrcElement.dataset;
+					let hexVal = dataset.hex;
+					hexInputVal.value = hexVal.toLowerCase();
+					selectedHexColor['style']['background'] = hexVal;
+
+					let rVal = dataset['r'];
+					let gVal = dataset['g'];
+					let bVal = dataset['b'];
+					rInputVal.value = rVal;
+					gInputVal.value = gVal;
+					bInputVal.value = bVal;
+					let rgbVal = `rgb(${rVal}, ${gVal}, ${bVal})`;
+					rgbInputVal.value = rgbVal;
+					selectedRgbColor['style']['background'] = rgbVal;
+				}, false);
+				h++;
+			}
+			colorHexs[Math.floor(Math.random() * 127)].click();
+		</script>
+		<script>
+			function rgbToHex(red, green, blue) {
+				const rgb = (red << 16) | (green << 8) | (blue << 0);
+				return '#' + (0x1000000 + rgb).toString(16).slice(1);
+			}
+
+			function hexToRgb(hex) {
+				const normal = hex.match(/^#([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i);
+				if (normal) return normal.slice(1).map(e => parseInt(e, 16));
+
+				const shorthand = hex.match(/^#([0-9a-f])([0-9a-f])([0-9a-f])$/i);
+				if (shorthand) return shorthand.slice(1).map(e => 0x11 * parseInt(e, 16));
+
+				return null;
+			}
+			function hexToRgb(hex) {
+				var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+				return result ? {
+					r: parseInt(result[1], 16),
+					g: parseInt(result[2], 16),
+					b: parseInt(result[3], 16)
+				} : null;
+			}
+			function RGBchange() {
+				var r1 = document.getElementById("rInputVal").value;
+				var g1 = document.getElementById("gInputVal").value;
+				var b1 = document.getElementById("bInputVal").value;
+				var hexVal = rgbToHex(r1, g1, b1);
+				selectedHexColor['style']['background'] = hexVal;
+				selectedRgbColor['style']['background'] = hexVal;
+				hexInputVal.value = hexVal;
+				//alert(hexVal);
+			}
+			function HEXchange() {
+				var hexVal = document.getElementById("hexInputVal").value;
+				var rgbres = hexToRgb(hexVal);
+				selectedHexColor['style']['background'] = hexVal;
+				selectedRgbColor['style']['background'] = hexVal;
+				rInputVal.value = rgbres.r;
+				gInputVal.value = rgbres.g;
+				bInputVal.value = rgbres.b;
+			}
+		</script>
+
+
+
+
+	</div>
+
+
+
+</body>
+
+
+</html>
