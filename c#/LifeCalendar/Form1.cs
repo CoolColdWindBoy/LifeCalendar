@@ -921,7 +921,7 @@ namespace LifeCalendar
             if (con[0]!='['|| con[1]!='T' || con[2] != 'r' || con[3] != 'u' || con[4] != 'e' || con[5] != ']')
             {
                 labelLoginErr.Text = "Unknown Error";
-                MessageBox.Show(con);
+                //MessageBox.Show(con);
                 return;
             }
             string[] data=con.Split('&');
