@@ -2,10 +2,12 @@
 
 //requst url: shitao.tech?method=
 //method: login, save, load, 
-$servername="localhost";
-$username="lifecalendar";
-$password="CZW8O3czw8o3";
-$dbname = "lifecalendar";
+$servername=file_get_contents(__DIR__."/key/servername");
+$username=file_get_contents(__DIR__."/key/username");
+$password=file_get_contents(__DIR__."/key/password");
+$dbname=file_get_contents(__DIR__."/key/dbname");
+
+
 $conn=new mysqli($servername,$username,$password,$dbname);
 if($conn->connect_error){
     die("Fail");

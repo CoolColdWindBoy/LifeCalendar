@@ -20,3 +20,16 @@ C:\Users\Maverick\source\repos\LifeCalendar\LifeCalendar\bin\Debug\Newtonsoft.Js
 C:\Users\Maverick\source\repos\LifeCalendar\LifeCalendar\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Maverick\source\repos\LifeCalendar\LifeCalendar\obj\Debug\LifeCalendar.csproj.CopyComplete
 C:\Users\Maverick\source\repos\LifeCalendar\LifeCalendar\bin\Debug\LifeCalendar.exe.config
+C:\Users\Maverick\3D Objects\GitHub\LifeCalendar\LifeCalendar\c#\LifeCalendar\bin\Debug\LifeCalendar.exe.config
+C:\Users\Maverick\3D Objects\GitHub\LifeCalendar\LifeCalendar\c#\LifeCalendar\bin\Debug\LifeCalendar.exe
+C:\Users\Maverick\3D Objects\GitHub\LifeCalendar\LifeCalendar\c#\LifeCalendar\bin\Debug\LifeCalendar.pdb
+C:\Users\Maverick\3D Objects\GitHub\LifeCalendar\LifeCalendar\c#\LifeCalendar\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Maverick\3D Objects\GitHub\LifeCalendar\LifeCalendar\c#\LifeCalendar\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Maverick\3D Objects\GitHub\LifeCalendar\LifeCalendar\c#\LifeCalendar\obj\Debug\LifeCalendar.csproj.AssemblyReference.cache
+C:\Users\Maverick\3D Objects\GitHub\LifeCalendar\LifeCalendar\c#\LifeCalendar\obj\Debug\LifeCalendar.Form1.resources
+C:\Users\Maverick\3D Objects\GitHub\LifeCalendar\LifeCalendar\c#\LifeCalendar\obj\Debug\LifeCalendar.Properties.Resources.resources
+C:\Users\Maverick\3D Objects\GitHub\LifeCalendar\LifeCalendar\c#\LifeCalendar\obj\Debug\LifeCalendar.csproj.GenerateResource.cache
+C:\Users\Maverick\3D Objects\GitHub\LifeCalendar\LifeCalendar\c#\LifeCalendar\obj\Debug\LifeCalendar.csproj.CoreCompileInputs.cache
+C:\Users\Maverick\3D Objects\GitHub\LifeCalendar\LifeCalendar\c#\LifeCalendar\obj\Debug\LifeCalendar.csproj.CopyComplete
+C:\Users\Maverick\3D Objects\GitHub\LifeCalendar\LifeCalendar\c#\LifeCalendar\obj\Debug\LifeCalendar.exe
+C:\Users\Maverick\3D Objects\GitHub\LifeCalendar\LifeCalendar\c#\LifeCalendar\obj\Debug\LifeCalendar.pdb
