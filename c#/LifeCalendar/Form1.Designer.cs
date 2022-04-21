@@ -31,8 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelBtnBack = new System.Windows.Forms.Panel();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panelWeeklyRow = new System.Windows.Forms.Panel();
             this.labelRow100 = new System.Windows.Forms.Label();
             this.labelRow95 = new System.Windows.Forms.Label();
@@ -66,9 +71,21 @@
             this.buttonMax = new System.Windows.Forms.Button();
             this.buttonShut = new System.Windows.Forms.Button();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.panelLetters = new System.Windows.Forms.Panel();
+            this.buttonSent = new System.Windows.Forms.Button();
+            this.panelLettersDesktop = new System.Windows.Forms.Panel();
+            this.panelCompose = new System.Windows.Forms.Panel();
+            this.labelComposeTitleCount = new System.Windows.Forms.Label();
+            this.panelComposeTitle = new System.Windows.Forms.Panel();
+            this.labelComposeTitle = new System.Windows.Forms.Label();
+            this.textBoxComposeTitle = new System.Windows.Forms.TextBox();
+            this.buttonReceive = new System.Windows.Forms.Button();
+            this.buttonCompose = new System.Windows.Forms.Button();
+            this.buttonPullLetters = new System.Windows.Forms.Button();
             this.panelWeekly = new System.Windows.Forms.Panel();
             this.panelFloat = new System.Windows.Forms.Panel();
             this.labelYear = new System.Windows.Forms.Label();
+            this.panelFloatDesktop = new System.Windows.Forms.Panel();
             this.panelDate7 = new System.Windows.Forms.Panel();
             this.labelDate7 = new System.Windows.Forms.Label();
             this.panelDate6 = new System.Windows.Forms.Panel();
@@ -85,6 +102,7 @@
             this.labelDate1 = new System.Windows.Forms.Label();
             this.labelMonth2 = new System.Windows.Forms.Label();
             this.labelMonth1 = new System.Windows.Forms.Label();
+            this.buttonScale = new System.Windows.Forms.Button();
             this.panelWeeklyColumn = new System.Windows.Forms.Panel();
             this.labelColumn50 = new System.Windows.Forms.Label();
             this.labelColumn45 = new System.Windows.Forms.Label();
@@ -98,38 +116,31 @@
             this.labelColumn5 = new System.Windows.Forms.Label();
             this.panelPersonal = new System.Windows.Forms.Panel();
             this.panelLogin = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.labelLoginErr = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.buttonLogin = new System.Windows.Forms.Button();
             this.panelPassword = new System.Windows.Forms.Panel();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.panelMail = new System.Windows.Forms.Panel();
             this.textBoxMail = new System.Windows.Forms.TextBox();
+            this.pictureBoxPassword = new System.Windows.Forms.PictureBox();
+            this.pictureBoxMail = new System.Windows.Forms.PictureBox();
             this.labelLogin = new System.Windows.Forms.Label();
             this.timerFormSize = new System.Windows.Forms.Timer(this.components);
             this.timerSelectedColor = new System.Windows.Forms.Timer(this.components);
-            this.panelLetters = new System.Windows.Forms.Panel();
-            this.panelLettersDesktop = new System.Windows.Forms.Panel();
-            this.buttonSent = new System.Windows.Forms.Button();
-            this.buttonReceive = new System.Windows.Forms.Button();
-            this.buttonCompose = new System.Windows.Forms.Button();
-            this.buttonPullLetters = new System.Windows.Forms.Button();
-            this.panelFloatDesktop = new System.Windows.Forms.Panel();
-            this.buttonScale = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.buttonLogin = new System.Windows.Forms.Button();
-            this.pictureBoxPassword = new System.Windows.Forms.PictureBox();
-            this.pictureBoxMail = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
-            this.panelCompose = new System.Windows.Forms.Panel();
+            this.labelComposeContent = new System.Windows.Forms.Label();
+            this.textBoxComposeContent = new System.Windows.Forms.TextBox();
+            this.labelComposeContentCount = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.panelWeeklyRow.SuspendLayout();
             this.panelTitle.SuspendLayout();
             this.panelDesktop.SuspendLayout();
+            this.panelLetters.SuspendLayout();
+            this.panelLettersDesktop.SuspendLayout();
+            this.panelCompose.SuspendLayout();
             this.panelWeekly.SuspendLayout();
             this.panelFloat.SuspendLayout();
             this.panelDate7.SuspendLayout();
@@ -142,11 +153,8 @@
             this.panelWeeklyColumn.SuspendLayout();
             this.panelPersonal.SuspendLayout();
             this.panelLogin.SuspendLayout();
-            this.panelLetters.SuspendLayout();
-            this.panelLettersDesktop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -164,6 +172,55 @@
             this.panelMenu.Size = new System.Drawing.Size(202, 625);
             this.panelMenu.TabIndex = 0;
             // 
+            // button4
+            // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Image = global::LifeCalendar.Properties.Resources._4_;
+            this.button4.Location = new System.Drawing.Point(0, 571);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(202, 54);
+            this.button4.TabIndex = 4;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Image = global::LifeCalendar.Properties.Resources._3;
+            this.button3.Location = new System.Drawing.Point(0, 265);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(202, 54);
+            this.button3.TabIndex = 3;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = global::LifeCalendar.Properties.Resources._22;
+            this.button2.Location = new System.Drawing.Point(0, 204);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(202, 54);
+            this.button2.TabIndex = 2;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = global::LifeCalendar.Properties.Resources._1__;
+            this.button1.Location = new System.Drawing.Point(0, 143);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(202, 54);
+            this.button1.TabIndex = 1;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // panelBtnBack
             // 
             this.panelBtnBack.Location = new System.Drawing.Point(0, 71);
@@ -180,6 +237,16 @@
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(202, 65);
             this.panelLogo.TabIndex = 0;
+            // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.Image = global::LifeCalendar.Properties.Resources.polaris2021;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(12, 11);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(180, 40);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxLogo.TabIndex = 0;
+            this.pictureBoxLogo.TabStop = false;
             // 
             // panelWeeklyRow
             // 
@@ -545,6 +612,156 @@
             this.panelDesktop.TabIndex = 2;
             this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
             // 
+            // panelLetters
+            // 
+            this.panelLetters.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelLetters.Controls.Add(this.buttonSent);
+            this.panelLetters.Controls.Add(this.panelLettersDesktop);
+            this.panelLetters.Controls.Add(this.buttonReceive);
+            this.panelLetters.Controls.Add(this.buttonCompose);
+            this.panelLetters.Controls.Add(this.buttonPullLetters);
+            this.panelLetters.Location = new System.Drawing.Point(0, 3);
+            this.panelLetters.Name = "panelLetters";
+            this.panelLetters.Size = new System.Drawing.Size(749, 557);
+            this.panelLetters.TabIndex = 3;
+            this.panelLetters.Visible = false;
+            // 
+            // buttonSent
+            // 
+            this.buttonSent.FlatAppearance.BorderSize = 0;
+            this.buttonSent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSent.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSent.ForeColor = System.Drawing.Color.White;
+            this.buttonSent.Image = global::LifeCalendar.Properties.Resources.sent;
+            this.buttonSent.Location = new System.Drawing.Point(6, 231);
+            this.buttonSent.Name = "buttonSent";
+            this.buttonSent.Size = new System.Drawing.Size(131, 32);
+            this.buttonSent.TabIndex = 4;
+            this.buttonSent.UseVisualStyleBackColor = true;
+            this.buttonSent.Click += new System.EventHandler(this.buttonSent_Click);
+            // 
+            // panelLettersDesktop
+            // 
+            this.panelLettersDesktop.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelLettersDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(80)))));
+            this.panelLettersDesktop.Controls.Add(this.panelCompose);
+            this.panelLettersDesktop.Location = new System.Drawing.Point(143, 0);
+            this.panelLettersDesktop.Name = "panelLettersDesktop";
+            this.panelLettersDesktop.Size = new System.Drawing.Size(606, 557);
+            this.panelLettersDesktop.TabIndex = 3;
+            // 
+            // panelCompose
+            // 
+            this.panelCompose.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelCompose.Controls.Add(this.textBoxComposeContent);
+            this.panelCompose.Controls.Add(this.labelComposeContentCount);
+            this.panelCompose.Controls.Add(this.labelComposeContent);
+            this.panelCompose.Controls.Add(this.labelComposeTitleCount);
+            this.panelCompose.Controls.Add(this.panelComposeTitle);
+            this.panelCompose.Controls.Add(this.labelComposeTitle);
+            this.panelCompose.Controls.Add(this.textBoxComposeTitle);
+            this.panelCompose.Location = new System.Drawing.Point(0, -3);
+            this.panelCompose.Name = "panelCompose";
+            this.panelCompose.Size = new System.Drawing.Size(606, 560);
+            this.panelCompose.TabIndex = 0;
+            // 
+            // labelComposeTitleCount
+            // 
+            this.labelComposeTitleCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelComposeTitleCount.AutoSize = true;
+            this.labelComposeTitleCount.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelComposeTitleCount.ForeColor = System.Drawing.Color.White;
+            this.labelComposeTitleCount.Location = new System.Drawing.Point(533, 19);
+            this.labelComposeTitleCount.Name = "labelComposeTitleCount";
+            this.labelComposeTitleCount.Size = new System.Drawing.Size(52, 36);
+            this.labelComposeTitleCount.TabIndex = 3;
+            this.labelComposeTitleCount.Text = "0/64";
+            this.labelComposeTitleCount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // panelComposeTitle
+            // 
+            this.panelComposeTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelComposeTitle.BackColor = System.Drawing.Color.White;
+            this.panelComposeTitle.ForeColor = System.Drawing.Color.White;
+            this.panelComposeTitle.Location = new System.Drawing.Point(92, 49);
+            this.panelComposeTitle.Name = "panelComposeTitle";
+            this.panelComposeTitle.Size = new System.Drawing.Size(424, 1);
+            this.panelComposeTitle.TabIndex = 2;
+            // 
+            // labelComposeTitle
+            // 
+            this.labelComposeTitle.AutoSize = true;
+            this.labelComposeTitle.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelComposeTitle.ForeColor = System.Drawing.Color.White;
+            this.labelComposeTitle.Location = new System.Drawing.Point(31, 19);
+            this.labelComposeTitle.Name = "labelComposeTitle";
+            this.labelComposeTitle.Size = new System.Drawing.Size(60, 36);
+            this.labelComposeTitle.TabIndex = 1;
+            this.labelComposeTitle.Text = "Title: ";
+            // 
+            // textBoxComposeTitle
+            // 
+            this.textBoxComposeTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxComposeTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(75)))));
+            this.textBoxComposeTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxComposeTitle.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxComposeTitle.ForeColor = System.Drawing.Color.White;
+            this.textBoxComposeTitle.Location = new System.Drawing.Point(92, 16);
+            this.textBoxComposeTitle.Name = "textBoxComposeTitle";
+            this.textBoxComposeTitle.Size = new System.Drawing.Size(424, 43);
+            this.textBoxComposeTitle.TabIndex = 0;
+            this.textBoxComposeTitle.TextChanged += new System.EventHandler(this.textBoxComposeTitle_TextChanged);
+            // 
+            // buttonReceive
+            // 
+            this.buttonReceive.FlatAppearance.BorderSize = 0;
+            this.buttonReceive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonReceive.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonReceive.ForeColor = System.Drawing.Color.White;
+            this.buttonReceive.Image = global::LifeCalendar.Properties.Resources.receive;
+            this.buttonReceive.Location = new System.Drawing.Point(6, 140);
+            this.buttonReceive.Name = "buttonReceive";
+            this.buttonReceive.Size = new System.Drawing.Size(131, 32);
+            this.buttonReceive.TabIndex = 2;
+            this.buttonReceive.UseVisualStyleBackColor = true;
+            this.buttonReceive.Click += new System.EventHandler(this.buttonReceive_Click);
+            // 
+            // buttonCompose
+            // 
+            this.buttonCompose.FlatAppearance.BorderSize = 0;
+            this.buttonCompose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCompose.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCompose.ForeColor = System.Drawing.Color.White;
+            this.buttonCompose.Image = global::LifeCalendar.Properties.Resources.compose;
+            this.buttonCompose.Location = new System.Drawing.Point(6, 100);
+            this.buttonCompose.Name = "buttonCompose";
+            this.buttonCompose.Size = new System.Drawing.Size(131, 32);
+            this.buttonCompose.TabIndex = 1;
+            this.buttonCompose.UseVisualStyleBackColor = true;
+            this.buttonCompose.Click += new System.EventHandler(this.buttonCompose_Click);
+            // 
+            // buttonPullLetters
+            // 
+            this.buttonPullLetters.FlatAppearance.BorderSize = 0;
+            this.buttonPullLetters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPullLetters.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPullLetters.ForeColor = System.Drawing.Color.White;
+            this.buttonPullLetters.Image = global::LifeCalendar.Properties.Resources.pullLetters;
+            this.buttonPullLetters.Location = new System.Drawing.Point(6, 60);
+            this.buttonPullLetters.Name = "buttonPullLetters";
+            this.buttonPullLetters.Size = new System.Drawing.Size(131, 32);
+            this.buttonPullLetters.TabIndex = 0;
+            this.buttonPullLetters.UseVisualStyleBackColor = true;
+            this.buttonPullLetters.Click += new System.EventHandler(this.buttonPullLetters_Click);
+            // 
             // panelWeekly
             // 
             this.panelWeekly.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -591,6 +808,16 @@
             this.labelYear.TabIndex = 16;
             this.labelYear.Text = "0000-0000";
             this.labelYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelFloatDesktop
+            // 
+            this.panelFloatDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.panelFloatDesktop.BackgroundImage = global::LifeCalendar.Properties.Resources.option3;
+            this.panelFloatDesktop.Location = new System.Drawing.Point(3, 57);
+            this.panelFloatDesktop.Name = "panelFloatDesktop";
+            this.panelFloatDesktop.Size = new System.Drawing.Size(208, 142);
+            this.panelFloatDesktop.TabIndex = 15;
+            this.panelFloatDesktop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelFloatDesktop_MouseDown);
             // 
             // panelDate7
             // 
@@ -761,6 +988,19 @@
             this.labelMonth1.TabIndex = 5;
             this.labelMonth1.Text = "April";
             // 
+            // buttonScale
+            // 
+            this.buttonScale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonScale.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
+            this.buttonScale.FlatAppearance.BorderSize = 0;
+            this.buttonScale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonScale.Image = global::LifeCalendar.Properties.Resources.scale;
+            this.buttonScale.Location = new System.Drawing.Point(635, 470);
+            this.buttonScale.Name = "buttonScale";
+            this.buttonScale.Size = new System.Drawing.Size(42, 42);
+            this.buttonScale.TabIndex = 0;
+            this.buttonScale.UseVisualStyleBackColor = false;
+            // 
             // panelWeeklyColumn
             // 
             this.panelWeeklyColumn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
@@ -904,6 +1144,21 @@
             this.panelLogin.TabIndex = 0;
             this.panelLogin.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogin_Paint);
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.Black;
+            this.button5.Image = global::LifeCalendar.Properties.Resources.btnRegister;
+            this.button5.Location = new System.Drawing.Point(19, 249);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(240, 40);
+            this.button5.TabIndex = 8;
+            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button5.UseVisualStyleBackColor = false;
+            // 
             // labelLoginErr
             // 
             this.labelLoginErr.AutoSize = true;
@@ -927,6 +1182,22 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "iForgot";
             this.linkLabel1.VisitedLinkColor = System.Drawing.Color.Gray;
+            // 
+            // buttonLogin
+            // 
+            this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
+            this.buttonLogin.FlatAppearance.BorderSize = 0;
+            this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLogin.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogin.ForeColor = System.Drawing.Color.Black;
+            this.buttonLogin.Image = global::LifeCalendar.Properties.Resources.btnLogin;
+            this.buttonLogin.Location = new System.Drawing.Point(19, 197);
+            this.buttonLogin.Name = "buttonLogin";
+            this.buttonLogin.Size = new System.Drawing.Size(240, 40);
+            this.buttonLogin.TabIndex = 7;
+            this.buttonLogin.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonLogin.UseVisualStyleBackColor = false;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // panelPassword
             // 
@@ -978,6 +1249,26 @@
             this.textBoxMail.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxMail_KeyDown);
             this.textBoxMail.Leave += new System.EventHandler(this.textBoxMail_Leave);
             // 
+            // pictureBoxPassword
+            // 
+            this.pictureBoxPassword.Image = global::LifeCalendar.Properties.Resources.key;
+            this.pictureBoxPassword.Location = new System.Drawing.Point(19, 158);
+            this.pictureBoxPassword.Name = "pictureBoxPassword";
+            this.pictureBoxPassword.Size = new System.Drawing.Size(24, 18);
+            this.pictureBoxPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxPassword.TabIndex = 2;
+            this.pictureBoxPassword.TabStop = false;
+            // 
+            // pictureBoxMail
+            // 
+            this.pictureBoxMail.Image = global::LifeCalendar.Properties.Resources.mail;
+            this.pictureBoxMail.Location = new System.Drawing.Point(19, 116);
+            this.pictureBoxMail.Name = "pictureBoxMail";
+            this.pictureBoxMail.Size = new System.Drawing.Size(24, 18);
+            this.pictureBoxMail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxMail.TabIndex = 1;
+            this.pictureBoxMail.TabStop = false;
+            // 
             // labelLogin
             // 
             this.labelLogin.Font = new System.Drawing.Font("Journal", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1001,229 +1292,44 @@
             this.timerSelectedColor.Interval = 32;
             this.timerSelectedColor.Tick += new System.EventHandler(this.timerSelectedColor_Tick);
             // 
-            // panelLetters
+            // labelComposeContent
             // 
-            this.panelLetters.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelComposeContent.AutoSize = true;
+            this.labelComposeContent.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelComposeContent.ForeColor = System.Drawing.Color.White;
+            this.labelComposeContent.Location = new System.Drawing.Point(15, 89);
+            this.labelComposeContent.Name = "labelComposeContent";
+            this.labelComposeContent.Size = new System.Drawing.Size(78, 36);
+            this.labelComposeContent.TabIndex = 4;
+            this.labelComposeContent.Text = "Content: ";
+            // 
+            // textBoxComposeContent
+            // 
+            this.textBoxComposeContent.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelLetters.Controls.Add(this.buttonSent);
-            this.panelLetters.Controls.Add(this.panelLettersDesktop);
-            this.panelLetters.Controls.Add(this.buttonReceive);
-            this.panelLetters.Controls.Add(this.buttonCompose);
-            this.panelLetters.Controls.Add(this.buttonPullLetters);
-            this.panelLetters.Location = new System.Drawing.Point(0, 3);
-            this.panelLetters.Name = "panelLetters";
-            this.panelLetters.Size = new System.Drawing.Size(749, 557);
-            this.panelLetters.TabIndex = 3;
-            this.panelLetters.Visible = false;
+            this.textBoxComposeContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(75)))));
+            this.textBoxComposeContent.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxComposeContent.ForeColor = System.Drawing.Color.White;
+            this.textBoxComposeContent.Location = new System.Drawing.Point(92, 86);
+            this.textBoxComposeContent.Multiline = true;
+            this.textBoxComposeContent.Name = "textBoxComposeContent";
+            this.textBoxComposeContent.Size = new System.Drawing.Size(424, 451);
+            this.textBoxComposeContent.TabIndex = 5;
+            this.textBoxComposeContent.TextChanged += new System.EventHandler(this.textBoxComposeContent_TextChanged);
             // 
-            // panelLettersDesktop
+            // labelComposeContentCount
             // 
-            this.panelLettersDesktop.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelLettersDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(80)))));
-            this.panelLettersDesktop.Controls.Add(this.panelCompose);
-            this.panelLettersDesktop.Location = new System.Drawing.Point(143, 0);
-            this.panelLettersDesktop.Name = "panelLettersDesktop";
-            this.panelLettersDesktop.Size = new System.Drawing.Size(606, 557);
-            this.panelLettersDesktop.TabIndex = 3;
-            // 
-            // buttonSent
-            // 
-            this.buttonSent.FlatAppearance.BorderSize = 0;
-            this.buttonSent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSent.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSent.ForeColor = System.Drawing.Color.White;
-            this.buttonSent.Image = global::LifeCalendar.Properties.Resources.sent;
-            this.buttonSent.Location = new System.Drawing.Point(6, 231);
-            this.buttonSent.Name = "buttonSent";
-            this.buttonSent.Size = new System.Drawing.Size(131, 32);
-            this.buttonSent.TabIndex = 4;
-            this.buttonSent.UseVisualStyleBackColor = true;
-            this.buttonSent.Click += new System.EventHandler(this.buttonSent_Click);
-            // 
-            // buttonReceive
-            // 
-            this.buttonReceive.FlatAppearance.BorderSize = 0;
-            this.buttonReceive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonReceive.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonReceive.ForeColor = System.Drawing.Color.White;
-            this.buttonReceive.Image = global::LifeCalendar.Properties.Resources.receive;
-            this.buttonReceive.Location = new System.Drawing.Point(6, 140);
-            this.buttonReceive.Name = "buttonReceive";
-            this.buttonReceive.Size = new System.Drawing.Size(131, 32);
-            this.buttonReceive.TabIndex = 2;
-            this.buttonReceive.UseVisualStyleBackColor = true;
-            this.buttonReceive.Click += new System.EventHandler(this.buttonReceive_Click);
-            // 
-            // buttonCompose
-            // 
-            this.buttonCompose.FlatAppearance.BorderSize = 0;
-            this.buttonCompose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCompose.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCompose.ForeColor = System.Drawing.Color.White;
-            this.buttonCompose.Image = global::LifeCalendar.Properties.Resources.compose;
-            this.buttonCompose.Location = new System.Drawing.Point(6, 100);
-            this.buttonCompose.Name = "buttonCompose";
-            this.buttonCompose.Size = new System.Drawing.Size(131, 32);
-            this.buttonCompose.TabIndex = 1;
-            this.buttonCompose.UseVisualStyleBackColor = true;
-            this.buttonCompose.Click += new System.EventHandler(this.buttonCompose_Click);
-            // 
-            // buttonPullLetters
-            // 
-            this.buttonPullLetters.FlatAppearance.BorderSize = 0;
-            this.buttonPullLetters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPullLetters.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPullLetters.ForeColor = System.Drawing.Color.White;
-            this.buttonPullLetters.Image = global::LifeCalendar.Properties.Resources.pullLetters;
-            this.buttonPullLetters.Location = new System.Drawing.Point(6, 60);
-            this.buttonPullLetters.Name = "buttonPullLetters";
-            this.buttonPullLetters.Size = new System.Drawing.Size(131, 32);
-            this.buttonPullLetters.TabIndex = 0;
-            this.buttonPullLetters.UseVisualStyleBackColor = true;
-            this.buttonPullLetters.Click += new System.EventHandler(this.buttonPullLetters_Click);
-            // 
-            // panelFloatDesktop
-            // 
-            this.panelFloatDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.panelFloatDesktop.BackgroundImage = global::LifeCalendar.Properties.Resources.option3;
-            this.panelFloatDesktop.Location = new System.Drawing.Point(3, 57);
-            this.panelFloatDesktop.Name = "panelFloatDesktop";
-            this.panelFloatDesktop.Size = new System.Drawing.Size(208, 142);
-            this.panelFloatDesktop.TabIndex = 15;
-            this.panelFloatDesktop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelFloatDesktop_MouseDown);
-            // 
-            // buttonScale
-            // 
-            this.buttonScale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonScale.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
-            this.buttonScale.FlatAppearance.BorderSize = 0;
-            this.buttonScale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonScale.Image = global::LifeCalendar.Properties.Resources.scale;
-            this.buttonScale.Location = new System.Drawing.Point(635, 470);
-            this.buttonScale.Name = "buttonScale";
-            this.buttonScale.Size = new System.Drawing.Size(42, 42);
-            this.buttonScale.TabIndex = 0;
-            this.buttonScale.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Image = global::LifeCalendar.Properties.Resources.btnRegister;
-            this.button5.Location = new System.Drawing.Point(19, 249);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(240, 40);
-            this.button5.TabIndex = 8;
-            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // buttonLogin
-            // 
-            this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
-            this.buttonLogin.FlatAppearance.BorderSize = 0;
-            this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogin.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLogin.ForeColor = System.Drawing.Color.Black;
-            this.buttonLogin.Image = global::LifeCalendar.Properties.Resources.btnLogin;
-            this.buttonLogin.Location = new System.Drawing.Point(19, 197);
-            this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(240, 40);
-            this.buttonLogin.TabIndex = 7;
-            this.buttonLogin.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonLogin.UseVisualStyleBackColor = false;
-            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
-            // 
-            // pictureBoxPassword
-            // 
-            this.pictureBoxPassword.Image = global::LifeCalendar.Properties.Resources.key;
-            this.pictureBoxPassword.Location = new System.Drawing.Point(19, 158);
-            this.pictureBoxPassword.Name = "pictureBoxPassword";
-            this.pictureBoxPassword.Size = new System.Drawing.Size(24, 18);
-            this.pictureBoxPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxPassword.TabIndex = 2;
-            this.pictureBoxPassword.TabStop = false;
-            // 
-            // pictureBoxMail
-            // 
-            this.pictureBoxMail.Image = global::LifeCalendar.Properties.Resources.mail;
-            this.pictureBoxMail.Location = new System.Drawing.Point(19, 116);
-            this.pictureBoxMail.Name = "pictureBoxMail";
-            this.pictureBoxMail.Size = new System.Drawing.Size(24, 18);
-            this.pictureBoxMail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxMail.TabIndex = 1;
-            this.pictureBoxMail.TabStop = false;
-            // 
-            // button4
-            // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Image = global::LifeCalendar.Properties.Resources._4_;
-            this.button4.Location = new System.Drawing.Point(0, 571);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(202, 54);
-            this.button4.TabIndex = 4;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Image = global::LifeCalendar.Properties.Resources._3;
-            this.button3.Location = new System.Drawing.Point(0, 265);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(202, 54);
-            this.button3.TabIndex = 3;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = global::LifeCalendar.Properties.Resources._22;
-            this.button2.Location = new System.Drawing.Point(0, 204);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(202, 54);
-            this.button2.TabIndex = 2;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::LifeCalendar.Properties.Resources._1__;
-            this.button1.Location = new System.Drawing.Point(0, 143);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(202, 54);
-            this.button1.TabIndex = 1;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.Image = global::LifeCalendar.Properties.Resources.polaris2021;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(12, 11);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(180, 40);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBoxLogo.TabIndex = 0;
-            this.pictureBoxLogo.TabStop = false;
-            // 
-            // panelCompose
-            // 
-            this.panelCompose.Location = new System.Drawing.Point(3, 44);
-            this.panelCompose.Name = "panelCompose";
-            this.panelCompose.Size = new System.Drawing.Size(600, 510);
-            this.panelCompose.TabIndex = 0;
+            this.labelComposeContentCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.labelComposeContentCount.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelComposeContentCount.ForeColor = System.Drawing.Color.White;
+            this.labelComposeContentCount.Location = new System.Drawing.Point(-22, 501);
+            this.labelComposeContentCount.Name = "labelComposeContentCount";
+            this.labelComposeContentCount.Size = new System.Drawing.Size(115, 36);
+            this.labelComposeContentCount.TabIndex = 6;
+            this.labelComposeContentCount.Text = "0/1024";
+            this.labelComposeContentCount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelComposeContentCount.Click += new System.EventHandler(this.labelComposeContentCount_Click);
             // 
             // Form1
             // 
@@ -1244,11 +1350,16 @@
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panelWeeklyRow.ResumeLayout(false);
             this.panelWeeklyRow.PerformLayout();
             this.panelTitle.ResumeLayout(false);
             this.panelTitle.PerformLayout();
             this.panelDesktop.ResumeLayout(false);
+            this.panelLetters.ResumeLayout(false);
+            this.panelLettersDesktop.ResumeLayout(false);
+            this.panelCompose.ResumeLayout(false);
+            this.panelCompose.PerformLayout();
             this.panelWeekly.ResumeLayout(false);
             this.panelFloat.ResumeLayout(false);
             this.panelDate7.ResumeLayout(false);
@@ -1263,11 +1374,8 @@
             this.panelPersonal.ResumeLayout(false);
             this.panelLogin.ResumeLayout(false);
             this.panelLogin.PerformLayout();
-            this.panelLetters.ResumeLayout(false);
-            this.panelLettersDesktop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPassword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1369,6 +1477,13 @@
         private System.Windows.Forms.Panel panelLettersDesktop;
         private System.Windows.Forms.Button buttonSent;
         private System.Windows.Forms.Panel panelCompose;
+        private System.Windows.Forms.Panel panelComposeTitle;
+        private System.Windows.Forms.Label labelComposeTitle;
+        private System.Windows.Forms.TextBox textBoxComposeTitle;
+        private System.Windows.Forms.Label labelComposeTitleCount;
+        private System.Windows.Forms.Label labelComposeContent;
+        private System.Windows.Forms.Label labelComposeContentCount;
+        private System.Windows.Forms.TextBox textBoxComposeContent;
     }
 }
 

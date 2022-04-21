@@ -1841,6 +1841,42 @@ namespace LifeCalendar
             buttonReceive.BackColor = panelLetters.BackColor;
         }
 
+        private void textBoxComposeTitle_TextChanged(object sender, EventArgs e)
+        {
+            int lim = 64;
+            if (textBoxComposeTitle.Text.Length > lim)
+            {
+                textBoxComposeTitle.Text=textBoxComposeTitle.Text.Remove(lim);
+                textBoxComposeTitle.SelectionStart = textBoxComposeTitle.Text.Length;
+                textBoxComposeTitle.SelectionLength = 0;
+            }
+            labelComposeTitleCount.Text=textBoxComposeTitle.Text.Length.ToString()+"/"+lim.ToString();
+        }
+
+        private void textBoxComposeContent_TextChanged(object sender, EventArgs e)
+        {
+            int lim = 1024;
+            try { 
+                char lastDigit = textBoxComposeContent.Text[textBoxComposeContent.Text.Length - 1];
+                if (textBoxComposeContent.Text.Length > lim||lastDigit=='&')
+                {
+                    textBoxComposeContent.Text = textBoxComposeContent.Text.Remove(textBoxComposeContent.Text.Length-1);
+                    textBoxComposeContent.SelectionStart = textBoxComposeContent.Text.Length;
+                    textBoxComposeContent.SelectionLength = 0;
+                }
+                labelComposeContentCount.Text = textBoxComposeContent.Text.Length.ToString() + "/" + lim.ToString();
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void labelComposeContentCount_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private bool saveJson()
         {
             alterWeekly.count = alterCount;
