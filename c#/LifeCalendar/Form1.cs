@@ -489,6 +489,7 @@ namespace LifeCalendar
             button2.BackColor = panelMenu.BackColor;
             button3.BackColor = panelMenu.BackColor;
             button4.BackColor = panelMenu.BackColor;
+            panelLetters.Visible = false;
             panelWeekly.Visible= true;
             panelWeeklyColumn.Visible= true;
             panelWeeklyRow.Visible= true;
@@ -511,6 +512,7 @@ namespace LifeCalendar
             panelWeeklyColumn.Visible = false;
             panelWeeklyRow.Visible = false;
             panelPersonal.Visible = false;
+            panelLetters.Visible = true;
         }
         private void button3_Click(object sender, EventArgs e)
         {
@@ -522,6 +524,7 @@ namespace LifeCalendar
             panelWeeklyColumn.Visible = false;
             panelWeeklyRow.Visible = false;
             panelPersonal.Visible = true;
+            panelLetters.Visible = false;
             AdjustLogin();
         }
         private void button4_Click(object sender, EventArgs e)
@@ -534,6 +537,7 @@ namespace LifeCalendar
             panelWeeklyColumn.Visible = false;
             panelWeeklyRow.Visible = false;
             panelPersonal.Visible = false;
+            panelLetters.Visible = false;
         }
         private void labelHeading_MouseDown(object sender, MouseEventArgs e)
         {
@@ -1804,6 +1808,39 @@ namespace LifeCalendar
             //MessageBox.Show(conn);
             return true;
         }
+
+        private void buttonPullLetters_Click(object sender, EventArgs e)
+        {
+            buttonPullLetters.BackColor = Color.FromArgb(76, 81, 103);
+            buttonCompose.BackColor = panelLetters.BackColor;
+            buttonReceive.BackColor=panelLetters.BackColor;
+            buttonSent.BackColor = panelLetters.BackColor;
+        }
+
+        private void buttonCompose_Click(object sender, EventArgs e)
+        {
+            buttonCompose.BackColor = Color.FromArgb(76, 81, 103);
+            buttonPullLetters.BackColor = panelLetters.BackColor;
+            buttonReceive.BackColor = panelLetters.BackColor;
+            buttonSent.BackColor = panelLetters.BackColor;
+        }
+
+        private void buttonReceive_Click(object sender, EventArgs e)
+        {
+            buttonReceive.BackColor = Color.FromArgb(76, 81, 103);
+            buttonCompose.BackColor = panelLetters.BackColor;
+            buttonPullLetters.BackColor = panelLetters.BackColor;
+            buttonSent.BackColor = panelLetters.BackColor;
+        }
+
+        private void buttonSent_Click(object sender, EventArgs e)
+        {
+            buttonSent.BackColor = Color.FromArgb(76, 81, 103);
+            buttonCompose.BackColor = panelLetters.BackColor;
+            buttonPullLetters.BackColor = panelLetters.BackColor;
+            buttonReceive.BackColor = panelLetters.BackColor;
+        }
+
         private bool saveJson()
         {
             alterWeekly.count = alterCount;
