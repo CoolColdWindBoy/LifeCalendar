@@ -504,6 +504,11 @@ namespace LifeCalendar
         }
         private void button2_Click(object sender, EventArgs e)
         {
+            if (loginStatus == 0)
+            {
+                MessageBox.Show("Please Login or Register. ");
+                return;
+            }
             button1.BackColor = panelMenu.BackColor;
             button2.BackColor = panelBtnBack.BackColor;
             button3.BackColor = panelMenu.BackColor;
@@ -1799,16 +1804,15 @@ namespace LifeCalendar
                 MessageBox.Show("Unknown error");
                 return false;
             }
-            string conn="";
-            for(int i =1;i< con.Length; i++)
+            string conn = "";
+            for (int i = 1; i < con.Length; i++)
             {
                 conn += con[i];
             }
-            
+
             //MessageBox.Show(conn);
             return true;
         }
-
         private void buttonPullLetters_Click(object sender, EventArgs e)
         {
             buttonPullLetters.BackColor = Color.FromArgb(76, 81, 103);
@@ -1816,7 +1820,6 @@ namespace LifeCalendar
             buttonReceive.BackColor=panelLetters.BackColor;
             buttonSent.BackColor = panelLetters.BackColor;
         }
-
         private void buttonCompose_Click(object sender, EventArgs e)
         {
             buttonCompose.BackColor = Color.FromArgb(76, 81, 103);
@@ -1824,7 +1827,6 @@ namespace LifeCalendar
             buttonReceive.BackColor = panelLetters.BackColor;
             buttonSent.BackColor = panelLetters.BackColor;
         }
-
         private void buttonReceive_Click(object sender, EventArgs e)
         {
             buttonReceive.BackColor = Color.FromArgb(76, 81, 103);
@@ -1832,7 +1834,6 @@ namespace LifeCalendar
             buttonPullLetters.BackColor = panelLetters.BackColor;
             buttonSent.BackColor = panelLetters.BackColor;
         }
-
         private void buttonSent_Click(object sender, EventArgs e)
         {
             buttonSent.BackColor = Color.FromArgb(76, 81, 103);
@@ -1840,7 +1841,6 @@ namespace LifeCalendar
             buttonPullLetters.BackColor = panelLetters.BackColor;
             buttonReceive.BackColor = panelLetters.BackColor;
         }
-
         private void textBoxComposeTitle_TextChanged(object sender, EventArgs e)
         {
             int lim = 64;
@@ -1852,7 +1852,6 @@ namespace LifeCalendar
             }
             labelComposeTitleCount.Text=textBoxComposeTitle.Text.Length.ToString()+"/"+lim.ToString();
         }
-
         private void textBoxComposeContent_TextChanged(object sender, EventArgs e)
         {
             int lim = 1024;
@@ -1864,16 +1863,71 @@ namespace LifeCalendar
                     textBoxComposeContent.SelectionStart = textBoxComposeContent.Text.Length;
                     textBoxComposeContent.SelectionLength = 0;
                 }
-                labelComposeContentCount.Text = textBoxComposeContent.Text.Length.ToString() + "/" + lim.ToString();
             }
             catch
             {
 
             }
+            labelComposeContentCount.Text = textBoxComposeContent.Text.Length.ToString() + "/" + lim.ToString();
         }
 
         private void labelComposeContentCount_Click(object sender, EventArgs e)
         {
+
+        }
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            for(int i = 0; i < textBoxComposeTitle.Text.Length; i++)
+            {
+                if (textBoxComposeTitle.Text[i] == '&')
+                {
+                    int j = 1;
+                    for(int k=i+1;k< textBoxComposeTitle.Text.Length; k++)
+                    {
+                        if (textBoxComposeTitle.Text[k] == '&')
+                        {
+                            j++;
+                        }
+                        else
+                        {
+                            break;
+                        }
+                    }
+                    MessageBox.Show("Please do not include \'&\' in the title. ");
+                    textBoxComposeTitle.Focus();
+                    textBoxComposeTitle.SelectionStart = i;
+                    textBoxComposeTitle.SelectionLength = j;
+                    return;
+                }
+            }
+            for (int i = 0; i < textBoxComposeContent.Text.Length; i++)
+            {
+                if (textBoxComposeContent.Text[i] == '&')
+                {
+                    int j = 1;
+                    for (int k = i + 1; k < textBoxComposeContent.Text.Length; k++)
+                    {
+                        if (textBoxComposeContent.Text[k] == '&')
+                        {
+                            j++;
+                        }
+                        else
+                        {
+                            break;
+                        }
+                    }
+                    MessageBox.Show("Please do not include \'&\' in the content. ");
+                    textBoxComposeContent.Focus();
+                    textBoxComposeContent.SelectionStart = i;
+                    textBoxComposeContent.SelectionLength = j;
+                    return;
+                }
+            }
+            if(textBoxComposeTitle.Text=="" && textBoxComposeContent.Text == "")
+            {
+                MessageBox.Show("Please at least write the title or the content. ");
+                return;
+            }
 
         }
 

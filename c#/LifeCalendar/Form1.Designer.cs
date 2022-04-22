@@ -75,6 +75,10 @@
             this.buttonSent = new System.Windows.Forms.Button();
             this.panelLettersDesktop = new System.Windows.Forms.Panel();
             this.panelCompose = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
+            this.textBoxComposeContent = new System.Windows.Forms.TextBox();
+            this.labelComposeContentCount = new System.Windows.Forms.Label();
+            this.labelComposeContent = new System.Windows.Forms.Label();
             this.labelComposeTitleCount = new System.Windows.Forms.Label();
             this.panelComposeTitle = new System.Windows.Forms.Panel();
             this.labelComposeTitle = new System.Windows.Forms.Label();
@@ -129,9 +133,6 @@
             this.labelLogin = new System.Windows.Forms.Label();
             this.timerFormSize = new System.Windows.Forms.Timer(this.components);
             this.timerSelectedColor = new System.Windows.Forms.Timer(this.components);
-            this.labelComposeContent = new System.Windows.Forms.Label();
-            this.textBoxComposeContent = new System.Windows.Forms.TextBox();
-            this.labelComposeContentCount = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
@@ -659,6 +660,7 @@
             this.panelCompose.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelCompose.Controls.Add(this.button6);
             this.panelCompose.Controls.Add(this.textBoxComposeContent);
             this.panelCompose.Controls.Add(this.labelComposeContentCount);
             this.panelCompose.Controls.Add(this.labelComposeContent);
@@ -670,6 +672,60 @@
             this.panelCompose.Name = "panelCompose";
             this.panelCompose.Size = new System.Drawing.Size(606, 560);
             this.panelCompose.TabIndex = 0;
+            // 
+            // button6
+            // 
+            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Image = global::LifeCalendar.Properties.Resources.send;
+            this.button6.Location = new System.Drawing.Point(516, 505);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(80, 32);
+            this.button6.TabIndex = 5;
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click_1);
+            // 
+            // textBoxComposeContent
+            // 
+            this.textBoxComposeContent.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxComposeContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(75)))));
+            this.textBoxComposeContent.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxComposeContent.ForeColor = System.Drawing.Color.White;
+            this.textBoxComposeContent.Location = new System.Drawing.Point(92, 86);
+            this.textBoxComposeContent.Multiline = true;
+            this.textBoxComposeContent.Name = "textBoxComposeContent";
+            this.textBoxComposeContent.Size = new System.Drawing.Size(424, 451);
+            this.textBoxComposeContent.TabIndex = 5;
+            this.textBoxComposeContent.TextChanged += new System.EventHandler(this.textBoxComposeContent_TextChanged);
+            // 
+            // labelComposeContentCount
+            // 
+            this.labelComposeContentCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.labelComposeContentCount.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelComposeContentCount.ForeColor = System.Drawing.Color.White;
+            this.labelComposeContentCount.Location = new System.Drawing.Point(-22, 501);
+            this.labelComposeContentCount.Name = "labelComposeContentCount";
+            this.labelComposeContentCount.Size = new System.Drawing.Size(115, 36);
+            this.labelComposeContentCount.TabIndex = 6;
+            this.labelComposeContentCount.Text = "0/1024";
+            this.labelComposeContentCount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelComposeContentCount.Click += new System.EventHandler(this.labelComposeContentCount_Click);
+            // 
+            // labelComposeContent
+            // 
+            this.labelComposeContent.AutoSize = true;
+            this.labelComposeContent.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelComposeContent.ForeColor = System.Drawing.Color.White;
+            this.labelComposeContent.Location = new System.Drawing.Point(15, 89);
+            this.labelComposeContent.Name = "labelComposeContent";
+            this.labelComposeContent.Size = new System.Drawing.Size(78, 36);
+            this.labelComposeContent.TabIndex = 4;
+            this.labelComposeContent.Text = "Content: ";
             // 
             // labelComposeTitleCount
             // 
@@ -1292,45 +1348,6 @@
             this.timerSelectedColor.Interval = 32;
             this.timerSelectedColor.Tick += new System.EventHandler(this.timerSelectedColor_Tick);
             // 
-            // labelComposeContent
-            // 
-            this.labelComposeContent.AutoSize = true;
-            this.labelComposeContent.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelComposeContent.ForeColor = System.Drawing.Color.White;
-            this.labelComposeContent.Location = new System.Drawing.Point(15, 89);
-            this.labelComposeContent.Name = "labelComposeContent";
-            this.labelComposeContent.Size = new System.Drawing.Size(78, 36);
-            this.labelComposeContent.TabIndex = 4;
-            this.labelComposeContent.Text = "Content: ";
-            // 
-            // textBoxComposeContent
-            // 
-            this.textBoxComposeContent.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxComposeContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(75)))));
-            this.textBoxComposeContent.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxComposeContent.ForeColor = System.Drawing.Color.White;
-            this.textBoxComposeContent.Location = new System.Drawing.Point(92, 86);
-            this.textBoxComposeContent.Multiline = true;
-            this.textBoxComposeContent.Name = "textBoxComposeContent";
-            this.textBoxComposeContent.Size = new System.Drawing.Size(424, 451);
-            this.textBoxComposeContent.TabIndex = 5;
-            this.textBoxComposeContent.TextChanged += new System.EventHandler(this.textBoxComposeContent_TextChanged);
-            // 
-            // labelComposeContentCount
-            // 
-            this.labelComposeContentCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.labelComposeContentCount.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelComposeContentCount.ForeColor = System.Drawing.Color.White;
-            this.labelComposeContentCount.Location = new System.Drawing.Point(-22, 501);
-            this.labelComposeContentCount.Name = "labelComposeContentCount";
-            this.labelComposeContentCount.Size = new System.Drawing.Size(115, 36);
-            this.labelComposeContentCount.TabIndex = 6;
-            this.labelComposeContentCount.Text = "0/1024";
-            this.labelComposeContentCount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelComposeContentCount.Click += new System.EventHandler(this.labelComposeContentCount_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1484,6 +1501,7 @@
         private System.Windows.Forms.Label labelComposeContent;
         private System.Windows.Forms.Label labelComposeContentCount;
         private System.Windows.Forms.TextBox textBoxComposeContent;
+        private System.Windows.Forms.Button button6;
     }
 }
 
