@@ -265,6 +265,90 @@ namespace LifeCalendar
                 alterCount = alterWeekly.count;
             }
 
+            
+
+        }
+        private bool AutoLogin()
+        {
+            string mail = Properties.Settings.Default.mail;
+            string password = Base64Decode(Base64Decode(Base64Decode(Base64Decode(Properties.Settings.Default.password))));
+            //MessageBox.Show(mail + " " + password);
+            if (mail=="")
+            {
+                return false;
+            }
+            if (password=="")
+            {
+                textBoxMail.Text = mail;
+                return false;
+            }
+            string con = "";
+            try
+            {
+                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(phpURL + "?method=login&mail=" + mail + "&pass=" + password);
+                request.Timeout = 3000;
+                request.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
+                request.UserAgent = "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36";
+                using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+                using (Stream stream = response.GetResponseStream())
+                using (StreamReader reader = new StreamReader(stream))
+                {
+                    con = reader.ReadToEnd();
+                }
+            }
+            catch (Exception ex)
+            {
+                textBoxMail.Text = mail;
+                textBoxPassword.Text = password;
+                
+                return false;
+            }
+            if (con == "Error: User No Entry")
+            {
+                return false;
+                
+            }
+            if (con == "Error: Password Wrong")
+            {
+                
+                return false;
+            }
+            if (con == "")
+            {
+                textBoxMail.Text = mail;
+                textBoxPassword.Text = password;
+                return false;
+            }
+            if (con[0] != '[' || con[1] != 'T' || con[2] != 'r' || con[3] != 'u' || con[4] != 'e' || con[5] != ']')
+            {
+                textBoxMail.Text = mail;
+                textBoxPassword.Text = password;
+                //MessageBox.Show(con);
+                return false;
+            }
+            
+            string[] data = con.Split('&');
+            id = Int32.Parse(data[1].Split('=')[1]);
+            birth = new DateTime(Int32.Parse(data[2].Split('=')[1]), Int32.Parse(data[3].Split('=')[1]), Int32.Parse(data[4].Split('=')[1]));
+            lifeExpectancy = int.Parse(data[5].Split('=')[1]);
+
+            textBoxMail.Text = "";
+            textBoxPassword.Text = "";
+
+            loginStatus = 1;
+            for (int i = 0; i < 7; i++)
+            {
+                TimeSpan timeSpan = new TimeSpan(i, 0, 0, 0);
+                firstSunday = birth.Add(timeSpan);
+                if (firstSunday.DayOfWeek == DayOfWeek.Sunday)
+                {
+                    //MessageBox.Show(firstSunday.Day.ToString());
+                    break;
+                }
+            }
+            button1.PerformClick();
+            return true;
+            //logging end
         }
         private void AdjustColor()
         {
@@ -881,22 +965,32 @@ namespace LifeCalendar
         }
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            labelLoginErr.Text = "";
-
-            if (textBoxMail.Text == ""||textBoxMail.Text=="Email")
+            if (!buttonLoginLogin())
             {
-                labelLoginErr.Text="Please Enter Mail";
-                return;
+                buttonLoginLogin();
             }
-            if (textBoxPassword.Text == ""||textBoxPassword.Text=="Password")
+            //button1.PerformClick();
+        }
+        private bool buttonLoginLogin()
+        {
+            labelLoginErr.Text = "";
+            string mail = textBoxMail.Text;
+            string password = textBoxPassword.Text;
+
+            if (textBoxMail.Text == "" || textBoxMail.Text == "Email")
             {
-                labelLoginErr.Text="Please Enter Password";
-                return;
+                labelLoginErr.Text = "Please Enter Mail";
+                return false;
+            }
+            if (textBoxPassword.Text == "" || textBoxPassword.Text == "Password")
+            {
+                labelLoginErr.Text = "Please Enter Password";
+                return false;
             }
             string con = "";
             try
             {
-                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(phpURL+"?method=login&mail="+textBoxMail.Text+"&pass="+textBoxPassword.Text);
+                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(phpURL + "?method=login&mail=" + textBoxMail.Text + "&pass=" + textBoxPassword.Text);
                 request.Timeout = 3000;
                 request.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
                 request.UserAgent = "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36";
@@ -906,40 +1000,41 @@ namespace LifeCalendar
                 {
                     con = reader.ReadToEnd();
                 }
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 labelLoginErr.Text = "Network Error";
                 string msg = ex.Message;
-                return;
+                return false;
             }
-            if(con== "Error: User No Entry")
+            if (con == "Error: User No Entry")
             {
                 labelLoginErr.Text = "User No Entry";
-                return;
+                return false;
             }
-            if(con== "Error: Password Wrong")
+            if (con == "Error: Password Wrong")
             {
                 labelLoginErr.Text = "Password Wrong";
-                return;
+                return false;
             }
             if (con == "")
             {
                 labelLoginErr.Text = "Unknown Error";
-                return;
+                return false;
             }
-            if (con[0]!='['|| con[1]!='T' || con[2] != 'r' || con[3] != 'u' || con[4] != 'e' || con[5] != ']')
+            if (con[0] != '[' || con[1] != 'T' || con[2] != 'r' || con[3] != 'u' || con[4] != 'e' || con[5] != ']')
             {
                 labelLoginErr.Text = "Unknown Error";
                 //MessageBox.Show(con);
-                return;
+                return false;
             }
-            string[] data=con.Split('&');
+            string[] data = con.Split('&');
             id = Int32.Parse(data[1].Split('=')[1]);
             birth = new DateTime(Int32.Parse(data[2].Split('=')[1]), Int32.Parse(data[3].Split('=')[1]), Int32.Parse(data[4].Split('=')[1]));
-            lifeExpectancy=int.Parse(data[5].Split('=')[1]);
-            
-            Properties.Settings.Default.mail = textBoxMail.Text;
-            Properties.Settings.Default.password = Base64Encode(Base64Encode(Base64Encode(Base64Encode(textBoxPassword.Text))));
+            lifeExpectancy = int.Parse(data[5].Split('=')[1]);
+
+            Properties.Settings.Default.mail = mail;
+            Properties.Settings.Default.password = Base64Encode(Base64Encode(Base64Encode(Base64Encode(password))));
             Properties.Settings.Default.Save();
             textBoxMail.Text = "";
             textBoxPassword.Text = "";
@@ -956,7 +1051,7 @@ namespace LifeCalendar
                 }
             }
             button1.PerformClick();
-            //button1.PerformClick();
+            return true;
         }
         private void textBoxMail_TextChanged(object sender, EventArgs e)
         {
@@ -1929,6 +2024,21 @@ namespace LifeCalendar
                 return;
             }
 
+        }
+
+        private void Form1_Shown(object sender, EventArgs e)
+        {
+            if (!AutoLogin())
+            {
+                if (!AutoLogin())
+                {
+                    //MessageBox.Show("Login fail after 2 tries");
+                }
+            }
+        }
+
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
         }
 
         private bool saveJson()
