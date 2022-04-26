@@ -71,7 +71,6 @@ namespace LifeCalendar
         private Color pickNotGreat1 = Color.FromArgb(255, 255, 128, 0);
         private Color pickNotGreat2 = Color.FromArgb(255, 64, 0, 128);
         private Color pickFailure = Color.FromArgb(255, 153, 153, 153);
-        private string jsonName = "";
         public class ModuleSelect
         {
             public int id;
@@ -79,12 +78,54 @@ namespace LifeCalendar
         }
         private ModuleSelect moduleSelect = new ModuleSelect();
 
+        public class PullLetters
+        {
+            public int count;
+            public int current;
+            public int lastK;
+            public string[] id = new string[1024]; 
+            public string[] title= new string[1024];
+            public string[] content=new string[1024];
+            public string[] time= new string[1024];
+        }
+        private PullLetters pullLetters = new PullLetters();
+        
+
+
+        private Panel[] panelPulls;
+        private Label[] labelPullTitles;
+        private Label[] labelPullContents;
+        private Label[] labelPullTimes;
         public Form1()
         {
             InitializeComponent();
             this.Padding = new System.Windows.Forms.Padding(borderSize);
             this.BackColor = panelMenu.BackColor;
             this.DoubleBuffered = true;
+            panelPulls = new Panel[] {panelPull1,panelPull2,panelPull3,panelPull4, panelPull5, panelPull6, panelPull7, panelPull8, panelPull9, panelPull10, panelPull11, panelPull12, panelPull13, panelPull14, panelPull15, panelPull16, panelPull17, panelPull18, panelPull19, panelPull20};
+            labelPullTitles = new Label[] {labelPullHeading1 , labelPullHeading2, labelPullHeading3, labelPullHeading4, labelPullHeading5, labelPullHeading6, labelPullHeading7, labelPullHeading8, labelPullHeading9, labelPullHeading10, labelPullHeading11, labelPullHeading12, labelPullHeading13, labelPullHeading14, labelPullHeading15, labelPullHeading16, labelPullHeading17, labelPullHeading18, labelPullHeading19, labelPullHeading20 };
+            labelPullContents = new Label[] {labelPullContent1, labelPullContent2, labelPullContent3, labelPullContent4, labelPullContent5, labelPullContent6, labelPullContent7, labelPullContent8, labelPullContent9, labelPullContent10, labelPullContent11, labelPullContent12, labelPullContent13, labelPullContent14, labelPullContent15, labelPullContent16, labelPullContent17, labelPullContent18, labelPullContent19, labelPullContent20 };
+            labelPullTimes = new Label[] { labelPullTime1, labelPullTime2, labelPullTime3, labelPullTime4, labelPullTime5, labelPullTime6, labelPullTime7, labelPullTime8, labelPullTime9, labelPullTime10, labelPullTime11, labelPullTime12, labelPullTime13, labelPullTime14, labelPullTime15, labelPullTime16, labelPullTime17, labelPullTime18, labelPullTime19, labelPullTime20 };
+            pullLetters.count = 2;
+            for(int i = 0; i < 20; i++)
+            {
+                panelPulls[i].Visible = false;
+                labelPullTitles[i].Text = "";
+                labelPullTitles[i].Visible = true;
+                labelPullTimes[i].Visible = true;
+                labelPullContents[i].Visible = true;
+
+                labelPullContents[i].Text = "";
+                labelPullTimes[i].Text = "";
+                labelPullTitles[i].Parent = panelPulls[i];
+                labelPullTimes[i].Parent = panelPulls[i];
+                labelPullContents[i].Parent = panelPulls[i];
+                labelPullTitles[i].Location = new Point(41,-6);
+                labelPullContents[i].Location = new Point(11,43);
+                labelPullTimes[i].Location = new Point(408,-5);
+
+            }
+
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -96,6 +137,7 @@ namespace LifeCalendar
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.Opacity = 0;
             AdjustColor();
             lastH = this.Height;
             lastW = this.Width;
@@ -303,6 +345,7 @@ namespace LifeCalendar
                 
                 return false;
             }
+            
             if (con == "Error: User No Entry")
             {
                 return false;
@@ -517,6 +560,96 @@ namespace LifeCalendar
             }
             cancelClick();
             panelLogin.Location = new Point(panelPersonal.Size.Width/2-panelLogin.Width/2,panelPersonal.Size.Height/2-panelLogin.Height/2);
+            for(int i = 0; i < 20; i++)
+            {
+                panelPulls[i].Size=new Size(flowLayoutPanelPull.Size.Width-10,panelPulls[i].Size.Height);    
+            }
+            AdjustPull();
+        }
+        private void AdjustPull()
+        {
+            flowLayoutPanelPull.Controls.Clear();
+            int k = 0;
+            for(int i = 1; i <= 20; i++)
+            {
+                if (86 * i-6 <= flowLayoutPanelPull.Height)
+                {
+                    k = i;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            for(int i =0; i <= k - 1; i++)
+            {
+                flowLayoutPanelPull.Controls.Add(panelPulls[i]);
+                panelPulls[i].BackColor = Color.FromArgb(46, 51, 73);
+            }
+            int j = 0;//index of leter
+            int height = (flowLayoutPanelPull.Height - 6 * (k - 1)) / k;
+            bool b = false;
+            for (int i = 0; i < k; i++)
+            {
+                j = pullLetters.current + i;
+                if (j < pullLetters.count)
+                {
+                    panelPulls[i].Visible = true;
+                    b = true;
+                }
+                else
+                {
+                    panelPulls[i].Visible = false;
+                    b = false;
+                }
+                
+            }
+            if (b)
+            {
+                for (int i = 0; i < k; i++)
+                {
+                    panelPulls[i].Height = height;
+                }
+            }
+            else
+            {
+                for (int i = 0; i < k; i++)
+                {
+                    panelPulls[i].Height = 80;
+                }
+            }
+            pullLetters.lastK = k;
+            for(int i = 0; i < k; i++)
+            {
+                labelPullTitles[i].Text = pullLetters.title[pullLetters.current + i]; //(pullLetters.current + i).ToString();
+                labelPullContents[i].Text = pullLetters.content[pullLetters.current + i];
+                labelPullTimes[i].Text = pullLetters.time[pullLetters.current + i];
+                bool titleChanged=false;
+                while (labelPullContents[i].Width > panelPulls[i].Width - 50)
+                {
+                    titleChanged = true;
+                    labelPullContents[i].Text = labelPullContents[i].Text.Remove(labelPullContents[i].Text.Length - 1);
+                }
+                if (titleChanged)
+                {
+                    labelPullContents[i].Text += " ...";
+                }
+            }
+            
+
+        }
+        private void buttonPullRefresh_Click(object sender, EventArgs e)
+        {
+            int k = pullLetters.lastK;
+            if (pullLetters.current + k >= pullLetters.count)
+            {//to page 0
+                pullLetters.current = 0;
+            }
+            else
+            {
+                pullLetters.current = pullLetters.current + k;
+            }
+            AdjustPull();
         }
         private void InitializeBig()
         {
@@ -591,6 +724,7 @@ namespace LifeCalendar
             if (loginStatus == 0)
             {
                 MessageBox.Show("Please Login or Register. ");
+                button3.PerformClick();
                 return;
             }
             button1.BackColor = panelMenu.BackColor;
@@ -1914,6 +2048,118 @@ namespace LifeCalendar
             buttonCompose.BackColor = panelLetters.BackColor;
             buttonReceive.BackColor=panelLetters.BackColor;
             buttonSent.BackColor = panelLetters.BackColor;
+            panelPull.Visible = true;
+            panelCompose.Visible = false;
+            pullLetters.current = 0;
+            if (UpdatePull())
+            {
+            }
+            else
+            {
+                pullLetters.current = 0;
+                pullLetters.lastK = 0;
+                for (int i = 0; i < pullLetters.count; i++)
+                {
+                    pullLetters.id[i] = "";
+                    pullLetters.title[i] = "";
+                    pullLetters.content[i] = "";
+                    pullLetters.time[i] = "";
+                }
+                pullLetters.count = 0;
+            }
+            AdjustPull();
+        }
+        // pullLetter myDeserializedClass = JsonConvert.DeserializeObject<pullLetter>(myJsonResponse);
+        public class LetterW
+        {
+            public string id { get; set; }
+            public string title { get; set; }
+            public string content { get; set; }
+            public int time { get; set; }
+        }
+        public class PullLetter
+        {
+            public int count { get; set; }
+            public List<LetterW> letters { get; set; }
+        }
+        private bool UpdatePull()
+        {
+            string con = "";
+            try
+            {
+                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(phpURL + "?method=pull&mail=" + Properties.Settings.Default.mail + "&pass=" + Base64Decode(Base64Decode(Base64Decode(Base64Decode(Properties.Settings.Default.password)))));
+                request.Timeout = 3000;
+                request.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
+                request.UserAgent = "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36";
+                using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+                using (Stream stream = response.GetResponseStream())
+                using (StreamReader reader = new StreamReader(stream))
+                {
+                    con = reader.ReadToEnd();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Network error. ");
+                string msg = ex.Message;
+                return false;
+            }
+            if (con == "Error: User No Entry")
+            {
+                MessageBox.Show("No user. ");
+                return false;
+            }
+            if (con == "Error: Password Wrong")
+            {
+                MessageBox.Show("Password is wrong. ");
+                return false;
+            }
+            if (con == "")
+            {
+                MessageBox.Show("Unknown error. ");
+                return false;
+            }
+            if (con[0] != 'O' || con[1] != 'K')
+            {
+                MessageBox.Show("Unknown error. ");
+                return false;
+            }
+            string con1 = "";
+            for(int i = 2; i < con.Length; i++)
+            {
+                con1+=con[i];
+            }
+            PullLetter pullLetter = JsonConvert.DeserializeObject<PullLetter>(con1);
+            pullLetters.count = pullLetter.count;
+            pullLetters.current = 0;
+            pullLetters.lastK = 0;
+            for(int i = 0; i < pullLetter.count; i++)
+            {
+                pullLetters.id[i] = pullLetter.letters[i].id;
+                pullLetters.title[i] = pullLetter.letters[i].title;
+                using (var reader = new StringReader(pullLetter.letters[i].content))
+                {
+                    string first = reader.ReadLine();
+                    pullLetters.content[i] = first;
+                }
+                pullLetters.time[i] = "";
+                int total = pullLetter.letters[i].time;
+                int m = total % 60;
+                int h = (total - m)/60;
+                if(h > 0)
+                {
+                    pullLetters.time[i] += h.ToString() + "h ";
+                }
+                if (m > 0)
+                {
+                    pullLetters.time[i] += m.ToString() + "m";
+                }
+                if (h == 0 && m == 0)
+                {
+                    pullLetters.time[i] += "Just now";
+                }
+            }
+            return true;
         }
         private void buttonCompose_Click(object sender, EventArgs e)
         {
@@ -1921,6 +2167,8 @@ namespace LifeCalendar
             buttonPullLetters.BackColor = panelLetters.BackColor;
             buttonReceive.BackColor = panelLetters.BackColor;
             buttonSent.BackColor = panelLetters.BackColor;
+            panelCompose.Visible = true;
+            panelPull.Visible = false;
         }
         private void buttonReceive_Click(object sender, EventArgs e)
         {
@@ -1928,6 +2176,8 @@ namespace LifeCalendar
             buttonCompose.BackColor = panelLetters.BackColor;
             buttonPullLetters.BackColor = panelLetters.BackColor;
             buttonSent.BackColor = panelLetters.BackColor;
+            panelPull.Visible = false;
+            panelCompose.Visible = false;
         }
         private void buttonSent_Click(object sender, EventArgs e)
         {
@@ -1935,6 +2185,8 @@ namespace LifeCalendar
             buttonCompose.BackColor = panelLetters.BackColor;
             buttonPullLetters.BackColor = panelLetters.BackColor;
             buttonReceive.BackColor = panelLetters.BackColor;
+            panelPull.Visible = false;
+            panelCompose.Visible = false;
         }
         private void textBoxComposeTitle_TextChanged(object sender, EventArgs e)
         {
@@ -1965,7 +2217,6 @@ namespace LifeCalendar
             }
             labelComposeContentCount.Text = textBoxComposeContent.Text.Length.ToString() + "/" + lim.ToString();
         }
-
         private void labelComposeContentCount_Click(object sender, EventArgs e)
         {
 
@@ -2023,11 +2274,54 @@ namespace LifeCalendar
                 MessageBox.Show("Please at least write the title or the content. ");
                 return;
             }
+            string con = "";
+            try
+            {
+                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(phpURL + "?method=send&mail=" + Properties.Settings.Default.mail + "&pass=" + Base64Decode(Base64Decode(Base64Decode(Base64Decode(Properties.Settings.Default.password))))+"&title="+textBoxComposeTitle.Text+"&content="+textBoxComposeContent.Text);
+                request.Timeout = 3000;
+                request.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
+                request.UserAgent = "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36";
+                using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+                using (Stream stream = response.GetResponseStream())
+                using (StreamReader reader = new StreamReader(stream))
+                {
+                    con = reader.ReadToEnd();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Network error. ");
+                return;
+            }
+            if (con == "Error: User No Entry")
+            {
+                MessageBox.Show("User info not found. ");
+                return;
+            }
+            if (con == "Error: Password Wrong")
+            {
+                MessageBox.Show("Password is wrong. Did you change your password? Please re-login. ");
+                return;
+            }
+            if (con == "")
+            {
+                MessageBox.Show("Unspecified error. ");
+                return;
+            }
+            if (con != "OK")
+            {
+                MessageBox.Show("Unspecified error. ");
+                return;
+            }
+            MessageBox.Show("Sent to the letter pool. The letter will expire in 1 day if no one replys. ");
+            textBoxComposeTitle.Text = "";
+            textBoxComposeContent.Text = "";
+
 
         }
-
         private void Form1_Shown(object sender, EventArgs e)
         {
+            this.Opacity = 1;
             if (!AutoLogin())
             {
                 if (!AutoLogin())
@@ -2035,10 +2329,36 @@ namespace LifeCalendar
                     //MessageBox.Show("Login fail after 2 tries");
                 }
             }
+            //initializing many controls for letter. 
+            
         }
-
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
+        }
+
+        private void panel9_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel13_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel19_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBoxLogo_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://shitao.tech");
+        }
+
+        private void labelPullContent4_Click(object sender, EventArgs e)
+        {
+
         }
 
         private bool saveJson()
@@ -2105,5 +2425,6 @@ namespace LifeCalendar
 
             return true;
         }
+
     }
 }
