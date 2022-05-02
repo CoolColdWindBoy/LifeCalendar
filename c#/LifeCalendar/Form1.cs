@@ -389,7 +389,7 @@ namespace LifeCalendar
                     break;
                 }
             }
-            button1.PerformClick();
+            SyncLogin();
             return true;
             //logging end
         }
@@ -565,6 +565,7 @@ namespace LifeCalendar
                 panelPulls[i].Size=new Size(flowLayoutPanelPull.Size.Width-10,panelPulls[i].Size.Height);    
             }
             AdjustPull();
+            panelSyncCheckCenter.Location = new Point(panelSyncCheck.Width/2-panelSyncCheckCenter.Width-2, panelSyncCheck.Height / 2 - panelSyncCheckCenter.Height - 2);
         }
         private void AdjustPull()
         {
@@ -1166,13 +1167,11 @@ namespace LifeCalendar
             id = Int32.Parse(data[1].Split('=')[1]);
             birth = new DateTime(Int32.Parse(data[2].Split('=')[1]), Int32.Parse(data[3].Split('=')[1]), Int32.Parse(data[4].Split('=')[1]));
             lifeExpectancy = int.Parse(data[5].Split('=')[1]);
-
             Properties.Settings.Default.mail = mail;
             Properties.Settings.Default.password = Base64Encode(Base64Encode(Base64Encode(Base64Encode(password))));
             Properties.Settings.Default.Save();
             textBoxMail.Text = "";
             textBoxPassword.Text = "";
-
             loginStatus = 1;
             for (int i = 0; i < 7; i++)
             {
@@ -1184,7 +1183,9 @@ namespace LifeCalendar
                     break;
                 }
             }
-            button1.PerformClick();
+            SyncLogin();
+            
+            
             return true;
         }
         private void textBoxMail_TextChanged(object sender, EventArgs e)
@@ -2033,7 +2034,7 @@ namespace LifeCalendar
                 MessageBox.Show("Unknown error");
                 return false;
             }
-            string conn = "";
+            conn = "";
             for (int i = 1; i < con.Length; i++)
             {
                 conn += con[i];
@@ -2042,13 +2043,54 @@ namespace LifeCalendar
             //MessageBox.Show(conn);
             return true;
         }
+        private string conn = "";
+        private string jsonLocal = "";
+        private string jsonServer = "";
+        private void SyncLogin()
+        {
+            jsonLocal = Properties.Settings.Default.json;
+            jsonServer = "";
+            string str = "";
+            if (loadJson())
+            {
+                jsonServer = conn;
+            }
+            if (jsonLocal == "" && jsonServer == "")
+            {
+                return;
+            }
+            else if (jsonLocal == "")
+            {
+                str = jsonServer;
+            }
+            else if (jsonServer == "")
+            {
+                str = jsonLocal;
+            }
+            else if (jsonLocal == jsonServer)
+            {
+            }
+            else
+            {
+                panelSyncCheck.Visible = true;
+                panelSyncCheck.BringToFront();
+                
+
+                return;
+            }
+
+            alterWeekly = JsonConvert.DeserializeObject<AlterWeekly>(str);
+            alterCount = alterWeekly.count;
+
+            button1.PerformClick();
+
+        }
         private void buttonPullLetters_Click(object sender, EventArgs e)
         {
             buttonPullLetters.BackColor = Color.FromArgb(76, 81, 103);
             buttonCompose.BackColor = panelLetters.BackColor;
             buttonReceive.BackColor=panelLetters.BackColor;
             buttonSent.BackColor = panelLetters.BackColor;
-            panelPull.Visible = true;
             panelCompose.Visible = false;
             pullLetters.current = 0;
             if (UpdatePull())
@@ -2068,6 +2110,7 @@ namespace LifeCalendar
                 pullLetters.count = 0;
             }
             AdjustPull();
+            panelPull.Visible=true;
         }
         // pullLetter myDeserializedClass = JsonConvert.DeserializeObject<pullLetter>(myJsonResponse);
         public class LetterW

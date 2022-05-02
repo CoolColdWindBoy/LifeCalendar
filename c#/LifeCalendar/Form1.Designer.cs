@@ -31,13 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panelBtnBack = new System.Windows.Forms.Panel();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panelWeeklyRow = new System.Windows.Forms.Panel();
             this.labelRow100 = new System.Windows.Forms.Label();
             this.labelRow95 = new System.Windows.Forms.Label();
@@ -72,10 +67,68 @@
             this.buttonShut = new System.Windows.Forms.Button();
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.panelLetters = new System.Windows.Forms.Panel();
-            this.buttonSent = new System.Windows.Forms.Button();
             this.panelLettersDesktop = new System.Windows.Forms.Panel();
             this.panelPull = new System.Windows.Forms.Panel();
-            this.buttonPullRefresh = new System.Windows.Forms.Button();
+            this.labelPullTime20 = new System.Windows.Forms.Label();
+            this.labelPullTime19 = new System.Windows.Forms.Label();
+            this.labelPullTime18 = new System.Windows.Forms.Label();
+            this.labelPullTime17 = new System.Windows.Forms.Label();
+            this.labelPullTime16 = new System.Windows.Forms.Label();
+            this.labelPullTime15 = new System.Windows.Forms.Label();
+            this.labelPullTime14 = new System.Windows.Forms.Label();
+            this.labelPullTime13 = new System.Windows.Forms.Label();
+            this.labelPullTime12 = new System.Windows.Forms.Label();
+            this.labelPullTime11 = new System.Windows.Forms.Label();
+            this.labelPullTime10 = new System.Windows.Forms.Label();
+            this.labelPullTime9 = new System.Windows.Forms.Label();
+            this.labelPullTime8 = new System.Windows.Forms.Label();
+            this.labelPullTime7 = new System.Windows.Forms.Label();
+            this.labelPullTime6 = new System.Windows.Forms.Label();
+            this.labelPullTime5 = new System.Windows.Forms.Label();
+            this.labelPullTime4 = new System.Windows.Forms.Label();
+            this.labelPullTime3 = new System.Windows.Forms.Label();
+            this.labelPullTime2 = new System.Windows.Forms.Label();
+            this.labelPullTime1 = new System.Windows.Forms.Label();
+            this.labelPullContent20 = new System.Windows.Forms.Label();
+            this.labelPullContent19 = new System.Windows.Forms.Label();
+            this.labelPullContent18 = new System.Windows.Forms.Label();
+            this.labelPullContent17 = new System.Windows.Forms.Label();
+            this.labelPullContent16 = new System.Windows.Forms.Label();
+            this.labelPullContent15 = new System.Windows.Forms.Label();
+            this.labelPullContent14 = new System.Windows.Forms.Label();
+            this.labelPullContent13 = new System.Windows.Forms.Label();
+            this.labelPullContent12 = new System.Windows.Forms.Label();
+            this.labelPullContent11 = new System.Windows.Forms.Label();
+            this.labelPullContent10 = new System.Windows.Forms.Label();
+            this.labelPullContent9 = new System.Windows.Forms.Label();
+            this.labelPullContent8 = new System.Windows.Forms.Label();
+            this.labelPullContent7 = new System.Windows.Forms.Label();
+            this.labelPullContent6 = new System.Windows.Forms.Label();
+            this.labelPullContent5 = new System.Windows.Forms.Label();
+            this.labelPullContent4 = new System.Windows.Forms.Label();
+            this.labelPullContent3 = new System.Windows.Forms.Label();
+            this.labelPullContent2 = new System.Windows.Forms.Label();
+            this.labelPullContent1 = new System.Windows.Forms.Label();
+            this.labelPullHeading20 = new System.Windows.Forms.Label();
+            this.labelPullHeading19 = new System.Windows.Forms.Label();
+            this.labelPullHeading18 = new System.Windows.Forms.Label();
+            this.labelPullHeading17 = new System.Windows.Forms.Label();
+            this.labelPullHeading16 = new System.Windows.Forms.Label();
+            this.labelPullHeading15 = new System.Windows.Forms.Label();
+            this.labelPullHeading14 = new System.Windows.Forms.Label();
+            this.labelPullHeading13 = new System.Windows.Forms.Label();
+            this.labelPullHeading12 = new System.Windows.Forms.Label();
+            this.labelPullHeading11 = new System.Windows.Forms.Label();
+            this.labelPullHeading10 = new System.Windows.Forms.Label();
+            this.labelPullHeading9 = new System.Windows.Forms.Label();
+            this.labelPullHeading8 = new System.Windows.Forms.Label();
+            this.labelPullHeading7 = new System.Windows.Forms.Label();
+            this.labelPullHeading6 = new System.Windows.Forms.Label();
+            this.labelPullHeading5 = new System.Windows.Forms.Label();
+            this.labelPullHeading4 = new System.Windows.Forms.Label();
+            this.labelPullHeading3 = new System.Windows.Forms.Label();
+            this.labelPullHeading2 = new System.Windows.Forms.Label();
+            this.labelPullHeading1 = new System.Windows.Forms.Label();
             this.panelPull20 = new System.Windows.Forms.Panel();
             this.panelPull19 = new System.Windows.Forms.Panel();
             this.panelPull18 = new System.Windows.Forms.Panel();
@@ -98,7 +151,6 @@
             this.panelPull1 = new System.Windows.Forms.Panel();
             this.flowLayoutPanelPull = new System.Windows.Forms.FlowLayoutPanel();
             this.panelCompose = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
             this.textBoxComposeContent = new System.Windows.Forms.TextBox();
             this.labelComposeContentCount = new System.Windows.Forms.Label();
             this.labelComposeContent = new System.Windows.Forms.Label();
@@ -106,13 +158,9 @@
             this.panelComposeTitle = new System.Windows.Forms.Panel();
             this.labelComposeTitle = new System.Windows.Forms.Label();
             this.textBoxComposeTitle = new System.Windows.Forms.TextBox();
-            this.buttonReceive = new System.Windows.Forms.Button();
-            this.buttonCompose = new System.Windows.Forms.Button();
-            this.buttonPullLetters = new System.Windows.Forms.Button();
             this.panelWeekly = new System.Windows.Forms.Panel();
             this.panelFloat = new System.Windows.Forms.Panel();
             this.labelYear = new System.Windows.Forms.Label();
-            this.panelFloatDesktop = new System.Windows.Forms.Panel();
             this.panelDate7 = new System.Windows.Forms.Panel();
             this.labelDate7 = new System.Windows.Forms.Label();
             this.panelDate6 = new System.Windows.Forms.Panel();
@@ -129,7 +177,6 @@
             this.labelDate1 = new System.Windows.Forms.Label();
             this.labelMonth2 = new System.Windows.Forms.Label();
             this.labelMonth1 = new System.Windows.Forms.Label();
-            this.buttonScale = new System.Windows.Forms.Button();
             this.panelWeeklyColumn = new System.Windows.Forms.Panel();
             this.labelColumn50 = new System.Windows.Forms.Label();
             this.labelColumn45 = new System.Windows.Forms.Label();
@@ -143,82 +190,42 @@
             this.labelColumn5 = new System.Windows.Forms.Label();
             this.panelPersonal = new System.Windows.Forms.Panel();
             this.panelLogin = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
             this.labelLoginErr = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.buttonLogin = new System.Windows.Forms.Button();
             this.panelPassword = new System.Windows.Forms.Panel();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.panelMail = new System.Windows.Forms.Panel();
             this.textBoxMail = new System.Windows.Forms.TextBox();
-            this.pictureBoxPassword = new System.Windows.Forms.PictureBox();
-            this.pictureBoxMail = new System.Windows.Forms.PictureBox();
             this.labelLogin = new System.Windows.Forms.Label();
             this.timerFormSize = new System.Windows.Forms.Timer(this.components);
             this.timerSelectedColor = new System.Windows.Forms.Timer(this.components);
-            this.labelPullHeading1 = new System.Windows.Forms.Label();
-            this.labelPullHeading2 = new System.Windows.Forms.Label();
-            this.labelPullHeading3 = new System.Windows.Forms.Label();
-            this.labelPullHeading4 = new System.Windows.Forms.Label();
-            this.labelPullHeading5 = new System.Windows.Forms.Label();
-            this.labelPullHeading6 = new System.Windows.Forms.Label();
-            this.labelPullHeading7 = new System.Windows.Forms.Label();
-            this.labelPullHeading8 = new System.Windows.Forms.Label();
-            this.labelPullHeading9 = new System.Windows.Forms.Label();
-            this.labelPullHeading10 = new System.Windows.Forms.Label();
-            this.labelPullHeading11 = new System.Windows.Forms.Label();
-            this.labelPullHeading12 = new System.Windows.Forms.Label();
-            this.labelPullHeading13 = new System.Windows.Forms.Label();
-            this.labelPullHeading14 = new System.Windows.Forms.Label();
-            this.labelPullHeading15 = new System.Windows.Forms.Label();
-            this.labelPullHeading16 = new System.Windows.Forms.Label();
-            this.labelPullHeading17 = new System.Windows.Forms.Label();
-            this.labelPullHeading18 = new System.Windows.Forms.Label();
-            this.labelPullHeading19 = new System.Windows.Forms.Label();
-            this.labelPullHeading20 = new System.Windows.Forms.Label();
-            this.labelPullContent1 = new System.Windows.Forms.Label();
-            this.labelPullContent2 = new System.Windows.Forms.Label();
-            this.labelPullContent3 = new System.Windows.Forms.Label();
-            this.labelPullContent4 = new System.Windows.Forms.Label();
-            this.labelPullContent5 = new System.Windows.Forms.Label();
-            this.labelPullContent6 = new System.Windows.Forms.Label();
-            this.labelPullContent7 = new System.Windows.Forms.Label();
-            this.labelPullContent8 = new System.Windows.Forms.Label();
-            this.labelPullContent9 = new System.Windows.Forms.Label();
-            this.labelPullContent10 = new System.Windows.Forms.Label();
-            this.labelPullContent11 = new System.Windows.Forms.Label();
-            this.labelPullContent12 = new System.Windows.Forms.Label();
-            this.labelPullContent13 = new System.Windows.Forms.Label();
-            this.labelPullContent14 = new System.Windows.Forms.Label();
-            this.labelPullContent15 = new System.Windows.Forms.Label();
-            this.labelPullContent16 = new System.Windows.Forms.Label();
-            this.labelPullContent17 = new System.Windows.Forms.Label();
-            this.labelPullContent18 = new System.Windows.Forms.Label();
-            this.labelPullContent19 = new System.Windows.Forms.Label();
-            this.labelPullContent20 = new System.Windows.Forms.Label();
-            this.labelPullTime1 = new System.Windows.Forms.Label();
-            this.labelPullTime2 = new System.Windows.Forms.Label();
-            this.labelPullTime3 = new System.Windows.Forms.Label();
-            this.labelPullTime4 = new System.Windows.Forms.Label();
-            this.labelPullTime5 = new System.Windows.Forms.Label();
-            this.labelPullTime6 = new System.Windows.Forms.Label();
-            this.labelPullTime7 = new System.Windows.Forms.Label();
-            this.labelPullTime8 = new System.Windows.Forms.Label();
-            this.labelPullTime9 = new System.Windows.Forms.Label();
-            this.labelPullTime10 = new System.Windows.Forms.Label();
-            this.labelPullTime11 = new System.Windows.Forms.Label();
-            this.labelPullTime12 = new System.Windows.Forms.Label();
-            this.labelPullTime13 = new System.Windows.Forms.Label();
-            this.labelPullTime14 = new System.Windows.Forms.Label();
-            this.labelPullTime15 = new System.Windows.Forms.Label();
-            this.labelPullTime16 = new System.Windows.Forms.Label();
-            this.labelPullTime17 = new System.Windows.Forms.Label();
-            this.labelPullTime18 = new System.Windows.Forms.Label();
-            this.labelPullTime19 = new System.Windows.Forms.Label();
-            this.labelPullTime20 = new System.Windows.Forms.Label();
+            this.panelSyncCheck = new System.Windows.Forms.Panel();
+            this.panelSyncCheckCenter = new System.Windows.Forms.Panel();
+            this.labelSyncCheckSubTitle = new System.Windows.Forms.Label();
+            this.labelSyncCheckTitle = new System.Windows.Forms.Label();
+            this.buttonSyncFromPC = new System.Windows.Forms.Button();
+            this.buttonSyncFromServer = new System.Windows.Forms.Button();
+            this.buttonSent = new System.Windows.Forms.Button();
+            this.buttonPullRefresh = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.buttonReceive = new System.Windows.Forms.Button();
+            this.buttonCompose = new System.Windows.Forms.Button();
+            this.buttonPullLetters = new System.Windows.Forms.Button();
+            this.panelFloatDesktop = new System.Windows.Forms.Panel();
+            this.buttonScale = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.buttonLogin = new System.Windows.Forms.Button();
+            this.pictureBoxPassword = new System.Windows.Forms.PictureBox();
+            this.pictureBoxMail = new System.Windows.Forms.PictureBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.labelSizeOfData1 = new System.Windows.Forms.Label();
+            this.labelSizeOfData2 = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.panelWeeklyRow.SuspendLayout();
             this.panelTitle.SuspendLayout();
             this.panelDesktop.SuspendLayout();
@@ -238,8 +245,11 @@
             this.panelWeeklyColumn.SuspendLayout();
             this.panelPersonal.SuspendLayout();
             this.panelLogin.SuspendLayout();
+            this.panelSyncCheck.SuspendLayout();
+            this.panelSyncCheckCenter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -257,55 +267,6 @@
             this.panelMenu.Size = new System.Drawing.Size(202, 625);
             this.panelMenu.TabIndex = 0;
             // 
-            // button4
-            // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Image = global::LifeCalendar.Properties.Resources._4_;
-            this.button4.Location = new System.Drawing.Point(0, 571);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(202, 54);
-            this.button4.TabIndex = 4;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Image = global::LifeCalendar.Properties.Resources._3;
-            this.button3.Location = new System.Drawing.Point(0, 265);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(202, 54);
-            this.button3.TabIndex = 3;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = global::LifeCalendar.Properties.Resources._22;
-            this.button2.Location = new System.Drawing.Point(0, 204);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(202, 54);
-            this.button2.TabIndex = 2;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::LifeCalendar.Properties.Resources._1__;
-            this.button1.Location = new System.Drawing.Point(0, 143);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(202, 54);
-            this.button1.TabIndex = 1;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // panelBtnBack
             // 
             this.panelBtnBack.Location = new System.Drawing.Point(0, 71);
@@ -322,17 +283,6 @@
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(202, 65);
             this.panelLogo.TabIndex = 0;
-            // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.Image = global::LifeCalendar.Properties.Resources.polaris2021;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(12, 11);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(180, 40);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBoxLogo.TabIndex = 0;
-            this.pictureBoxLogo.TabStop = false;
-            this.pictureBoxLogo.Click += new System.EventHandler(this.pictureBoxLogo_Click);
             // 
             // panelWeeklyRow
             // 
@@ -714,21 +664,6 @@
             this.panelLetters.TabIndex = 3;
             this.panelLetters.Visible = false;
             // 
-            // buttonSent
-            // 
-            this.buttonSent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.buttonSent.FlatAppearance.BorderSize = 0;
-            this.buttonSent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSent.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSent.ForeColor = System.Drawing.Color.White;
-            this.buttonSent.Image = global::LifeCalendar.Properties.Resources.sent;
-            this.buttonSent.Location = new System.Drawing.Point(6, 231);
-            this.buttonSent.Name = "buttonSent";
-            this.buttonSent.Size = new System.Drawing.Size(131, 32);
-            this.buttonSent.TabIndex = 4;
-            this.buttonSent.UseVisualStyleBackColor = false;
-            this.buttonSent.Click += new System.EventHandler(this.buttonSent_Click);
-            // 
             // panelLettersDesktop
             // 
             this.panelLettersDesktop.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -835,18 +770,786 @@
             this.panelPull.TabIndex = 1;
             this.panelPull.Visible = false;
             // 
-            // buttonPullRefresh
+            // labelPullTime20
             // 
-            this.buttonPullRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonPullRefresh.BackgroundImage = global::LifeCalendar.Properties.Resources.refresh;
-            this.buttonPullRefresh.FlatAppearance.BorderSize = 0;
-            this.buttonPullRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPullRefresh.Location = new System.Drawing.Point(467, 13);
-            this.buttonPullRefresh.Name = "buttonPullRefresh";
-            this.buttonPullRefresh.Size = new System.Drawing.Size(98, 27);
-            this.buttonPullRefresh.TabIndex = 22;
-            this.buttonPullRefresh.UseVisualStyleBackColor = true;
-            this.buttonPullRefresh.Click += new System.EventHandler(this.buttonPullRefresh_Click);
+            this.labelPullTime20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullTime20.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullTime20.ForeColor = System.Drawing.Color.White;
+            this.labelPullTime20.Location = new System.Drawing.Point(408, 407);
+            this.labelPullTime20.Name = "labelPullTime20";
+            this.labelPullTime20.Size = new System.Drawing.Size(95, 46);
+            this.labelPullTime20.TabIndex = 82;
+            this.labelPullTime20.Text = "time";
+            this.labelPullTime20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelPullTime20.Visible = false;
+            // 
+            // labelPullTime19
+            // 
+            this.labelPullTime19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullTime19.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullTime19.ForeColor = System.Drawing.Color.White;
+            this.labelPullTime19.Location = new System.Drawing.Point(400, 399);
+            this.labelPullTime19.Name = "labelPullTime19";
+            this.labelPullTime19.Size = new System.Drawing.Size(95, 46);
+            this.labelPullTime19.TabIndex = 81;
+            this.labelPullTime19.Text = "time";
+            this.labelPullTime19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelPullTime19.Visible = false;
+            // 
+            // labelPullTime18
+            // 
+            this.labelPullTime18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullTime18.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullTime18.ForeColor = System.Drawing.Color.White;
+            this.labelPullTime18.Location = new System.Drawing.Point(392, 391);
+            this.labelPullTime18.Name = "labelPullTime18";
+            this.labelPullTime18.Size = new System.Drawing.Size(95, 46);
+            this.labelPullTime18.TabIndex = 80;
+            this.labelPullTime18.Text = "time";
+            this.labelPullTime18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelPullTime18.Visible = false;
+            // 
+            // labelPullTime17
+            // 
+            this.labelPullTime17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullTime17.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullTime17.ForeColor = System.Drawing.Color.White;
+            this.labelPullTime17.Location = new System.Drawing.Point(384, 383);
+            this.labelPullTime17.Name = "labelPullTime17";
+            this.labelPullTime17.Size = new System.Drawing.Size(95, 46);
+            this.labelPullTime17.TabIndex = 79;
+            this.labelPullTime17.Text = "time";
+            this.labelPullTime17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelPullTime17.Visible = false;
+            // 
+            // labelPullTime16
+            // 
+            this.labelPullTime16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullTime16.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullTime16.ForeColor = System.Drawing.Color.White;
+            this.labelPullTime16.Location = new System.Drawing.Point(376, 375);
+            this.labelPullTime16.Name = "labelPullTime16";
+            this.labelPullTime16.Size = new System.Drawing.Size(95, 46);
+            this.labelPullTime16.TabIndex = 78;
+            this.labelPullTime16.Text = "time";
+            this.labelPullTime16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelPullTime16.Visible = false;
+            // 
+            // labelPullTime15
+            // 
+            this.labelPullTime15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullTime15.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullTime15.ForeColor = System.Drawing.Color.White;
+            this.labelPullTime15.Location = new System.Drawing.Point(368, 367);
+            this.labelPullTime15.Name = "labelPullTime15";
+            this.labelPullTime15.Size = new System.Drawing.Size(95, 46);
+            this.labelPullTime15.TabIndex = 77;
+            this.labelPullTime15.Text = "time";
+            this.labelPullTime15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelPullTime15.Visible = false;
+            // 
+            // labelPullTime14
+            // 
+            this.labelPullTime14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullTime14.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullTime14.ForeColor = System.Drawing.Color.White;
+            this.labelPullTime14.Location = new System.Drawing.Point(360, 359);
+            this.labelPullTime14.Name = "labelPullTime14";
+            this.labelPullTime14.Size = new System.Drawing.Size(95, 46);
+            this.labelPullTime14.TabIndex = 76;
+            this.labelPullTime14.Text = "time";
+            this.labelPullTime14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelPullTime14.Visible = false;
+            // 
+            // labelPullTime13
+            // 
+            this.labelPullTime13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullTime13.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullTime13.ForeColor = System.Drawing.Color.White;
+            this.labelPullTime13.Location = new System.Drawing.Point(352, 351);
+            this.labelPullTime13.Name = "labelPullTime13";
+            this.labelPullTime13.Size = new System.Drawing.Size(95, 46);
+            this.labelPullTime13.TabIndex = 75;
+            this.labelPullTime13.Text = "time";
+            this.labelPullTime13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelPullTime13.Visible = false;
+            // 
+            // labelPullTime12
+            // 
+            this.labelPullTime12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullTime12.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullTime12.ForeColor = System.Drawing.Color.White;
+            this.labelPullTime12.Location = new System.Drawing.Point(344, 343);
+            this.labelPullTime12.Name = "labelPullTime12";
+            this.labelPullTime12.Size = new System.Drawing.Size(95, 46);
+            this.labelPullTime12.TabIndex = 74;
+            this.labelPullTime12.Text = "time";
+            this.labelPullTime12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelPullTime12.Visible = false;
+            // 
+            // labelPullTime11
+            // 
+            this.labelPullTime11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullTime11.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullTime11.ForeColor = System.Drawing.Color.White;
+            this.labelPullTime11.Location = new System.Drawing.Point(336, 335);
+            this.labelPullTime11.Name = "labelPullTime11";
+            this.labelPullTime11.Size = new System.Drawing.Size(95, 46);
+            this.labelPullTime11.TabIndex = 73;
+            this.labelPullTime11.Text = "time";
+            this.labelPullTime11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelPullTime11.Visible = false;
+            // 
+            // labelPullTime10
+            // 
+            this.labelPullTime10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullTime10.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullTime10.ForeColor = System.Drawing.Color.White;
+            this.labelPullTime10.Location = new System.Drawing.Point(328, 327);
+            this.labelPullTime10.Name = "labelPullTime10";
+            this.labelPullTime10.Size = new System.Drawing.Size(95, 46);
+            this.labelPullTime10.TabIndex = 72;
+            this.labelPullTime10.Text = "time";
+            this.labelPullTime10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelPullTime10.Visible = false;
+            // 
+            // labelPullTime9
+            // 
+            this.labelPullTime9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullTime9.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullTime9.ForeColor = System.Drawing.Color.White;
+            this.labelPullTime9.Location = new System.Drawing.Point(320, 319);
+            this.labelPullTime9.Name = "labelPullTime9";
+            this.labelPullTime9.Size = new System.Drawing.Size(95, 46);
+            this.labelPullTime9.TabIndex = 71;
+            this.labelPullTime9.Text = "time";
+            this.labelPullTime9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelPullTime9.Visible = false;
+            // 
+            // labelPullTime8
+            // 
+            this.labelPullTime8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullTime8.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullTime8.ForeColor = System.Drawing.Color.White;
+            this.labelPullTime8.Location = new System.Drawing.Point(312, 311);
+            this.labelPullTime8.Name = "labelPullTime8";
+            this.labelPullTime8.Size = new System.Drawing.Size(95, 46);
+            this.labelPullTime8.TabIndex = 70;
+            this.labelPullTime8.Text = "time";
+            this.labelPullTime8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelPullTime8.Visible = false;
+            // 
+            // labelPullTime7
+            // 
+            this.labelPullTime7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullTime7.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullTime7.ForeColor = System.Drawing.Color.White;
+            this.labelPullTime7.Location = new System.Drawing.Point(304, 303);
+            this.labelPullTime7.Name = "labelPullTime7";
+            this.labelPullTime7.Size = new System.Drawing.Size(95, 46);
+            this.labelPullTime7.TabIndex = 69;
+            this.labelPullTime7.Text = "time";
+            this.labelPullTime7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelPullTime7.Visible = false;
+            // 
+            // labelPullTime6
+            // 
+            this.labelPullTime6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullTime6.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullTime6.ForeColor = System.Drawing.Color.White;
+            this.labelPullTime6.Location = new System.Drawing.Point(296, 295);
+            this.labelPullTime6.Name = "labelPullTime6";
+            this.labelPullTime6.Size = new System.Drawing.Size(95, 46);
+            this.labelPullTime6.TabIndex = 68;
+            this.labelPullTime6.Text = "time";
+            this.labelPullTime6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelPullTime6.Visible = false;
+            // 
+            // labelPullTime5
+            // 
+            this.labelPullTime5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullTime5.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullTime5.ForeColor = System.Drawing.Color.White;
+            this.labelPullTime5.Location = new System.Drawing.Point(288, 287);
+            this.labelPullTime5.Name = "labelPullTime5";
+            this.labelPullTime5.Size = new System.Drawing.Size(95, 46);
+            this.labelPullTime5.TabIndex = 67;
+            this.labelPullTime5.Text = "time";
+            this.labelPullTime5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelPullTime5.Visible = false;
+            // 
+            // labelPullTime4
+            // 
+            this.labelPullTime4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullTime4.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullTime4.ForeColor = System.Drawing.Color.White;
+            this.labelPullTime4.Location = new System.Drawing.Point(280, 279);
+            this.labelPullTime4.Name = "labelPullTime4";
+            this.labelPullTime4.Size = new System.Drawing.Size(95, 46);
+            this.labelPullTime4.TabIndex = 66;
+            this.labelPullTime4.Text = "time";
+            this.labelPullTime4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelPullTime4.Visible = false;
+            // 
+            // labelPullTime3
+            // 
+            this.labelPullTime3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullTime3.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullTime3.ForeColor = System.Drawing.Color.White;
+            this.labelPullTime3.Location = new System.Drawing.Point(272, 271);
+            this.labelPullTime3.Name = "labelPullTime3";
+            this.labelPullTime3.Size = new System.Drawing.Size(95, 46);
+            this.labelPullTime3.TabIndex = 65;
+            this.labelPullTime3.Text = "time";
+            this.labelPullTime3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelPullTime3.Visible = false;
+            // 
+            // labelPullTime2
+            // 
+            this.labelPullTime2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullTime2.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullTime2.ForeColor = System.Drawing.Color.White;
+            this.labelPullTime2.Location = new System.Drawing.Point(264, 263);
+            this.labelPullTime2.Name = "labelPullTime2";
+            this.labelPullTime2.Size = new System.Drawing.Size(95, 46);
+            this.labelPullTime2.TabIndex = 64;
+            this.labelPullTime2.Text = "time";
+            this.labelPullTime2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelPullTime2.Visible = false;
+            // 
+            // labelPullTime1
+            // 
+            this.labelPullTime1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullTime1.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullTime1.ForeColor = System.Drawing.Color.White;
+            this.labelPullTime1.Location = new System.Drawing.Point(256, 255);
+            this.labelPullTime1.Name = "labelPullTime1";
+            this.labelPullTime1.Size = new System.Drawing.Size(95, 46);
+            this.labelPullTime1.TabIndex = 63;
+            this.labelPullTime1.Text = "time";
+            this.labelPullTime1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelPullTime1.Visible = false;
+            // 
+            // labelPullContent20
+            // 
+            this.labelPullContent20.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullContent20.AutoSize = true;
+            this.labelPullContent20.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullContent20.ForeColor = System.Drawing.Color.White;
+            this.labelPullContent20.Location = new System.Drawing.Point(421, 412);
+            this.labelPullContent20.Name = "labelPullContent20";
+            this.labelPullContent20.Size = new System.Drawing.Size(69, 36);
+            this.labelPullContent20.TabIndex = 62;
+            this.labelPullContent20.Text = "Content";
+            this.labelPullContent20.Visible = false;
+            // 
+            // labelPullContent19
+            // 
+            this.labelPullContent19.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullContent19.AutoSize = true;
+            this.labelPullContent19.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullContent19.ForeColor = System.Drawing.Color.White;
+            this.labelPullContent19.Location = new System.Drawing.Point(413, 404);
+            this.labelPullContent19.Name = "labelPullContent19";
+            this.labelPullContent19.Size = new System.Drawing.Size(69, 36);
+            this.labelPullContent19.TabIndex = 61;
+            this.labelPullContent19.Text = "Content";
+            this.labelPullContent19.Visible = false;
+            // 
+            // labelPullContent18
+            // 
+            this.labelPullContent18.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullContent18.AutoSize = true;
+            this.labelPullContent18.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullContent18.ForeColor = System.Drawing.Color.White;
+            this.labelPullContent18.Location = new System.Drawing.Point(405, 396);
+            this.labelPullContent18.Name = "labelPullContent18";
+            this.labelPullContent18.Size = new System.Drawing.Size(69, 36);
+            this.labelPullContent18.TabIndex = 60;
+            this.labelPullContent18.Text = "Content";
+            this.labelPullContent18.Visible = false;
+            // 
+            // labelPullContent17
+            // 
+            this.labelPullContent17.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullContent17.AutoSize = true;
+            this.labelPullContent17.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullContent17.ForeColor = System.Drawing.Color.White;
+            this.labelPullContent17.Location = new System.Drawing.Point(397, 388);
+            this.labelPullContent17.Name = "labelPullContent17";
+            this.labelPullContent17.Size = new System.Drawing.Size(69, 36);
+            this.labelPullContent17.TabIndex = 59;
+            this.labelPullContent17.Text = "Content";
+            this.labelPullContent17.Visible = false;
+            // 
+            // labelPullContent16
+            // 
+            this.labelPullContent16.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullContent16.AutoSize = true;
+            this.labelPullContent16.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullContent16.ForeColor = System.Drawing.Color.White;
+            this.labelPullContent16.Location = new System.Drawing.Point(389, 380);
+            this.labelPullContent16.Name = "labelPullContent16";
+            this.labelPullContent16.Size = new System.Drawing.Size(69, 36);
+            this.labelPullContent16.TabIndex = 58;
+            this.labelPullContent16.Text = "Content";
+            this.labelPullContent16.Visible = false;
+            // 
+            // labelPullContent15
+            // 
+            this.labelPullContent15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullContent15.AutoSize = true;
+            this.labelPullContent15.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullContent15.ForeColor = System.Drawing.Color.White;
+            this.labelPullContent15.Location = new System.Drawing.Point(381, 372);
+            this.labelPullContent15.Name = "labelPullContent15";
+            this.labelPullContent15.Size = new System.Drawing.Size(69, 36);
+            this.labelPullContent15.TabIndex = 57;
+            this.labelPullContent15.Text = "Content";
+            this.labelPullContent15.Visible = false;
+            // 
+            // labelPullContent14
+            // 
+            this.labelPullContent14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullContent14.AutoSize = true;
+            this.labelPullContent14.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullContent14.ForeColor = System.Drawing.Color.White;
+            this.labelPullContent14.Location = new System.Drawing.Point(373, 364);
+            this.labelPullContent14.Name = "labelPullContent14";
+            this.labelPullContent14.Size = new System.Drawing.Size(69, 36);
+            this.labelPullContent14.TabIndex = 56;
+            this.labelPullContent14.Text = "Content";
+            this.labelPullContent14.Visible = false;
+            // 
+            // labelPullContent13
+            // 
+            this.labelPullContent13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullContent13.AutoSize = true;
+            this.labelPullContent13.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullContent13.ForeColor = System.Drawing.Color.White;
+            this.labelPullContent13.Location = new System.Drawing.Point(365, 356);
+            this.labelPullContent13.Name = "labelPullContent13";
+            this.labelPullContent13.Size = new System.Drawing.Size(69, 36);
+            this.labelPullContent13.TabIndex = 55;
+            this.labelPullContent13.Text = "Content";
+            this.labelPullContent13.Visible = false;
+            // 
+            // labelPullContent12
+            // 
+            this.labelPullContent12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullContent12.AutoSize = true;
+            this.labelPullContent12.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullContent12.ForeColor = System.Drawing.Color.White;
+            this.labelPullContent12.Location = new System.Drawing.Point(357, 348);
+            this.labelPullContent12.Name = "labelPullContent12";
+            this.labelPullContent12.Size = new System.Drawing.Size(69, 36);
+            this.labelPullContent12.TabIndex = 54;
+            this.labelPullContent12.Text = "Content";
+            this.labelPullContent12.Visible = false;
+            // 
+            // labelPullContent11
+            // 
+            this.labelPullContent11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullContent11.AutoSize = true;
+            this.labelPullContent11.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullContent11.ForeColor = System.Drawing.Color.White;
+            this.labelPullContent11.Location = new System.Drawing.Point(349, 340);
+            this.labelPullContent11.Name = "labelPullContent11";
+            this.labelPullContent11.Size = new System.Drawing.Size(69, 36);
+            this.labelPullContent11.TabIndex = 53;
+            this.labelPullContent11.Text = "Content";
+            this.labelPullContent11.Visible = false;
+            // 
+            // labelPullContent10
+            // 
+            this.labelPullContent10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullContent10.AutoSize = true;
+            this.labelPullContent10.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullContent10.ForeColor = System.Drawing.Color.White;
+            this.labelPullContent10.Location = new System.Drawing.Point(341, 332);
+            this.labelPullContent10.Name = "labelPullContent10";
+            this.labelPullContent10.Size = new System.Drawing.Size(69, 36);
+            this.labelPullContent10.TabIndex = 52;
+            this.labelPullContent10.Text = "Content";
+            this.labelPullContent10.Visible = false;
+            // 
+            // labelPullContent9
+            // 
+            this.labelPullContent9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullContent9.AutoSize = true;
+            this.labelPullContent9.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullContent9.ForeColor = System.Drawing.Color.White;
+            this.labelPullContent9.Location = new System.Drawing.Point(333, 324);
+            this.labelPullContent9.Name = "labelPullContent9";
+            this.labelPullContent9.Size = new System.Drawing.Size(69, 36);
+            this.labelPullContent9.TabIndex = 51;
+            this.labelPullContent9.Text = "Content";
+            this.labelPullContent9.Visible = false;
+            // 
+            // labelPullContent8
+            // 
+            this.labelPullContent8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullContent8.AutoSize = true;
+            this.labelPullContent8.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullContent8.ForeColor = System.Drawing.Color.White;
+            this.labelPullContent8.Location = new System.Drawing.Point(325, 316);
+            this.labelPullContent8.Name = "labelPullContent8";
+            this.labelPullContent8.Size = new System.Drawing.Size(69, 36);
+            this.labelPullContent8.TabIndex = 50;
+            this.labelPullContent8.Text = "Content";
+            this.labelPullContent8.Visible = false;
+            // 
+            // labelPullContent7
+            // 
+            this.labelPullContent7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullContent7.AutoSize = true;
+            this.labelPullContent7.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullContent7.ForeColor = System.Drawing.Color.White;
+            this.labelPullContent7.Location = new System.Drawing.Point(317, 308);
+            this.labelPullContent7.Name = "labelPullContent7";
+            this.labelPullContent7.Size = new System.Drawing.Size(69, 36);
+            this.labelPullContent7.TabIndex = 49;
+            this.labelPullContent7.Text = "Content";
+            this.labelPullContent7.Visible = false;
+            // 
+            // labelPullContent6
+            // 
+            this.labelPullContent6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullContent6.AutoSize = true;
+            this.labelPullContent6.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullContent6.ForeColor = System.Drawing.Color.White;
+            this.labelPullContent6.Location = new System.Drawing.Point(309, 300);
+            this.labelPullContent6.Name = "labelPullContent6";
+            this.labelPullContent6.Size = new System.Drawing.Size(69, 36);
+            this.labelPullContent6.TabIndex = 48;
+            this.labelPullContent6.Text = "Content";
+            this.labelPullContent6.Visible = false;
+            // 
+            // labelPullContent5
+            // 
+            this.labelPullContent5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullContent5.AutoSize = true;
+            this.labelPullContent5.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullContent5.ForeColor = System.Drawing.Color.White;
+            this.labelPullContent5.Location = new System.Drawing.Point(301, 292);
+            this.labelPullContent5.Name = "labelPullContent5";
+            this.labelPullContent5.Size = new System.Drawing.Size(69, 36);
+            this.labelPullContent5.TabIndex = 47;
+            this.labelPullContent5.Text = "Content";
+            this.labelPullContent5.Visible = false;
+            // 
+            // labelPullContent4
+            // 
+            this.labelPullContent4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullContent4.AutoSize = true;
+            this.labelPullContent4.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullContent4.ForeColor = System.Drawing.Color.White;
+            this.labelPullContent4.Location = new System.Drawing.Point(293, 284);
+            this.labelPullContent4.Name = "labelPullContent4";
+            this.labelPullContent4.Size = new System.Drawing.Size(69, 36);
+            this.labelPullContent4.TabIndex = 46;
+            this.labelPullContent4.Text = "Content";
+            this.labelPullContent4.Visible = false;
+            this.labelPullContent4.Click += new System.EventHandler(this.labelPullContent4_Click);
+            // 
+            // labelPullContent3
+            // 
+            this.labelPullContent3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullContent3.AutoSize = true;
+            this.labelPullContent3.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullContent3.ForeColor = System.Drawing.Color.White;
+            this.labelPullContent3.Location = new System.Drawing.Point(285, 276);
+            this.labelPullContent3.Name = "labelPullContent3";
+            this.labelPullContent3.Size = new System.Drawing.Size(69, 36);
+            this.labelPullContent3.TabIndex = 45;
+            this.labelPullContent3.Text = "Content";
+            this.labelPullContent3.Visible = false;
+            // 
+            // labelPullContent2
+            // 
+            this.labelPullContent2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullContent2.AutoSize = true;
+            this.labelPullContent2.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullContent2.ForeColor = System.Drawing.Color.White;
+            this.labelPullContent2.Location = new System.Drawing.Point(277, 268);
+            this.labelPullContent2.Name = "labelPullContent2";
+            this.labelPullContent2.Size = new System.Drawing.Size(69, 36);
+            this.labelPullContent2.TabIndex = 44;
+            this.labelPullContent2.Text = "Content";
+            this.labelPullContent2.Visible = false;
+            // 
+            // labelPullContent1
+            // 
+            this.labelPullContent1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPullContent1.AutoSize = true;
+            this.labelPullContent1.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullContent1.ForeColor = System.Drawing.Color.White;
+            this.labelPullContent1.Location = new System.Drawing.Point(269, 260);
+            this.labelPullContent1.Name = "labelPullContent1";
+            this.labelPullContent1.Size = new System.Drawing.Size(69, 36);
+            this.labelPullContent1.TabIndex = 43;
+            this.labelPullContent1.Text = "Content";
+            this.labelPullContent1.Visible = false;
+            // 
+            // labelPullHeading20
+            // 
+            this.labelPullHeading20.AutoSize = true;
+            this.labelPullHeading20.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullHeading20.ForeColor = System.Drawing.Color.White;
+            this.labelPullHeading20.Location = new System.Drawing.Point(414, 407);
+            this.labelPullHeading20.Name = "labelPullHeading20";
+            this.labelPullHeading20.Size = new System.Drawing.Size(83, 46);
+            this.labelPullHeading20.TabIndex = 42;
+            this.labelPullHeading20.Text = "Heading";
+            this.labelPullHeading20.Visible = false;
+            // 
+            // labelPullHeading19
+            // 
+            this.labelPullHeading19.AutoSize = true;
+            this.labelPullHeading19.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullHeading19.ForeColor = System.Drawing.Color.White;
+            this.labelPullHeading19.Location = new System.Drawing.Point(406, 399);
+            this.labelPullHeading19.Name = "labelPullHeading19";
+            this.labelPullHeading19.Size = new System.Drawing.Size(83, 46);
+            this.labelPullHeading19.TabIndex = 41;
+            this.labelPullHeading19.Text = "Heading";
+            this.labelPullHeading19.Visible = false;
+            // 
+            // labelPullHeading18
+            // 
+            this.labelPullHeading18.AutoSize = true;
+            this.labelPullHeading18.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullHeading18.ForeColor = System.Drawing.Color.White;
+            this.labelPullHeading18.Location = new System.Drawing.Point(398, 391);
+            this.labelPullHeading18.Name = "labelPullHeading18";
+            this.labelPullHeading18.Size = new System.Drawing.Size(83, 46);
+            this.labelPullHeading18.TabIndex = 40;
+            this.labelPullHeading18.Text = "Heading";
+            this.labelPullHeading18.Visible = false;
+            // 
+            // labelPullHeading17
+            // 
+            this.labelPullHeading17.AutoSize = true;
+            this.labelPullHeading17.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullHeading17.ForeColor = System.Drawing.Color.White;
+            this.labelPullHeading17.Location = new System.Drawing.Point(390, 383);
+            this.labelPullHeading17.Name = "labelPullHeading17";
+            this.labelPullHeading17.Size = new System.Drawing.Size(83, 46);
+            this.labelPullHeading17.TabIndex = 39;
+            this.labelPullHeading17.Text = "Heading";
+            this.labelPullHeading17.Visible = false;
+            // 
+            // labelPullHeading16
+            // 
+            this.labelPullHeading16.AutoSize = true;
+            this.labelPullHeading16.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullHeading16.ForeColor = System.Drawing.Color.White;
+            this.labelPullHeading16.Location = new System.Drawing.Point(382, 375);
+            this.labelPullHeading16.Name = "labelPullHeading16";
+            this.labelPullHeading16.Size = new System.Drawing.Size(83, 46);
+            this.labelPullHeading16.TabIndex = 38;
+            this.labelPullHeading16.Text = "Heading";
+            this.labelPullHeading16.Visible = false;
+            // 
+            // labelPullHeading15
+            // 
+            this.labelPullHeading15.AutoSize = true;
+            this.labelPullHeading15.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullHeading15.ForeColor = System.Drawing.Color.White;
+            this.labelPullHeading15.Location = new System.Drawing.Point(374, 367);
+            this.labelPullHeading15.Name = "labelPullHeading15";
+            this.labelPullHeading15.Size = new System.Drawing.Size(83, 46);
+            this.labelPullHeading15.TabIndex = 37;
+            this.labelPullHeading15.Text = "Heading";
+            this.labelPullHeading15.Visible = false;
+            // 
+            // labelPullHeading14
+            // 
+            this.labelPullHeading14.AutoSize = true;
+            this.labelPullHeading14.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullHeading14.ForeColor = System.Drawing.Color.White;
+            this.labelPullHeading14.Location = new System.Drawing.Point(366, 359);
+            this.labelPullHeading14.Name = "labelPullHeading14";
+            this.labelPullHeading14.Size = new System.Drawing.Size(83, 46);
+            this.labelPullHeading14.TabIndex = 36;
+            this.labelPullHeading14.Text = "Heading";
+            this.labelPullHeading14.Visible = false;
+            // 
+            // labelPullHeading13
+            // 
+            this.labelPullHeading13.AutoSize = true;
+            this.labelPullHeading13.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullHeading13.ForeColor = System.Drawing.Color.White;
+            this.labelPullHeading13.Location = new System.Drawing.Point(358, 351);
+            this.labelPullHeading13.Name = "labelPullHeading13";
+            this.labelPullHeading13.Size = new System.Drawing.Size(83, 46);
+            this.labelPullHeading13.TabIndex = 35;
+            this.labelPullHeading13.Text = "Heading";
+            this.labelPullHeading13.Visible = false;
+            // 
+            // labelPullHeading12
+            // 
+            this.labelPullHeading12.AutoSize = true;
+            this.labelPullHeading12.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullHeading12.ForeColor = System.Drawing.Color.White;
+            this.labelPullHeading12.Location = new System.Drawing.Point(350, 343);
+            this.labelPullHeading12.Name = "labelPullHeading12";
+            this.labelPullHeading12.Size = new System.Drawing.Size(83, 46);
+            this.labelPullHeading12.TabIndex = 34;
+            this.labelPullHeading12.Text = "Heading";
+            this.labelPullHeading12.Visible = false;
+            // 
+            // labelPullHeading11
+            // 
+            this.labelPullHeading11.AutoSize = true;
+            this.labelPullHeading11.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullHeading11.ForeColor = System.Drawing.Color.White;
+            this.labelPullHeading11.Location = new System.Drawing.Point(342, 335);
+            this.labelPullHeading11.Name = "labelPullHeading11";
+            this.labelPullHeading11.Size = new System.Drawing.Size(83, 46);
+            this.labelPullHeading11.TabIndex = 33;
+            this.labelPullHeading11.Text = "Heading";
+            this.labelPullHeading11.Visible = false;
+            // 
+            // labelPullHeading10
+            // 
+            this.labelPullHeading10.AutoSize = true;
+            this.labelPullHeading10.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullHeading10.ForeColor = System.Drawing.Color.White;
+            this.labelPullHeading10.Location = new System.Drawing.Point(334, 327);
+            this.labelPullHeading10.Name = "labelPullHeading10";
+            this.labelPullHeading10.Size = new System.Drawing.Size(83, 46);
+            this.labelPullHeading10.TabIndex = 32;
+            this.labelPullHeading10.Text = "Heading";
+            this.labelPullHeading10.Visible = false;
+            // 
+            // labelPullHeading9
+            // 
+            this.labelPullHeading9.AutoSize = true;
+            this.labelPullHeading9.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullHeading9.ForeColor = System.Drawing.Color.White;
+            this.labelPullHeading9.Location = new System.Drawing.Point(326, 319);
+            this.labelPullHeading9.Name = "labelPullHeading9";
+            this.labelPullHeading9.Size = new System.Drawing.Size(83, 46);
+            this.labelPullHeading9.TabIndex = 31;
+            this.labelPullHeading9.Text = "Heading";
+            this.labelPullHeading9.Visible = false;
+            // 
+            // labelPullHeading8
+            // 
+            this.labelPullHeading8.AutoSize = true;
+            this.labelPullHeading8.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullHeading8.ForeColor = System.Drawing.Color.White;
+            this.labelPullHeading8.Location = new System.Drawing.Point(318, 311);
+            this.labelPullHeading8.Name = "labelPullHeading8";
+            this.labelPullHeading8.Size = new System.Drawing.Size(83, 46);
+            this.labelPullHeading8.TabIndex = 30;
+            this.labelPullHeading8.Text = "Heading";
+            this.labelPullHeading8.Visible = false;
+            // 
+            // labelPullHeading7
+            // 
+            this.labelPullHeading7.AutoSize = true;
+            this.labelPullHeading7.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullHeading7.ForeColor = System.Drawing.Color.White;
+            this.labelPullHeading7.Location = new System.Drawing.Point(310, 303);
+            this.labelPullHeading7.Name = "labelPullHeading7";
+            this.labelPullHeading7.Size = new System.Drawing.Size(83, 46);
+            this.labelPullHeading7.TabIndex = 29;
+            this.labelPullHeading7.Text = "Heading";
+            this.labelPullHeading7.Visible = false;
+            // 
+            // labelPullHeading6
+            // 
+            this.labelPullHeading6.AutoSize = true;
+            this.labelPullHeading6.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullHeading6.ForeColor = System.Drawing.Color.White;
+            this.labelPullHeading6.Location = new System.Drawing.Point(302, 295);
+            this.labelPullHeading6.Name = "labelPullHeading6";
+            this.labelPullHeading6.Size = new System.Drawing.Size(83, 46);
+            this.labelPullHeading6.TabIndex = 28;
+            this.labelPullHeading6.Text = "Heading";
+            this.labelPullHeading6.Visible = false;
+            // 
+            // labelPullHeading5
+            // 
+            this.labelPullHeading5.AutoSize = true;
+            this.labelPullHeading5.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullHeading5.ForeColor = System.Drawing.Color.White;
+            this.labelPullHeading5.Location = new System.Drawing.Point(294, 287);
+            this.labelPullHeading5.Name = "labelPullHeading5";
+            this.labelPullHeading5.Size = new System.Drawing.Size(83, 46);
+            this.labelPullHeading5.TabIndex = 27;
+            this.labelPullHeading5.Text = "Heading";
+            this.labelPullHeading5.Visible = false;
+            // 
+            // labelPullHeading4
+            // 
+            this.labelPullHeading4.AutoSize = true;
+            this.labelPullHeading4.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullHeading4.ForeColor = System.Drawing.Color.White;
+            this.labelPullHeading4.Location = new System.Drawing.Point(286, 279);
+            this.labelPullHeading4.Name = "labelPullHeading4";
+            this.labelPullHeading4.Size = new System.Drawing.Size(83, 46);
+            this.labelPullHeading4.TabIndex = 26;
+            this.labelPullHeading4.Text = "Heading";
+            this.labelPullHeading4.Visible = false;
+            // 
+            // labelPullHeading3
+            // 
+            this.labelPullHeading3.AutoSize = true;
+            this.labelPullHeading3.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullHeading3.ForeColor = System.Drawing.Color.White;
+            this.labelPullHeading3.Location = new System.Drawing.Point(278, 271);
+            this.labelPullHeading3.Name = "labelPullHeading3";
+            this.labelPullHeading3.Size = new System.Drawing.Size(83, 46);
+            this.labelPullHeading3.TabIndex = 25;
+            this.labelPullHeading3.Text = "Heading";
+            this.labelPullHeading3.Visible = false;
+            // 
+            // labelPullHeading2
+            // 
+            this.labelPullHeading2.AutoSize = true;
+            this.labelPullHeading2.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullHeading2.ForeColor = System.Drawing.Color.White;
+            this.labelPullHeading2.Location = new System.Drawing.Point(270, 263);
+            this.labelPullHeading2.Name = "labelPullHeading2";
+            this.labelPullHeading2.Size = new System.Drawing.Size(83, 46);
+            this.labelPullHeading2.TabIndex = 24;
+            this.labelPullHeading2.Text = "Heading";
+            this.labelPullHeading2.Visible = false;
+            // 
+            // labelPullHeading1
+            // 
+            this.labelPullHeading1.AutoSize = true;
+            this.labelPullHeading1.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPullHeading1.ForeColor = System.Drawing.Color.White;
+            this.labelPullHeading1.Location = new System.Drawing.Point(262, 255);
+            this.labelPullHeading1.Name = "labelPullHeading1";
+            this.labelPullHeading1.Size = new System.Drawing.Size(83, 46);
+            this.labelPullHeading1.TabIndex = 23;
+            this.labelPullHeading1.Text = "Heading";
+            this.labelPullHeading1.Visible = false;
             // 
             // panelPull20
             // 
@@ -1062,21 +1765,6 @@
             this.panelCompose.TabIndex = 0;
             this.panelCompose.Visible = false;
             // 
-            // button6
-            // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Image = global::LifeCalendar.Properties.Resources.send;
-            this.button6.Location = new System.Drawing.Point(516, 505);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(80, 32);
-            this.button6.TabIndex = 5;
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click_1);
-            // 
             // textBoxComposeContent
             // 
             this.textBoxComposeContent.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -1165,51 +1853,6 @@
             this.textBoxComposeTitle.TabIndex = 0;
             this.textBoxComposeTitle.TextChanged += new System.EventHandler(this.textBoxComposeTitle_TextChanged);
             // 
-            // buttonReceive
-            // 
-            this.buttonReceive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.buttonReceive.FlatAppearance.BorderSize = 0;
-            this.buttonReceive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonReceive.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonReceive.ForeColor = System.Drawing.Color.White;
-            this.buttonReceive.Image = global::LifeCalendar.Properties.Resources.receive;
-            this.buttonReceive.Location = new System.Drawing.Point(6, 140);
-            this.buttonReceive.Name = "buttonReceive";
-            this.buttonReceive.Size = new System.Drawing.Size(131, 32);
-            this.buttonReceive.TabIndex = 2;
-            this.buttonReceive.UseVisualStyleBackColor = false;
-            this.buttonReceive.Click += new System.EventHandler(this.buttonReceive_Click);
-            // 
-            // buttonCompose
-            // 
-            this.buttonCompose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.buttonCompose.FlatAppearance.BorderSize = 0;
-            this.buttonCompose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCompose.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCompose.ForeColor = System.Drawing.Color.White;
-            this.buttonCompose.Image = global::LifeCalendar.Properties.Resources.compose;
-            this.buttonCompose.Location = new System.Drawing.Point(6, 100);
-            this.buttonCompose.Name = "buttonCompose";
-            this.buttonCompose.Size = new System.Drawing.Size(131, 32);
-            this.buttonCompose.TabIndex = 1;
-            this.buttonCompose.UseVisualStyleBackColor = false;
-            this.buttonCompose.Click += new System.EventHandler(this.buttonCompose_Click);
-            // 
-            // buttonPullLetters
-            // 
-            this.buttonPullLetters.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.buttonPullLetters.FlatAppearance.BorderSize = 0;
-            this.buttonPullLetters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPullLetters.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPullLetters.ForeColor = System.Drawing.Color.White;
-            this.buttonPullLetters.Image = global::LifeCalendar.Properties.Resources.pullLetters;
-            this.buttonPullLetters.Location = new System.Drawing.Point(6, 60);
-            this.buttonPullLetters.Name = "buttonPullLetters";
-            this.buttonPullLetters.Size = new System.Drawing.Size(131, 32);
-            this.buttonPullLetters.TabIndex = 0;
-            this.buttonPullLetters.UseVisualStyleBackColor = false;
-            this.buttonPullLetters.Click += new System.EventHandler(this.buttonPullLetters_Click);
-            // 
             // panelWeekly
             // 
             this.panelWeekly.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -1256,16 +1899,6 @@
             this.labelYear.TabIndex = 16;
             this.labelYear.Text = "0000-0000";
             this.labelYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panelFloatDesktop
-            // 
-            this.panelFloatDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.panelFloatDesktop.BackgroundImage = global::LifeCalendar.Properties.Resources.option3;
-            this.panelFloatDesktop.Location = new System.Drawing.Point(3, 57);
-            this.panelFloatDesktop.Name = "panelFloatDesktop";
-            this.panelFloatDesktop.Size = new System.Drawing.Size(208, 142);
-            this.panelFloatDesktop.TabIndex = 15;
-            this.panelFloatDesktop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelFloatDesktop_MouseDown);
             // 
             // panelDate7
             // 
@@ -1436,19 +2069,6 @@
             this.labelMonth1.TabIndex = 5;
             this.labelMonth1.Text = "April";
             // 
-            // buttonScale
-            // 
-            this.buttonScale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonScale.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
-            this.buttonScale.FlatAppearance.BorderSize = 0;
-            this.buttonScale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonScale.Image = global::LifeCalendar.Properties.Resources.scale;
-            this.buttonScale.Location = new System.Drawing.Point(635, 470);
-            this.buttonScale.Name = "buttonScale";
-            this.buttonScale.Size = new System.Drawing.Size(42, 42);
-            this.buttonScale.TabIndex = 0;
-            this.buttonScale.UseVisualStyleBackColor = false;
-            // 
             // panelWeeklyColumn
             // 
             this.panelWeeklyColumn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
@@ -1592,21 +2212,6 @@
             this.panelLogin.TabIndex = 0;
             this.panelLogin.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogin_Paint);
             // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Image = global::LifeCalendar.Properties.Resources.btnRegister;
-            this.button5.Location = new System.Drawing.Point(19, 249);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(240, 40);
-            this.button5.TabIndex = 8;
-            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.UseVisualStyleBackColor = false;
-            // 
             // labelLoginErr
             // 
             this.labelLoginErr.AutoSize = true;
@@ -1630,22 +2235,6 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "iForgot";
             this.linkLabel1.VisitedLinkColor = System.Drawing.Color.Gray;
-            // 
-            // buttonLogin
-            // 
-            this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
-            this.buttonLogin.FlatAppearance.BorderSize = 0;
-            this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogin.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLogin.ForeColor = System.Drawing.Color.Black;
-            this.buttonLogin.Image = global::LifeCalendar.Properties.Resources.btnLogin;
-            this.buttonLogin.Location = new System.Drawing.Point(19, 197);
-            this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(240, 40);
-            this.buttonLogin.TabIndex = 7;
-            this.buttonLogin.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonLogin.UseVisualStyleBackColor = false;
-            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // panelPassword
             // 
@@ -1697,26 +2286,6 @@
             this.textBoxMail.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxMail_KeyDown);
             this.textBoxMail.Leave += new System.EventHandler(this.textBoxMail_Leave);
             // 
-            // pictureBoxPassword
-            // 
-            this.pictureBoxPassword.Image = global::LifeCalendar.Properties.Resources.key;
-            this.pictureBoxPassword.Location = new System.Drawing.Point(19, 158);
-            this.pictureBoxPassword.Name = "pictureBoxPassword";
-            this.pictureBoxPassword.Size = new System.Drawing.Size(24, 18);
-            this.pictureBoxPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxPassword.TabIndex = 2;
-            this.pictureBoxPassword.TabStop = false;
-            // 
-            // pictureBoxMail
-            // 
-            this.pictureBoxMail.Image = global::LifeCalendar.Properties.Resources.mail;
-            this.pictureBoxMail.Location = new System.Drawing.Point(19, 116);
-            this.pictureBoxMail.Name = "pictureBoxMail";
-            this.pictureBoxMail.Size = new System.Drawing.Size(24, 18);
-            this.pictureBoxMail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxMail.TabIndex = 1;
-            this.pictureBoxMail.TabStop = false;
-            // 
             // labelLogin
             // 
             this.labelLogin.Font = new System.Drawing.Font("Journal", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1740,786 +2309,320 @@
             this.timerSelectedColor.Interval = 32;
             this.timerSelectedColor.Tick += new System.EventHandler(this.timerSelectedColor_Tick);
             // 
-            // labelPullHeading1
+            // panelSyncCheck
             // 
-            this.labelPullHeading1.AutoSize = true;
-            this.labelPullHeading1.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullHeading1.ForeColor = System.Drawing.Color.White;
-            this.labelPullHeading1.Location = new System.Drawing.Point(262, 255);
-            this.labelPullHeading1.Name = "labelPullHeading1";
-            this.labelPullHeading1.Size = new System.Drawing.Size(83, 46);
-            this.labelPullHeading1.TabIndex = 23;
-            this.labelPullHeading1.Text = "Heading";
-            this.labelPullHeading1.Visible = false;
-            // 
-            // labelPullHeading2
-            // 
-            this.labelPullHeading2.AutoSize = true;
-            this.labelPullHeading2.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullHeading2.ForeColor = System.Drawing.Color.White;
-            this.labelPullHeading2.Location = new System.Drawing.Point(270, 263);
-            this.labelPullHeading2.Name = "labelPullHeading2";
-            this.labelPullHeading2.Size = new System.Drawing.Size(83, 46);
-            this.labelPullHeading2.TabIndex = 24;
-            this.labelPullHeading2.Text = "Heading";
-            this.labelPullHeading2.Visible = false;
-            // 
-            // labelPullHeading3
-            // 
-            this.labelPullHeading3.AutoSize = true;
-            this.labelPullHeading3.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullHeading3.ForeColor = System.Drawing.Color.White;
-            this.labelPullHeading3.Location = new System.Drawing.Point(278, 271);
-            this.labelPullHeading3.Name = "labelPullHeading3";
-            this.labelPullHeading3.Size = new System.Drawing.Size(83, 46);
-            this.labelPullHeading3.TabIndex = 25;
-            this.labelPullHeading3.Text = "Heading";
-            this.labelPullHeading3.Visible = false;
-            // 
-            // labelPullHeading4
-            // 
-            this.labelPullHeading4.AutoSize = true;
-            this.labelPullHeading4.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullHeading4.ForeColor = System.Drawing.Color.White;
-            this.labelPullHeading4.Location = new System.Drawing.Point(286, 279);
-            this.labelPullHeading4.Name = "labelPullHeading4";
-            this.labelPullHeading4.Size = new System.Drawing.Size(83, 46);
-            this.labelPullHeading4.TabIndex = 26;
-            this.labelPullHeading4.Text = "Heading";
-            this.labelPullHeading4.Visible = false;
-            // 
-            // labelPullHeading5
-            // 
-            this.labelPullHeading5.AutoSize = true;
-            this.labelPullHeading5.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullHeading5.ForeColor = System.Drawing.Color.White;
-            this.labelPullHeading5.Location = new System.Drawing.Point(294, 287);
-            this.labelPullHeading5.Name = "labelPullHeading5";
-            this.labelPullHeading5.Size = new System.Drawing.Size(83, 46);
-            this.labelPullHeading5.TabIndex = 27;
-            this.labelPullHeading5.Text = "Heading";
-            this.labelPullHeading5.Visible = false;
-            // 
-            // labelPullHeading6
-            // 
-            this.labelPullHeading6.AutoSize = true;
-            this.labelPullHeading6.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullHeading6.ForeColor = System.Drawing.Color.White;
-            this.labelPullHeading6.Location = new System.Drawing.Point(302, 295);
-            this.labelPullHeading6.Name = "labelPullHeading6";
-            this.labelPullHeading6.Size = new System.Drawing.Size(83, 46);
-            this.labelPullHeading6.TabIndex = 28;
-            this.labelPullHeading6.Text = "Heading";
-            this.labelPullHeading6.Visible = false;
-            // 
-            // labelPullHeading7
-            // 
-            this.labelPullHeading7.AutoSize = true;
-            this.labelPullHeading7.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullHeading7.ForeColor = System.Drawing.Color.White;
-            this.labelPullHeading7.Location = new System.Drawing.Point(310, 303);
-            this.labelPullHeading7.Name = "labelPullHeading7";
-            this.labelPullHeading7.Size = new System.Drawing.Size(83, 46);
-            this.labelPullHeading7.TabIndex = 29;
-            this.labelPullHeading7.Text = "Heading";
-            this.labelPullHeading7.Visible = false;
-            // 
-            // labelPullHeading8
-            // 
-            this.labelPullHeading8.AutoSize = true;
-            this.labelPullHeading8.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullHeading8.ForeColor = System.Drawing.Color.White;
-            this.labelPullHeading8.Location = new System.Drawing.Point(318, 311);
-            this.labelPullHeading8.Name = "labelPullHeading8";
-            this.labelPullHeading8.Size = new System.Drawing.Size(83, 46);
-            this.labelPullHeading8.TabIndex = 30;
-            this.labelPullHeading8.Text = "Heading";
-            this.labelPullHeading8.Visible = false;
-            // 
-            // labelPullHeading9
-            // 
-            this.labelPullHeading9.AutoSize = true;
-            this.labelPullHeading9.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullHeading9.ForeColor = System.Drawing.Color.White;
-            this.labelPullHeading9.Location = new System.Drawing.Point(326, 319);
-            this.labelPullHeading9.Name = "labelPullHeading9";
-            this.labelPullHeading9.Size = new System.Drawing.Size(83, 46);
-            this.labelPullHeading9.TabIndex = 31;
-            this.labelPullHeading9.Text = "Heading";
-            this.labelPullHeading9.Visible = false;
-            // 
-            // labelPullHeading10
-            // 
-            this.labelPullHeading10.AutoSize = true;
-            this.labelPullHeading10.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullHeading10.ForeColor = System.Drawing.Color.White;
-            this.labelPullHeading10.Location = new System.Drawing.Point(334, 327);
-            this.labelPullHeading10.Name = "labelPullHeading10";
-            this.labelPullHeading10.Size = new System.Drawing.Size(83, 46);
-            this.labelPullHeading10.TabIndex = 32;
-            this.labelPullHeading10.Text = "Heading";
-            this.labelPullHeading10.Visible = false;
-            // 
-            // labelPullHeading11
-            // 
-            this.labelPullHeading11.AutoSize = true;
-            this.labelPullHeading11.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullHeading11.ForeColor = System.Drawing.Color.White;
-            this.labelPullHeading11.Location = new System.Drawing.Point(342, 335);
-            this.labelPullHeading11.Name = "labelPullHeading11";
-            this.labelPullHeading11.Size = new System.Drawing.Size(83, 46);
-            this.labelPullHeading11.TabIndex = 33;
-            this.labelPullHeading11.Text = "Heading";
-            this.labelPullHeading11.Visible = false;
-            // 
-            // labelPullHeading12
-            // 
-            this.labelPullHeading12.AutoSize = true;
-            this.labelPullHeading12.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullHeading12.ForeColor = System.Drawing.Color.White;
-            this.labelPullHeading12.Location = new System.Drawing.Point(350, 343);
-            this.labelPullHeading12.Name = "labelPullHeading12";
-            this.labelPullHeading12.Size = new System.Drawing.Size(83, 46);
-            this.labelPullHeading12.TabIndex = 34;
-            this.labelPullHeading12.Text = "Heading";
-            this.labelPullHeading12.Visible = false;
-            // 
-            // labelPullHeading13
-            // 
-            this.labelPullHeading13.AutoSize = true;
-            this.labelPullHeading13.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullHeading13.ForeColor = System.Drawing.Color.White;
-            this.labelPullHeading13.Location = new System.Drawing.Point(358, 351);
-            this.labelPullHeading13.Name = "labelPullHeading13";
-            this.labelPullHeading13.Size = new System.Drawing.Size(83, 46);
-            this.labelPullHeading13.TabIndex = 35;
-            this.labelPullHeading13.Text = "Heading";
-            this.labelPullHeading13.Visible = false;
-            // 
-            // labelPullHeading14
-            // 
-            this.labelPullHeading14.AutoSize = true;
-            this.labelPullHeading14.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullHeading14.ForeColor = System.Drawing.Color.White;
-            this.labelPullHeading14.Location = new System.Drawing.Point(366, 359);
-            this.labelPullHeading14.Name = "labelPullHeading14";
-            this.labelPullHeading14.Size = new System.Drawing.Size(83, 46);
-            this.labelPullHeading14.TabIndex = 36;
-            this.labelPullHeading14.Text = "Heading";
-            this.labelPullHeading14.Visible = false;
-            // 
-            // labelPullHeading15
-            // 
-            this.labelPullHeading15.AutoSize = true;
-            this.labelPullHeading15.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullHeading15.ForeColor = System.Drawing.Color.White;
-            this.labelPullHeading15.Location = new System.Drawing.Point(374, 367);
-            this.labelPullHeading15.Name = "labelPullHeading15";
-            this.labelPullHeading15.Size = new System.Drawing.Size(83, 46);
-            this.labelPullHeading15.TabIndex = 37;
-            this.labelPullHeading15.Text = "Heading";
-            this.labelPullHeading15.Visible = false;
-            // 
-            // labelPullHeading16
-            // 
-            this.labelPullHeading16.AutoSize = true;
-            this.labelPullHeading16.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullHeading16.ForeColor = System.Drawing.Color.White;
-            this.labelPullHeading16.Location = new System.Drawing.Point(382, 375);
-            this.labelPullHeading16.Name = "labelPullHeading16";
-            this.labelPullHeading16.Size = new System.Drawing.Size(83, 46);
-            this.labelPullHeading16.TabIndex = 38;
-            this.labelPullHeading16.Text = "Heading";
-            this.labelPullHeading16.Visible = false;
-            // 
-            // labelPullHeading17
-            // 
-            this.labelPullHeading17.AutoSize = true;
-            this.labelPullHeading17.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullHeading17.ForeColor = System.Drawing.Color.White;
-            this.labelPullHeading17.Location = new System.Drawing.Point(390, 383);
-            this.labelPullHeading17.Name = "labelPullHeading17";
-            this.labelPullHeading17.Size = new System.Drawing.Size(83, 46);
-            this.labelPullHeading17.TabIndex = 39;
-            this.labelPullHeading17.Text = "Heading";
-            this.labelPullHeading17.Visible = false;
-            // 
-            // labelPullHeading18
-            // 
-            this.labelPullHeading18.AutoSize = true;
-            this.labelPullHeading18.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullHeading18.ForeColor = System.Drawing.Color.White;
-            this.labelPullHeading18.Location = new System.Drawing.Point(398, 391);
-            this.labelPullHeading18.Name = "labelPullHeading18";
-            this.labelPullHeading18.Size = new System.Drawing.Size(83, 46);
-            this.labelPullHeading18.TabIndex = 40;
-            this.labelPullHeading18.Text = "Heading";
-            this.labelPullHeading18.Visible = false;
-            // 
-            // labelPullHeading19
-            // 
-            this.labelPullHeading19.AutoSize = true;
-            this.labelPullHeading19.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullHeading19.ForeColor = System.Drawing.Color.White;
-            this.labelPullHeading19.Location = new System.Drawing.Point(406, 399);
-            this.labelPullHeading19.Name = "labelPullHeading19";
-            this.labelPullHeading19.Size = new System.Drawing.Size(83, 46);
-            this.labelPullHeading19.TabIndex = 41;
-            this.labelPullHeading19.Text = "Heading";
-            this.labelPullHeading19.Visible = false;
-            // 
-            // labelPullHeading20
-            // 
-            this.labelPullHeading20.AutoSize = true;
-            this.labelPullHeading20.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullHeading20.ForeColor = System.Drawing.Color.White;
-            this.labelPullHeading20.Location = new System.Drawing.Point(414, 407);
-            this.labelPullHeading20.Name = "labelPullHeading20";
-            this.labelPullHeading20.Size = new System.Drawing.Size(83, 46);
-            this.labelPullHeading20.TabIndex = 42;
-            this.labelPullHeading20.Text = "Heading";
-            this.labelPullHeading20.Visible = false;
-            // 
-            // labelPullContent1
-            // 
-            this.labelPullContent1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.panelSyncCheck.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullContent1.AutoSize = true;
-            this.labelPullContent1.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullContent1.ForeColor = System.Drawing.Color.White;
-            this.labelPullContent1.Location = new System.Drawing.Point(269, 260);
-            this.labelPullContent1.Name = "labelPullContent1";
-            this.labelPullContent1.Size = new System.Drawing.Size(69, 36);
-            this.labelPullContent1.TabIndex = 43;
-            this.labelPullContent1.Text = "Content";
-            this.labelPullContent1.Visible = false;
-            // 
-            // labelPullContent2
-            // 
-            this.labelPullContent2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullContent2.AutoSize = true;
-            this.labelPullContent2.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullContent2.ForeColor = System.Drawing.Color.White;
-            this.labelPullContent2.Location = new System.Drawing.Point(277, 268);
-            this.labelPullContent2.Name = "labelPullContent2";
-            this.labelPullContent2.Size = new System.Drawing.Size(69, 36);
-            this.labelPullContent2.TabIndex = 44;
-            this.labelPullContent2.Text = "Content";
-            this.labelPullContent2.Visible = false;
-            // 
-            // labelPullContent3
-            // 
-            this.labelPullContent3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullContent3.AutoSize = true;
-            this.labelPullContent3.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullContent3.ForeColor = System.Drawing.Color.White;
-            this.labelPullContent3.Location = new System.Drawing.Point(285, 276);
-            this.labelPullContent3.Name = "labelPullContent3";
-            this.labelPullContent3.Size = new System.Drawing.Size(69, 36);
-            this.labelPullContent3.TabIndex = 45;
-            this.labelPullContent3.Text = "Content";
-            this.labelPullContent3.Visible = false;
-            // 
-            // labelPullContent4
-            // 
-            this.labelPullContent4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullContent4.AutoSize = true;
-            this.labelPullContent4.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullContent4.ForeColor = System.Drawing.Color.White;
-            this.labelPullContent4.Location = new System.Drawing.Point(293, 284);
-            this.labelPullContent4.Name = "labelPullContent4";
-            this.labelPullContent4.Size = new System.Drawing.Size(69, 36);
-            this.labelPullContent4.TabIndex = 46;
-            this.labelPullContent4.Text = "Content";
-            this.labelPullContent4.Visible = false;
-            this.labelPullContent4.Click += new System.EventHandler(this.labelPullContent4_Click);
-            // 
-            // labelPullContent5
-            // 
-            this.labelPullContent5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullContent5.AutoSize = true;
-            this.labelPullContent5.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullContent5.ForeColor = System.Drawing.Color.White;
-            this.labelPullContent5.Location = new System.Drawing.Point(301, 292);
-            this.labelPullContent5.Name = "labelPullContent5";
-            this.labelPullContent5.Size = new System.Drawing.Size(69, 36);
-            this.labelPullContent5.TabIndex = 47;
-            this.labelPullContent5.Text = "Content";
-            this.labelPullContent5.Visible = false;
-            // 
-            // labelPullContent6
-            // 
-            this.labelPullContent6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullContent6.AutoSize = true;
-            this.labelPullContent6.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullContent6.ForeColor = System.Drawing.Color.White;
-            this.labelPullContent6.Location = new System.Drawing.Point(309, 300);
-            this.labelPullContent6.Name = "labelPullContent6";
-            this.labelPullContent6.Size = new System.Drawing.Size(69, 36);
-            this.labelPullContent6.TabIndex = 48;
-            this.labelPullContent6.Text = "Content";
-            this.labelPullContent6.Visible = false;
-            // 
-            // labelPullContent7
-            // 
-            this.labelPullContent7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullContent7.AutoSize = true;
-            this.labelPullContent7.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullContent7.ForeColor = System.Drawing.Color.White;
-            this.labelPullContent7.Location = new System.Drawing.Point(317, 308);
-            this.labelPullContent7.Name = "labelPullContent7";
-            this.labelPullContent7.Size = new System.Drawing.Size(69, 36);
-            this.labelPullContent7.TabIndex = 49;
-            this.labelPullContent7.Text = "Content";
-            this.labelPullContent7.Visible = false;
-            // 
-            // labelPullContent8
-            // 
-            this.labelPullContent8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullContent8.AutoSize = true;
-            this.labelPullContent8.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullContent8.ForeColor = System.Drawing.Color.White;
-            this.labelPullContent8.Location = new System.Drawing.Point(325, 316);
-            this.labelPullContent8.Name = "labelPullContent8";
-            this.labelPullContent8.Size = new System.Drawing.Size(69, 36);
-            this.labelPullContent8.TabIndex = 50;
-            this.labelPullContent8.Text = "Content";
-            this.labelPullContent8.Visible = false;
-            // 
-            // labelPullContent9
-            // 
-            this.labelPullContent9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullContent9.AutoSize = true;
-            this.labelPullContent9.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullContent9.ForeColor = System.Drawing.Color.White;
-            this.labelPullContent9.Location = new System.Drawing.Point(333, 324);
-            this.labelPullContent9.Name = "labelPullContent9";
-            this.labelPullContent9.Size = new System.Drawing.Size(69, 36);
-            this.labelPullContent9.TabIndex = 51;
-            this.labelPullContent9.Text = "Content";
-            this.labelPullContent9.Visible = false;
-            // 
-            // labelPullContent10
-            // 
-            this.labelPullContent10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullContent10.AutoSize = true;
-            this.labelPullContent10.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullContent10.ForeColor = System.Drawing.Color.White;
-            this.labelPullContent10.Location = new System.Drawing.Point(341, 332);
-            this.labelPullContent10.Name = "labelPullContent10";
-            this.labelPullContent10.Size = new System.Drawing.Size(69, 36);
-            this.labelPullContent10.TabIndex = 52;
-            this.labelPullContent10.Text = "Content";
-            this.labelPullContent10.Visible = false;
-            // 
-            // labelPullContent11
-            // 
-            this.labelPullContent11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullContent11.AutoSize = true;
-            this.labelPullContent11.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullContent11.ForeColor = System.Drawing.Color.White;
-            this.labelPullContent11.Location = new System.Drawing.Point(349, 340);
-            this.labelPullContent11.Name = "labelPullContent11";
-            this.labelPullContent11.Size = new System.Drawing.Size(69, 36);
-            this.labelPullContent11.TabIndex = 53;
-            this.labelPullContent11.Text = "Content";
-            this.labelPullContent11.Visible = false;
-            // 
-            // labelPullContent12
-            // 
-            this.labelPullContent12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullContent12.AutoSize = true;
-            this.labelPullContent12.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullContent12.ForeColor = System.Drawing.Color.White;
-            this.labelPullContent12.Location = new System.Drawing.Point(357, 348);
-            this.labelPullContent12.Name = "labelPullContent12";
-            this.labelPullContent12.Size = new System.Drawing.Size(69, 36);
-            this.labelPullContent12.TabIndex = 54;
-            this.labelPullContent12.Text = "Content";
-            this.labelPullContent12.Visible = false;
-            // 
-            // labelPullContent13
-            // 
-            this.labelPullContent13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullContent13.AutoSize = true;
-            this.labelPullContent13.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullContent13.ForeColor = System.Drawing.Color.White;
-            this.labelPullContent13.Location = new System.Drawing.Point(365, 356);
-            this.labelPullContent13.Name = "labelPullContent13";
-            this.labelPullContent13.Size = new System.Drawing.Size(69, 36);
-            this.labelPullContent13.TabIndex = 55;
-            this.labelPullContent13.Text = "Content";
-            this.labelPullContent13.Visible = false;
-            // 
-            // labelPullContent14
-            // 
-            this.labelPullContent14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullContent14.AutoSize = true;
-            this.labelPullContent14.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullContent14.ForeColor = System.Drawing.Color.White;
-            this.labelPullContent14.Location = new System.Drawing.Point(373, 364);
-            this.labelPullContent14.Name = "labelPullContent14";
-            this.labelPullContent14.Size = new System.Drawing.Size(69, 36);
-            this.labelPullContent14.TabIndex = 56;
-            this.labelPullContent14.Text = "Content";
-            this.labelPullContent14.Visible = false;
-            // 
-            // labelPullContent15
-            // 
-            this.labelPullContent15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullContent15.AutoSize = true;
-            this.labelPullContent15.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullContent15.ForeColor = System.Drawing.Color.White;
-            this.labelPullContent15.Location = new System.Drawing.Point(381, 372);
-            this.labelPullContent15.Name = "labelPullContent15";
-            this.labelPullContent15.Size = new System.Drawing.Size(69, 36);
-            this.labelPullContent15.TabIndex = 57;
-            this.labelPullContent15.Text = "Content";
-            this.labelPullContent15.Visible = false;
-            // 
-            // labelPullContent16
-            // 
-            this.labelPullContent16.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullContent16.AutoSize = true;
-            this.labelPullContent16.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullContent16.ForeColor = System.Drawing.Color.White;
-            this.labelPullContent16.Location = new System.Drawing.Point(389, 380);
-            this.labelPullContent16.Name = "labelPullContent16";
-            this.labelPullContent16.Size = new System.Drawing.Size(69, 36);
-            this.labelPullContent16.TabIndex = 58;
-            this.labelPullContent16.Text = "Content";
-            this.labelPullContent16.Visible = false;
-            // 
-            // labelPullContent17
-            // 
-            this.labelPullContent17.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullContent17.AutoSize = true;
-            this.labelPullContent17.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullContent17.ForeColor = System.Drawing.Color.White;
-            this.labelPullContent17.Location = new System.Drawing.Point(397, 388);
-            this.labelPullContent17.Name = "labelPullContent17";
-            this.labelPullContent17.Size = new System.Drawing.Size(69, 36);
-            this.labelPullContent17.TabIndex = 59;
-            this.labelPullContent17.Text = "Content";
-            this.labelPullContent17.Visible = false;
-            // 
-            // labelPullContent18
-            // 
-            this.labelPullContent18.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullContent18.AutoSize = true;
-            this.labelPullContent18.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullContent18.ForeColor = System.Drawing.Color.White;
-            this.labelPullContent18.Location = new System.Drawing.Point(405, 396);
-            this.labelPullContent18.Name = "labelPullContent18";
-            this.labelPullContent18.Size = new System.Drawing.Size(69, 36);
-            this.labelPullContent18.TabIndex = 60;
-            this.labelPullContent18.Text = "Content";
-            this.labelPullContent18.Visible = false;
-            // 
-            // labelPullContent19
-            // 
-            this.labelPullContent19.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullContent19.AutoSize = true;
-            this.labelPullContent19.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullContent19.ForeColor = System.Drawing.Color.White;
-            this.labelPullContent19.Location = new System.Drawing.Point(413, 404);
-            this.labelPullContent19.Name = "labelPullContent19";
-            this.labelPullContent19.Size = new System.Drawing.Size(69, 36);
-            this.labelPullContent19.TabIndex = 61;
-            this.labelPullContent19.Text = "Content";
-            this.labelPullContent19.Visible = false;
-            // 
-            // labelPullContent20
-            // 
-            this.labelPullContent20.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullContent20.AutoSize = true;
-            this.labelPullContent20.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullContent20.ForeColor = System.Drawing.Color.White;
-            this.labelPullContent20.Location = new System.Drawing.Point(421, 412);
-            this.labelPullContent20.Name = "labelPullContent20";
-            this.labelPullContent20.Size = new System.Drawing.Size(69, 36);
-            this.labelPullContent20.TabIndex = 62;
-            this.labelPullContent20.Text = "Content";
-            this.labelPullContent20.Visible = false;
-            // 
-            // labelPullTime1
-            // 
-            this.labelPullTime1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullTime1.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullTime1.ForeColor = System.Drawing.Color.White;
-            this.labelPullTime1.Location = new System.Drawing.Point(256, 255);
-            this.labelPullTime1.Name = "labelPullTime1";
-            this.labelPullTime1.Size = new System.Drawing.Size(95, 46);
-            this.labelPullTime1.TabIndex = 63;
-            this.labelPullTime1.Text = "time";
-            this.labelPullTime1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelPullTime1.Visible = false;
-            // 
-            // labelPullTime2
-            // 
-            this.labelPullTime2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullTime2.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullTime2.ForeColor = System.Drawing.Color.White;
-            this.labelPullTime2.Location = new System.Drawing.Point(264, 263);
-            this.labelPullTime2.Name = "labelPullTime2";
-            this.labelPullTime2.Size = new System.Drawing.Size(95, 46);
-            this.labelPullTime2.TabIndex = 64;
-            this.labelPullTime2.Text = "time";
-            this.labelPullTime2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelPullTime2.Visible = false;
-            // 
-            // labelPullTime3
-            // 
-            this.labelPullTime3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullTime3.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullTime3.ForeColor = System.Drawing.Color.White;
-            this.labelPullTime3.Location = new System.Drawing.Point(272, 271);
-            this.labelPullTime3.Name = "labelPullTime3";
-            this.labelPullTime3.Size = new System.Drawing.Size(95, 46);
-            this.labelPullTime3.TabIndex = 65;
-            this.labelPullTime3.Text = "time";
-            this.labelPullTime3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelPullTime3.Visible = false;
-            // 
-            // labelPullTime4
-            // 
-            this.labelPullTime4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullTime4.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullTime4.ForeColor = System.Drawing.Color.White;
-            this.labelPullTime4.Location = new System.Drawing.Point(280, 279);
-            this.labelPullTime4.Name = "labelPullTime4";
-            this.labelPullTime4.Size = new System.Drawing.Size(95, 46);
-            this.labelPullTime4.TabIndex = 66;
-            this.labelPullTime4.Text = "time";
-            this.labelPullTime4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelPullTime4.Visible = false;
-            // 
-            // labelPullTime5
-            // 
-            this.labelPullTime5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullTime5.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullTime5.ForeColor = System.Drawing.Color.White;
-            this.labelPullTime5.Location = new System.Drawing.Point(288, 287);
-            this.labelPullTime5.Name = "labelPullTime5";
-            this.labelPullTime5.Size = new System.Drawing.Size(95, 46);
-            this.labelPullTime5.TabIndex = 67;
-            this.labelPullTime5.Text = "time";
-            this.labelPullTime5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelPullTime5.Visible = false;
-            // 
-            // labelPullTime6
-            // 
-            this.labelPullTime6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullTime6.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullTime6.ForeColor = System.Drawing.Color.White;
-            this.labelPullTime6.Location = new System.Drawing.Point(296, 295);
-            this.labelPullTime6.Name = "labelPullTime6";
-            this.labelPullTime6.Size = new System.Drawing.Size(95, 46);
-            this.labelPullTime6.TabIndex = 68;
-            this.labelPullTime6.Text = "time";
-            this.labelPullTime6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelPullTime6.Visible = false;
-            // 
-            // labelPullTime7
-            // 
-            this.labelPullTime7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullTime7.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullTime7.ForeColor = System.Drawing.Color.White;
-            this.labelPullTime7.Location = new System.Drawing.Point(304, 303);
-            this.labelPullTime7.Name = "labelPullTime7";
-            this.labelPullTime7.Size = new System.Drawing.Size(95, 46);
-            this.labelPullTime7.TabIndex = 69;
-            this.labelPullTime7.Text = "time";
-            this.labelPullTime7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelPullTime7.Visible = false;
-            // 
-            // labelPullTime8
-            // 
-            this.labelPullTime8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullTime8.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullTime8.ForeColor = System.Drawing.Color.White;
-            this.labelPullTime8.Location = new System.Drawing.Point(312, 311);
-            this.labelPullTime8.Name = "labelPullTime8";
-            this.labelPullTime8.Size = new System.Drawing.Size(95, 46);
-            this.labelPullTime8.TabIndex = 70;
-            this.labelPullTime8.Text = "time";
-            this.labelPullTime8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelPullTime8.Visible = false;
-            // 
-            // labelPullTime9
-            // 
-            this.labelPullTime9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullTime9.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullTime9.ForeColor = System.Drawing.Color.White;
-            this.labelPullTime9.Location = new System.Drawing.Point(320, 319);
-            this.labelPullTime9.Name = "labelPullTime9";
-            this.labelPullTime9.Size = new System.Drawing.Size(95, 46);
-            this.labelPullTime9.TabIndex = 71;
-            this.labelPullTime9.Text = "time";
-            this.labelPullTime9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelPullTime9.Visible = false;
-            // 
-            // labelPullTime10
-            // 
-            this.labelPullTime10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullTime10.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullTime10.ForeColor = System.Drawing.Color.White;
-            this.labelPullTime10.Location = new System.Drawing.Point(328, 327);
-            this.labelPullTime10.Name = "labelPullTime10";
-            this.labelPullTime10.Size = new System.Drawing.Size(95, 46);
-            this.labelPullTime10.TabIndex = 72;
-            this.labelPullTime10.Text = "time";
-            this.labelPullTime10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelPullTime10.Visible = false;
-            // 
-            // labelPullTime11
-            // 
-            this.labelPullTime11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullTime11.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullTime11.ForeColor = System.Drawing.Color.White;
-            this.labelPullTime11.Location = new System.Drawing.Point(336, 335);
-            this.labelPullTime11.Name = "labelPullTime11";
-            this.labelPullTime11.Size = new System.Drawing.Size(95, 46);
-            this.labelPullTime11.TabIndex = 73;
-            this.labelPullTime11.Text = "time";
-            this.labelPullTime11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelPullTime11.Visible = false;
-            // 
-            // labelPullTime12
-            // 
-            this.labelPullTime12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullTime12.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullTime12.ForeColor = System.Drawing.Color.White;
-            this.labelPullTime12.Location = new System.Drawing.Point(344, 343);
-            this.labelPullTime12.Name = "labelPullTime12";
-            this.labelPullTime12.Size = new System.Drawing.Size(95, 46);
-            this.labelPullTime12.TabIndex = 74;
-            this.labelPullTime12.Text = "time";
-            this.labelPullTime12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelPullTime12.Visible = false;
-            // 
-            // labelPullTime13
-            // 
-            this.labelPullTime13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullTime13.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullTime13.ForeColor = System.Drawing.Color.White;
-            this.labelPullTime13.Location = new System.Drawing.Point(352, 351);
-            this.labelPullTime13.Name = "labelPullTime13";
-            this.labelPullTime13.Size = new System.Drawing.Size(95, 46);
-            this.labelPullTime13.TabIndex = 75;
-            this.labelPullTime13.Text = "time";
-            this.labelPullTime13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelPullTime13.Visible = false;
-            // 
-            // labelPullTime14
-            // 
-            this.labelPullTime14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullTime14.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullTime14.ForeColor = System.Drawing.Color.White;
-            this.labelPullTime14.Location = new System.Drawing.Point(360, 359);
-            this.labelPullTime14.Name = "labelPullTime14";
-            this.labelPullTime14.Size = new System.Drawing.Size(95, 46);
-            this.labelPullTime14.TabIndex = 76;
-            this.labelPullTime14.Text = "time";
-            this.labelPullTime14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelPullTime14.Visible = false;
-            // 
-            // labelPullTime15
-            // 
-            this.labelPullTime15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullTime15.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullTime15.ForeColor = System.Drawing.Color.White;
-            this.labelPullTime15.Location = new System.Drawing.Point(368, 367);
-            this.labelPullTime15.Name = "labelPullTime15";
-            this.labelPullTime15.Size = new System.Drawing.Size(95, 46);
-            this.labelPullTime15.TabIndex = 77;
-            this.labelPullTime15.Text = "time";
-            this.labelPullTime15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelPullTime15.Visible = false;
-            // 
-            // labelPullTime16
-            // 
-            this.labelPullTime16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullTime16.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullTime16.ForeColor = System.Drawing.Color.White;
-            this.labelPullTime16.Location = new System.Drawing.Point(376, 375);
-            this.labelPullTime16.Name = "labelPullTime16";
-            this.labelPullTime16.Size = new System.Drawing.Size(95, 46);
-            this.labelPullTime16.TabIndex = 78;
-            this.labelPullTime16.Text = "time";
-            this.labelPullTime16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelPullTime16.Visible = false;
-            // 
-            // labelPullTime17
-            // 
-            this.labelPullTime17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullTime17.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullTime17.ForeColor = System.Drawing.Color.White;
-            this.labelPullTime17.Location = new System.Drawing.Point(384, 383);
-            this.labelPullTime17.Name = "labelPullTime17";
-            this.labelPullTime17.Size = new System.Drawing.Size(95, 46);
-            this.labelPullTime17.TabIndex = 79;
-            this.labelPullTime17.Text = "time";
-            this.labelPullTime17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelPullTime17.Visible = false;
-            // 
-            // labelPullTime18
-            // 
-            this.labelPullTime18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullTime18.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullTime18.ForeColor = System.Drawing.Color.White;
-            this.labelPullTime18.Location = new System.Drawing.Point(392, 391);
-            this.labelPullTime18.Name = "labelPullTime18";
-            this.labelPullTime18.Size = new System.Drawing.Size(95, 46);
-            this.labelPullTime18.TabIndex = 80;
-            this.labelPullTime18.Text = "time";
-            this.labelPullTime18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelPullTime18.Visible = false;
-            // 
-            // labelPullTime19
-            // 
-            this.labelPullTime19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullTime19.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullTime19.ForeColor = System.Drawing.Color.White;
-            this.labelPullTime19.Location = new System.Drawing.Point(400, 399);
-            this.labelPullTime19.Name = "labelPullTime19";
-            this.labelPullTime19.Size = new System.Drawing.Size(95, 46);
-            this.labelPullTime19.TabIndex = 81;
-            this.labelPullTime19.Text = "time";
-            this.labelPullTime19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelPullTime19.Visible = false;
-            // 
-            // labelPullTime20
-            // 
-            this.labelPullTime20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPullTime20.Font = new System.Drawing.Font("Journal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPullTime20.ForeColor = System.Drawing.Color.White;
-            this.labelPullTime20.Location = new System.Drawing.Point(408, 407);
-            this.labelPullTime20.Name = "labelPullTime20";
-            this.labelPullTime20.Size = new System.Drawing.Size(95, 46);
-            this.labelPullTime20.TabIndex = 82;
-            this.labelPullTime20.Text = "time";
-            this.labelPullTime20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelPullTime20.Visible = false;
+            this.panelSyncCheck.Controls.Add(this.panelSyncCheckCenter);
+            this.panelSyncCheck.Location = new System.Drawing.Point(0, 65);
+            this.panelSyncCheck.Name = "panelSyncCheck";
+            this.panelSyncCheck.Size = new System.Drawing.Size(951, 560);
+            this.panelSyncCheck.TabIndex = 3;
+            this.panelSyncCheck.Visible = false;
+            // 
+            // panelSyncCheckCenter
+            // 
+            this.panelSyncCheckCenter.Controls.Add(this.labelSizeOfData2);
+            this.panelSyncCheckCenter.Controls.Add(this.labelSizeOfData1);
+            this.panelSyncCheckCenter.Controls.Add(this.buttonSyncFromPC);
+            this.panelSyncCheckCenter.Controls.Add(this.buttonSyncFromServer);
+            this.panelSyncCheckCenter.Controls.Add(this.labelSyncCheckTitle);
+            this.panelSyncCheckCenter.Controls.Add(this.labelSyncCheckSubTitle);
+            this.panelSyncCheckCenter.Location = new System.Drawing.Point(224, 114);
+            this.panelSyncCheckCenter.Name = "panelSyncCheckCenter";
+            this.panelSyncCheckCenter.Size = new System.Drawing.Size(508, 356);
+            this.panelSyncCheckCenter.TabIndex = 0;
+            // 
+            // labelSyncCheckSubTitle
+            // 
+            this.labelSyncCheckSubTitle.AutoSize = true;
+            this.labelSyncCheckSubTitle.Font = new System.Drawing.Font("Journal", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSyncCheckSubTitle.ForeColor = System.Drawing.Color.White;
+            this.labelSyncCheckSubTitle.Location = new System.Drawing.Point(30, 31);
+            this.labelSyncCheckSubTitle.Name = "labelSyncCheckSubTitle";
+            this.labelSyncCheckSubTitle.Size = new System.Drawing.Size(328, 49);
+            this.labelSyncCheckSubTitle.TabIndex = 1;
+            this.labelSyncCheckSubTitle.Text = "Which one do you want to keep?\r\n";
+            // 
+            // labelSyncCheckTitle
+            // 
+            this.labelSyncCheckTitle.AutoSize = true;
+            this.labelSyncCheckTitle.Font = new System.Drawing.Font("Journal", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSyncCheckTitle.ForeColor = System.Drawing.Color.White;
+            this.labelSyncCheckTitle.Location = new System.Drawing.Point(30, -1);
+            this.labelSyncCheckTitle.Name = "labelSyncCheckTitle";
+            this.labelSyncCheckTitle.Size = new System.Drawing.Size(334, 43);
+            this.labelSyncCheckTitle.TabIndex = 0;
+            this.labelSyncCheckTitle.Text = "Local profile doesn\'t match with server. ";
+            // 
+            // buttonSyncFromPC
+            // 
+            this.buttonSyncFromPC.BackgroundImage = global::LifeCalendar.Properties.Resources.this_pc;
+            this.buttonSyncFromPC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonSyncFromPC.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonSyncFromPC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSyncFromPC.Location = new System.Drawing.Point(274, 103);
+            this.buttonSyncFromPC.Name = "buttonSyncFromPC";
+            this.buttonSyncFromPC.Size = new System.Drawing.Size(188, 180);
+            this.buttonSyncFromPC.TabIndex = 3;
+            this.buttonSyncFromPC.UseVisualStyleBackColor = true;
+            // 
+            // buttonSyncFromServer
+            // 
+            this.buttonSyncFromServer.BackgroundImage = global::LifeCalendar.Properties.Resources.server;
+            this.buttonSyncFromServer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonSyncFromServer.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonSyncFromServer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSyncFromServer.Location = new System.Drawing.Point(46, 103);
+            this.buttonSyncFromServer.Name = "buttonSyncFromServer";
+            this.buttonSyncFromServer.Size = new System.Drawing.Size(188, 180);
+            this.buttonSyncFromServer.TabIndex = 2;
+            this.buttonSyncFromServer.UseVisualStyleBackColor = true;
+            // 
+            // buttonSent
+            // 
+            this.buttonSent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.buttonSent.FlatAppearance.BorderSize = 0;
+            this.buttonSent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSent.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSent.ForeColor = System.Drawing.Color.White;
+            this.buttonSent.Image = ((System.Drawing.Image)(resources.GetObject("buttonSent.Image")));
+            this.buttonSent.Location = new System.Drawing.Point(6, 231);
+            this.buttonSent.Name = "buttonSent";
+            this.buttonSent.Size = new System.Drawing.Size(131, 32);
+            this.buttonSent.TabIndex = 4;
+            this.buttonSent.UseVisualStyleBackColor = false;
+            this.buttonSent.Click += new System.EventHandler(this.buttonSent_Click);
+            // 
+            // buttonPullRefresh
+            // 
+            this.buttonPullRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonPullRefresh.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonPullRefresh.BackgroundImage")));
+            this.buttonPullRefresh.FlatAppearance.BorderSize = 0;
+            this.buttonPullRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPullRefresh.Location = new System.Drawing.Point(467, 13);
+            this.buttonPullRefresh.Name = "buttonPullRefresh";
+            this.buttonPullRefresh.Size = new System.Drawing.Size(98, 27);
+            this.buttonPullRefresh.TabIndex = 22;
+            this.buttonPullRefresh.UseVisualStyleBackColor = true;
+            this.buttonPullRefresh.Click += new System.EventHandler(this.buttonPullRefresh_Click);
+            // 
+            // button6
+            // 
+            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.Location = new System.Drawing.Point(516, 505);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(80, 32);
+            this.button6.TabIndex = 5;
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click_1);
+            // 
+            // buttonReceive
+            // 
+            this.buttonReceive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.buttonReceive.FlatAppearance.BorderSize = 0;
+            this.buttonReceive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonReceive.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonReceive.ForeColor = System.Drawing.Color.White;
+            this.buttonReceive.Image = ((System.Drawing.Image)(resources.GetObject("buttonReceive.Image")));
+            this.buttonReceive.Location = new System.Drawing.Point(6, 140);
+            this.buttonReceive.Name = "buttonReceive";
+            this.buttonReceive.Size = new System.Drawing.Size(131, 32);
+            this.buttonReceive.TabIndex = 2;
+            this.buttonReceive.UseVisualStyleBackColor = false;
+            this.buttonReceive.Click += new System.EventHandler(this.buttonReceive_Click);
+            // 
+            // buttonCompose
+            // 
+            this.buttonCompose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.buttonCompose.FlatAppearance.BorderSize = 0;
+            this.buttonCompose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCompose.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCompose.ForeColor = System.Drawing.Color.White;
+            this.buttonCompose.Image = ((System.Drawing.Image)(resources.GetObject("buttonCompose.Image")));
+            this.buttonCompose.Location = new System.Drawing.Point(6, 100);
+            this.buttonCompose.Name = "buttonCompose";
+            this.buttonCompose.Size = new System.Drawing.Size(131, 32);
+            this.buttonCompose.TabIndex = 1;
+            this.buttonCompose.UseVisualStyleBackColor = false;
+            this.buttonCompose.Click += new System.EventHandler(this.buttonCompose_Click);
+            // 
+            // buttonPullLetters
+            // 
+            this.buttonPullLetters.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.buttonPullLetters.FlatAppearance.BorderSize = 0;
+            this.buttonPullLetters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPullLetters.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPullLetters.ForeColor = System.Drawing.Color.White;
+            this.buttonPullLetters.Image = ((System.Drawing.Image)(resources.GetObject("buttonPullLetters.Image")));
+            this.buttonPullLetters.Location = new System.Drawing.Point(6, 60);
+            this.buttonPullLetters.Name = "buttonPullLetters";
+            this.buttonPullLetters.Size = new System.Drawing.Size(131, 32);
+            this.buttonPullLetters.TabIndex = 0;
+            this.buttonPullLetters.UseVisualStyleBackColor = false;
+            this.buttonPullLetters.Click += new System.EventHandler(this.buttonPullLetters_Click);
+            // 
+            // panelFloatDesktop
+            // 
+            this.panelFloatDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.panelFloatDesktop.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelFloatDesktop.BackgroundImage")));
+            this.panelFloatDesktop.Location = new System.Drawing.Point(3, 57);
+            this.panelFloatDesktop.Name = "panelFloatDesktop";
+            this.panelFloatDesktop.Size = new System.Drawing.Size(208, 142);
+            this.panelFloatDesktop.TabIndex = 15;
+            this.panelFloatDesktop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelFloatDesktop_MouseDown);
+            // 
+            // buttonScale
+            // 
+            this.buttonScale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonScale.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
+            this.buttonScale.FlatAppearance.BorderSize = 0;
+            this.buttonScale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonScale.Image = ((System.Drawing.Image)(resources.GetObject("buttonScale.Image")));
+            this.buttonScale.Location = new System.Drawing.Point(635, 470);
+            this.buttonScale.Name = "buttonScale";
+            this.buttonScale.Size = new System.Drawing.Size(42, 42);
+            this.buttonScale.TabIndex = 0;
+            this.buttonScale.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.Black;
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.Location = new System.Drawing.Point(19, 249);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(240, 40);
+            this.button5.TabIndex = 8;
+            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // buttonLogin
+            // 
+            this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
+            this.buttonLogin.FlatAppearance.BorderSize = 0;
+            this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLogin.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogin.ForeColor = System.Drawing.Color.Black;
+            this.buttonLogin.Image = ((System.Drawing.Image)(resources.GetObject("buttonLogin.Image")));
+            this.buttonLogin.Location = new System.Drawing.Point(19, 197);
+            this.buttonLogin.Name = "buttonLogin";
+            this.buttonLogin.Size = new System.Drawing.Size(240, 40);
+            this.buttonLogin.TabIndex = 7;
+            this.buttonLogin.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonLogin.UseVisualStyleBackColor = false;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
+            // 
+            // pictureBoxPassword
+            // 
+            this.pictureBoxPassword.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxPassword.Image")));
+            this.pictureBoxPassword.Location = new System.Drawing.Point(19, 158);
+            this.pictureBoxPassword.Name = "pictureBoxPassword";
+            this.pictureBoxPassword.Size = new System.Drawing.Size(24, 18);
+            this.pictureBoxPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxPassword.TabIndex = 2;
+            this.pictureBoxPassword.TabStop = false;
+            // 
+            // pictureBoxMail
+            // 
+            this.pictureBoxMail.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMail.Image")));
+            this.pictureBoxMail.Location = new System.Drawing.Point(19, 116);
+            this.pictureBoxMail.Name = "pictureBoxMail";
+            this.pictureBoxMail.Size = new System.Drawing.Size(24, 18);
+            this.pictureBoxMail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxMail.TabIndex = 1;
+            this.pictureBoxMail.TabStop = false;
+            // 
+            // button4
+            // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.Location = new System.Drawing.Point(0, 571);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(202, 54);
+            this.button4.TabIndex = 4;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(0, 265);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(202, 54);
+            this.button3.TabIndex = 3;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(0, 204);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(202, 54);
+            this.button2.TabIndex = 2;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(0, 143);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(202, 54);
+            this.button1.TabIndex = 1;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.Image")));
+            this.pictureBoxLogo.Location = new System.Drawing.Point(12, 11);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(180, 40);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxLogo.TabIndex = 0;
+            this.pictureBoxLogo.TabStop = false;
+            this.pictureBoxLogo.Click += new System.EventHandler(this.pictureBoxLogo_Click);
+            // 
+            // labelSizeOfData1
+            // 
+            this.labelSizeOfData1.Font = new System.Drawing.Font("Journal", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSizeOfData1.ForeColor = System.Drawing.Color.White;
+            this.labelSizeOfData1.Location = new System.Drawing.Point(48, 299);
+            this.labelSizeOfData1.Name = "labelSizeOfData1";
+            this.labelSizeOfData1.Size = new System.Drawing.Size(186, 43);
+            this.labelSizeOfData1.TabIndex = 4;
+            this.labelSizeOfData1.Text = "SizeOfData: ";
+            this.labelSizeOfData1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelSizeOfData2
+            // 
+            this.labelSizeOfData2.Font = new System.Drawing.Font("Journal", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSizeOfData2.ForeColor = System.Drawing.Color.White;
+            this.labelSizeOfData2.Location = new System.Drawing.Point(277, 299);
+            this.labelSizeOfData2.Name = "labelSizeOfData2";
+            this.labelSizeOfData2.Size = new System.Drawing.Size(185, 43);
+            this.labelSizeOfData2.TabIndex = 5;
+            this.labelSizeOfData2.Text = "SizeOfData: ";
+            this.labelSizeOfData2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -2527,6 +2630,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(951, 625);
+            this.Controls.Add(this.panelSyncCheck);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panelMenu);
@@ -2542,7 +2646,6 @@
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panelWeeklyRow.ResumeLayout(false);
             this.panelWeeklyRow.PerformLayout();
             this.panelTitle.ResumeLayout(false);
@@ -2568,8 +2671,12 @@
             this.panelPersonal.ResumeLayout(false);
             this.panelLogin.ResumeLayout(false);
             this.panelLogin.PerformLayout();
+            this.panelSyncCheck.ResumeLayout(false);
+            this.panelSyncCheckCenter.ResumeLayout(false);
+            this.panelSyncCheckCenter.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPassword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2762,6 +2869,14 @@
         private System.Windows.Forms.Label labelPullTime3;
         private System.Windows.Forms.Label labelPullTime2;
         private System.Windows.Forms.Label labelPullTime1;
+        private System.Windows.Forms.Panel panelSyncCheck;
+        private System.Windows.Forms.Panel panelSyncCheckCenter;
+        private System.Windows.Forms.Label labelSyncCheckSubTitle;
+        private System.Windows.Forms.Label labelSyncCheckTitle;
+        private System.Windows.Forms.Button buttonSyncFromPC;
+        private System.Windows.Forms.Button buttonSyncFromServer;
+        private System.Windows.Forms.Label labelSizeOfData2;
+        private System.Windows.Forms.Label labelSizeOfData1;
     }
 }
 
