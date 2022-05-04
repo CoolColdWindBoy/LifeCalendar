@@ -31,8 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelBtnBack = new System.Windows.Forms.Panel();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panelWeeklyRow = new System.Windows.Forms.Panel();
             this.labelRow100 = new System.Windows.Forms.Label();
             this.labelRow95 = new System.Windows.Forms.Label();
@@ -67,6 +72,7 @@
             this.buttonShut = new System.Windows.Forms.Button();
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.panelLetters = new System.Windows.Forms.Panel();
+            this.buttonSent = new System.Windows.Forms.Button();
             this.panelLettersDesktop = new System.Windows.Forms.Panel();
             this.panelPull = new System.Windows.Forms.Panel();
             this.labelPullTime20 = new System.Windows.Forms.Label();
@@ -129,6 +135,7 @@
             this.labelPullHeading3 = new System.Windows.Forms.Label();
             this.labelPullHeading2 = new System.Windows.Forms.Label();
             this.labelPullHeading1 = new System.Windows.Forms.Label();
+            this.buttonPullRefresh = new System.Windows.Forms.Button();
             this.panelPull20 = new System.Windows.Forms.Panel();
             this.panelPull19 = new System.Windows.Forms.Panel();
             this.panelPull18 = new System.Windows.Forms.Panel();
@@ -151,6 +158,7 @@
             this.panelPull1 = new System.Windows.Forms.Panel();
             this.flowLayoutPanelPull = new System.Windows.Forms.FlowLayoutPanel();
             this.panelCompose = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
             this.textBoxComposeContent = new System.Windows.Forms.TextBox();
             this.labelComposeContentCount = new System.Windows.Forms.Label();
             this.labelComposeContent = new System.Windows.Forms.Label();
@@ -158,9 +166,13 @@
             this.panelComposeTitle = new System.Windows.Forms.Panel();
             this.labelComposeTitle = new System.Windows.Forms.Label();
             this.textBoxComposeTitle = new System.Windows.Forms.TextBox();
+            this.buttonReceive = new System.Windows.Forms.Button();
+            this.buttonCompose = new System.Windows.Forms.Button();
+            this.buttonPullLetters = new System.Windows.Forms.Button();
             this.panelWeekly = new System.Windows.Forms.Panel();
             this.panelFloat = new System.Windows.Forms.Panel();
             this.labelYear = new System.Windows.Forms.Label();
+            this.panelFloatDesktop = new System.Windows.Forms.Panel();
             this.panelDate7 = new System.Windows.Forms.Panel();
             this.labelDate7 = new System.Windows.Forms.Label();
             this.panelDate6 = new System.Windows.Forms.Panel();
@@ -177,6 +189,7 @@
             this.labelDate1 = new System.Windows.Forms.Label();
             this.labelMonth2 = new System.Windows.Forms.Label();
             this.labelMonth1 = new System.Windows.Forms.Label();
+            this.buttonScale = new System.Windows.Forms.Button();
             this.panelWeeklyColumn = new System.Windows.Forms.Panel();
             this.labelColumn50 = new System.Windows.Forms.Label();
             this.labelColumn45 = new System.Windows.Forms.Label();
@@ -190,42 +203,32 @@
             this.labelColumn5 = new System.Windows.Forms.Label();
             this.panelPersonal = new System.Windows.Forms.Panel();
             this.panelLogin = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.labelLoginErr = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.buttonLogin = new System.Windows.Forms.Button();
             this.panelPassword = new System.Windows.Forms.Panel();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.panelMail = new System.Windows.Forms.Panel();
             this.textBoxMail = new System.Windows.Forms.TextBox();
+            this.pictureBoxPassword = new System.Windows.Forms.PictureBox();
+            this.pictureBoxMail = new System.Windows.Forms.PictureBox();
             this.labelLogin = new System.Windows.Forms.Label();
             this.timerFormSize = new System.Windows.Forms.Timer(this.components);
             this.timerSelectedColor = new System.Windows.Forms.Timer(this.components);
             this.panelSyncCheck = new System.Windows.Forms.Panel();
             this.panelSyncCheckCenter = new System.Windows.Forms.Panel();
-            this.labelSyncCheckSubTitle = new System.Windows.Forms.Label();
-            this.labelSyncCheckTitle = new System.Windows.Forms.Label();
+            this.labelSizeOfData2 = new System.Windows.Forms.Label();
+            this.labelSizeOfData1 = new System.Windows.Forms.Label();
             this.buttonSyncFromPC = new System.Windows.Forms.Button();
             this.buttonSyncFromServer = new System.Windows.Forms.Button();
-            this.buttonSent = new System.Windows.Forms.Button();
-            this.buttonPullRefresh = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.buttonReceive = new System.Windows.Forms.Button();
-            this.buttonCompose = new System.Windows.Forms.Button();
-            this.buttonPullLetters = new System.Windows.Forms.Button();
-            this.panelFloatDesktop = new System.Windows.Forms.Panel();
-            this.buttonScale = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.buttonLogin = new System.Windows.Forms.Button();
-            this.pictureBoxPassword = new System.Windows.Forms.PictureBox();
-            this.pictureBoxMail = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
-            this.labelSizeOfData1 = new System.Windows.Forms.Label();
-            this.labelSizeOfData2 = new System.Windows.Forms.Label();
+            this.labelSyncCheckTitle = new System.Windows.Forms.Label();
+            this.labelSyncCheckSubTitle = new System.Windows.Forms.Label();
+            this.labelDataTime1 = new System.Windows.Forms.Label();
+            this.labelDataTime2 = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.panelWeeklyRow.SuspendLayout();
             this.panelTitle.SuspendLayout();
             this.panelDesktop.SuspendLayout();
@@ -245,11 +248,10 @@
             this.panelWeeklyColumn.SuspendLayout();
             this.panelPersonal.SuspendLayout();
             this.panelLogin.SuspendLayout();
-            this.panelSyncCheck.SuspendLayout();
-            this.panelSyncCheckCenter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            this.panelSyncCheck.SuspendLayout();
+            this.panelSyncCheckCenter.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -267,6 +269,55 @@
             this.panelMenu.Size = new System.Drawing.Size(202, 625);
             this.panelMenu.TabIndex = 0;
             // 
+            // button4
+            // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.Location = new System.Drawing.Point(0, 571);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(202, 54);
+            this.button4.TabIndex = 4;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(0, 265);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(202, 54);
+            this.button3.TabIndex = 3;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(0, 204);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(202, 54);
+            this.button2.TabIndex = 2;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(0, 143);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(202, 54);
+            this.button1.TabIndex = 1;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // panelBtnBack
             // 
             this.panelBtnBack.Location = new System.Drawing.Point(0, 71);
@@ -283,6 +334,17 @@
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(202, 65);
             this.panelLogo.TabIndex = 0;
+            // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.Image")));
+            this.pictureBoxLogo.Location = new System.Drawing.Point(12, 11);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(180, 40);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxLogo.TabIndex = 0;
+            this.pictureBoxLogo.TabStop = false;
+            this.pictureBoxLogo.Click += new System.EventHandler(this.pictureBoxLogo_Click);
             // 
             // panelWeeklyRow
             // 
@@ -568,6 +630,7 @@
             this.labelTest.Size = new System.Drawing.Size(19, 14);
             this.labelTest.TabIndex = 5;
             this.labelTest.Text = "100";
+            this.labelTest.Visible = false;
             // 
             // labelVer
             // 
@@ -576,9 +639,9 @@
             this.labelVer.ForeColor = System.Drawing.Color.White;
             this.labelVer.Location = new System.Drawing.Point(206, 27);
             this.labelVer.Name = "labelVer";
-            this.labelVer.Size = new System.Drawing.Size(58, 28);
+            this.labelVer.Size = new System.Drawing.Size(48, 28);
             this.labelVer.TabIndex = 4;
-            this.labelVer.Text = "2022v1";
+            this.labelVer.Text = "2022";
             this.labelVer.Click += new System.EventHandler(this.labelVer_Click);
             this.labelVer.MouseDown += new System.Windows.Forms.MouseEventHandler(this.labelVer_MouseDown);
             // 
@@ -663,6 +726,21 @@
             this.panelLetters.Size = new System.Drawing.Size(749, 557);
             this.panelLetters.TabIndex = 3;
             this.panelLetters.Visible = false;
+            // 
+            // buttonSent
+            // 
+            this.buttonSent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.buttonSent.FlatAppearance.BorderSize = 0;
+            this.buttonSent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSent.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSent.ForeColor = System.Drawing.Color.White;
+            this.buttonSent.Image = ((System.Drawing.Image)(resources.GetObject("buttonSent.Image")));
+            this.buttonSent.Location = new System.Drawing.Point(6, 231);
+            this.buttonSent.Name = "buttonSent";
+            this.buttonSent.Size = new System.Drawing.Size(131, 32);
+            this.buttonSent.TabIndex = 4;
+            this.buttonSent.UseVisualStyleBackColor = false;
+            this.buttonSent.Click += new System.EventHandler(this.buttonSent_Click);
             // 
             // panelLettersDesktop
             // 
@@ -1551,6 +1629,19 @@
             this.labelPullHeading1.Text = "Heading";
             this.labelPullHeading1.Visible = false;
             // 
+            // buttonPullRefresh
+            // 
+            this.buttonPullRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonPullRefresh.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonPullRefresh.BackgroundImage")));
+            this.buttonPullRefresh.FlatAppearance.BorderSize = 0;
+            this.buttonPullRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPullRefresh.Location = new System.Drawing.Point(467, 13);
+            this.buttonPullRefresh.Name = "buttonPullRefresh";
+            this.buttonPullRefresh.Size = new System.Drawing.Size(98, 27);
+            this.buttonPullRefresh.TabIndex = 22;
+            this.buttonPullRefresh.UseVisualStyleBackColor = true;
+            this.buttonPullRefresh.Click += new System.EventHandler(this.buttonPullRefresh_Click);
+            // 
             // panelPull20
             // 
             this.panelPull20.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -1765,6 +1856,21 @@
             this.panelCompose.TabIndex = 0;
             this.panelCompose.Visible = false;
             // 
+            // button6
+            // 
+            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.Location = new System.Drawing.Point(516, 505);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(80, 32);
+            this.button6.TabIndex = 5;
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click_1);
+            // 
             // textBoxComposeContent
             // 
             this.textBoxComposeContent.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -1853,6 +1959,51 @@
             this.textBoxComposeTitle.TabIndex = 0;
             this.textBoxComposeTitle.TextChanged += new System.EventHandler(this.textBoxComposeTitle_TextChanged);
             // 
+            // buttonReceive
+            // 
+            this.buttonReceive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.buttonReceive.FlatAppearance.BorderSize = 0;
+            this.buttonReceive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonReceive.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonReceive.ForeColor = System.Drawing.Color.White;
+            this.buttonReceive.Image = ((System.Drawing.Image)(resources.GetObject("buttonReceive.Image")));
+            this.buttonReceive.Location = new System.Drawing.Point(6, 140);
+            this.buttonReceive.Name = "buttonReceive";
+            this.buttonReceive.Size = new System.Drawing.Size(131, 32);
+            this.buttonReceive.TabIndex = 2;
+            this.buttonReceive.UseVisualStyleBackColor = false;
+            this.buttonReceive.Click += new System.EventHandler(this.buttonReceive_Click);
+            // 
+            // buttonCompose
+            // 
+            this.buttonCompose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.buttonCompose.FlatAppearance.BorderSize = 0;
+            this.buttonCompose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCompose.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCompose.ForeColor = System.Drawing.Color.White;
+            this.buttonCompose.Image = ((System.Drawing.Image)(resources.GetObject("buttonCompose.Image")));
+            this.buttonCompose.Location = new System.Drawing.Point(6, 100);
+            this.buttonCompose.Name = "buttonCompose";
+            this.buttonCompose.Size = new System.Drawing.Size(131, 32);
+            this.buttonCompose.TabIndex = 1;
+            this.buttonCompose.UseVisualStyleBackColor = false;
+            this.buttonCompose.Click += new System.EventHandler(this.buttonCompose_Click);
+            // 
+            // buttonPullLetters
+            // 
+            this.buttonPullLetters.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.buttonPullLetters.FlatAppearance.BorderSize = 0;
+            this.buttonPullLetters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPullLetters.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPullLetters.ForeColor = System.Drawing.Color.White;
+            this.buttonPullLetters.Image = ((System.Drawing.Image)(resources.GetObject("buttonPullLetters.Image")));
+            this.buttonPullLetters.Location = new System.Drawing.Point(6, 60);
+            this.buttonPullLetters.Name = "buttonPullLetters";
+            this.buttonPullLetters.Size = new System.Drawing.Size(131, 32);
+            this.buttonPullLetters.TabIndex = 0;
+            this.buttonPullLetters.UseVisualStyleBackColor = false;
+            this.buttonPullLetters.Click += new System.EventHandler(this.buttonPullLetters_Click);
+            // 
             // panelWeekly
             // 
             this.panelWeekly.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -1899,6 +2050,16 @@
             this.labelYear.TabIndex = 16;
             this.labelYear.Text = "0000-0000";
             this.labelYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelFloatDesktop
+            // 
+            this.panelFloatDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.panelFloatDesktop.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelFloatDesktop.BackgroundImage")));
+            this.panelFloatDesktop.Location = new System.Drawing.Point(3, 57);
+            this.panelFloatDesktop.Name = "panelFloatDesktop";
+            this.panelFloatDesktop.Size = new System.Drawing.Size(208, 142);
+            this.panelFloatDesktop.TabIndex = 15;
+            this.panelFloatDesktop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelFloatDesktop_MouseDown);
             // 
             // panelDate7
             // 
@@ -2069,6 +2230,19 @@
             this.labelMonth1.TabIndex = 5;
             this.labelMonth1.Text = "April";
             // 
+            // buttonScale
+            // 
+            this.buttonScale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonScale.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
+            this.buttonScale.FlatAppearance.BorderSize = 0;
+            this.buttonScale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonScale.Image = ((System.Drawing.Image)(resources.GetObject("buttonScale.Image")));
+            this.buttonScale.Location = new System.Drawing.Point(635, 470);
+            this.buttonScale.Name = "buttonScale";
+            this.buttonScale.Size = new System.Drawing.Size(42, 42);
+            this.buttonScale.TabIndex = 0;
+            this.buttonScale.UseVisualStyleBackColor = false;
+            // 
             // panelWeeklyColumn
             // 
             this.panelWeeklyColumn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
@@ -2212,6 +2386,21 @@
             this.panelLogin.TabIndex = 0;
             this.panelLogin.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogin_Paint);
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.Black;
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.Location = new System.Drawing.Point(19, 249);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(240, 40);
+            this.button5.TabIndex = 8;
+            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button5.UseVisualStyleBackColor = false;
+            // 
             // labelLoginErr
             // 
             this.labelLoginErr.AutoSize = true;
@@ -2235,6 +2424,22 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "iForgot";
             this.linkLabel1.VisitedLinkColor = System.Drawing.Color.Gray;
+            // 
+            // buttonLogin
+            // 
+            this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
+            this.buttonLogin.FlatAppearance.BorderSize = 0;
+            this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLogin.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogin.ForeColor = System.Drawing.Color.Black;
+            this.buttonLogin.Image = ((System.Drawing.Image)(resources.GetObject("buttonLogin.Image")));
+            this.buttonLogin.Location = new System.Drawing.Point(19, 197);
+            this.buttonLogin.Name = "buttonLogin";
+            this.buttonLogin.Size = new System.Drawing.Size(240, 40);
+            this.buttonLogin.TabIndex = 7;
+            this.buttonLogin.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonLogin.UseVisualStyleBackColor = false;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // panelPassword
             // 
@@ -2286,6 +2491,26 @@
             this.textBoxMail.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxMail_KeyDown);
             this.textBoxMail.Leave += new System.EventHandler(this.textBoxMail_Leave);
             // 
+            // pictureBoxPassword
+            // 
+            this.pictureBoxPassword.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxPassword.Image")));
+            this.pictureBoxPassword.Location = new System.Drawing.Point(19, 158);
+            this.pictureBoxPassword.Name = "pictureBoxPassword";
+            this.pictureBoxPassword.Size = new System.Drawing.Size(24, 18);
+            this.pictureBoxPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxPassword.TabIndex = 2;
+            this.pictureBoxPassword.TabStop = false;
+            // 
+            // pictureBoxMail
+            // 
+            this.pictureBoxMail.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMail.Image")));
+            this.pictureBoxMail.Location = new System.Drawing.Point(19, 116);
+            this.pictureBoxMail.Name = "pictureBoxMail";
+            this.pictureBoxMail.Size = new System.Drawing.Size(24, 18);
+            this.pictureBoxMail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxMail.TabIndex = 1;
+            this.pictureBoxMail.TabStop = false;
+            // 
             // labelLogin
             // 
             this.labelLogin.Font = new System.Drawing.Font("Journal", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2323,10 +2548,12 @@
             // 
             // panelSyncCheckCenter
             // 
-            this.panelSyncCheckCenter.Controls.Add(this.labelSizeOfData2);
-            this.panelSyncCheckCenter.Controls.Add(this.labelSizeOfData1);
+            this.panelSyncCheckCenter.Controls.Add(this.labelDataTime2);
+            this.panelSyncCheckCenter.Controls.Add(this.labelDataTime1);
             this.panelSyncCheckCenter.Controls.Add(this.buttonSyncFromPC);
             this.panelSyncCheckCenter.Controls.Add(this.buttonSyncFromServer);
+            this.panelSyncCheckCenter.Controls.Add(this.labelSizeOfData2);
+            this.panelSyncCheckCenter.Controls.Add(this.labelSizeOfData1);
             this.panelSyncCheckCenter.Controls.Add(this.labelSyncCheckTitle);
             this.panelSyncCheckCenter.Controls.Add(this.labelSyncCheckSubTitle);
             this.panelSyncCheckCenter.Location = new System.Drawing.Point(224, 114);
@@ -2334,27 +2561,27 @@
             this.panelSyncCheckCenter.Size = new System.Drawing.Size(508, 356);
             this.panelSyncCheckCenter.TabIndex = 0;
             // 
-            // labelSyncCheckSubTitle
+            // labelSizeOfData2
             // 
-            this.labelSyncCheckSubTitle.AutoSize = true;
-            this.labelSyncCheckSubTitle.Font = new System.Drawing.Font("Journal", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSyncCheckSubTitle.ForeColor = System.Drawing.Color.White;
-            this.labelSyncCheckSubTitle.Location = new System.Drawing.Point(30, 31);
-            this.labelSyncCheckSubTitle.Name = "labelSyncCheckSubTitle";
-            this.labelSyncCheckSubTitle.Size = new System.Drawing.Size(328, 49);
-            this.labelSyncCheckSubTitle.TabIndex = 1;
-            this.labelSyncCheckSubTitle.Text = "Which one do you want to keep?\r\n";
+            this.labelSizeOfData2.Font = new System.Drawing.Font("Journal", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSizeOfData2.ForeColor = System.Drawing.Color.White;
+            this.labelSizeOfData2.Location = new System.Drawing.Point(271, 282);
+            this.labelSizeOfData2.Name = "labelSizeOfData2";
+            this.labelSizeOfData2.Size = new System.Drawing.Size(185, 43);
+            this.labelSizeOfData2.TabIndex = 5;
+            this.labelSizeOfData2.Text = "SizeOfData: ";
+            this.labelSizeOfData2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelSyncCheckTitle
+            // labelSizeOfData1
             // 
-            this.labelSyncCheckTitle.AutoSize = true;
-            this.labelSyncCheckTitle.Font = new System.Drawing.Font("Journal", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSyncCheckTitle.ForeColor = System.Drawing.Color.White;
-            this.labelSyncCheckTitle.Location = new System.Drawing.Point(30, -1);
-            this.labelSyncCheckTitle.Name = "labelSyncCheckTitle";
-            this.labelSyncCheckTitle.Size = new System.Drawing.Size(334, 43);
-            this.labelSyncCheckTitle.TabIndex = 0;
-            this.labelSyncCheckTitle.Text = "Local profile doesn\'t match with server. ";
+            this.labelSizeOfData1.Font = new System.Drawing.Font("Journal", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSizeOfData1.ForeColor = System.Drawing.Color.White;
+            this.labelSizeOfData1.Location = new System.Drawing.Point(47, 282);
+            this.labelSizeOfData1.Name = "labelSizeOfData1";
+            this.labelSizeOfData1.Size = new System.Drawing.Size(186, 43);
+            this.labelSizeOfData1.TabIndex = 4;
+            this.labelSizeOfData1.Text = "SizeOfData: ";
+            this.labelSizeOfData1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // buttonSyncFromPC
             // 
@@ -2380,249 +2607,51 @@
             this.buttonSyncFromServer.TabIndex = 2;
             this.buttonSyncFromServer.UseVisualStyleBackColor = true;
             // 
-            // buttonSent
+            // labelSyncCheckTitle
             // 
-            this.buttonSent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.buttonSent.FlatAppearance.BorderSize = 0;
-            this.buttonSent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSent.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSent.ForeColor = System.Drawing.Color.White;
-            this.buttonSent.Image = ((System.Drawing.Image)(resources.GetObject("buttonSent.Image")));
-            this.buttonSent.Location = new System.Drawing.Point(6, 231);
-            this.buttonSent.Name = "buttonSent";
-            this.buttonSent.Size = new System.Drawing.Size(131, 32);
-            this.buttonSent.TabIndex = 4;
-            this.buttonSent.UseVisualStyleBackColor = false;
-            this.buttonSent.Click += new System.EventHandler(this.buttonSent_Click);
+            this.labelSyncCheckTitle.AutoSize = true;
+            this.labelSyncCheckTitle.Font = new System.Drawing.Font("Journal", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSyncCheckTitle.ForeColor = System.Drawing.Color.White;
+            this.labelSyncCheckTitle.Location = new System.Drawing.Point(30, -1);
+            this.labelSyncCheckTitle.Name = "labelSyncCheckTitle";
+            this.labelSyncCheckTitle.Size = new System.Drawing.Size(334, 43);
+            this.labelSyncCheckTitle.TabIndex = 0;
+            this.labelSyncCheckTitle.Text = "Local profile doesn\'t match with server. ";
             // 
-            // buttonPullRefresh
+            // labelSyncCheckSubTitle
             // 
-            this.buttonPullRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonPullRefresh.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonPullRefresh.BackgroundImage")));
-            this.buttonPullRefresh.FlatAppearance.BorderSize = 0;
-            this.buttonPullRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPullRefresh.Location = new System.Drawing.Point(467, 13);
-            this.buttonPullRefresh.Name = "buttonPullRefresh";
-            this.buttonPullRefresh.Size = new System.Drawing.Size(98, 27);
-            this.buttonPullRefresh.TabIndex = 22;
-            this.buttonPullRefresh.UseVisualStyleBackColor = true;
-            this.buttonPullRefresh.Click += new System.EventHandler(this.buttonPullRefresh_Click);
+            this.labelSyncCheckSubTitle.AutoSize = true;
+            this.labelSyncCheckSubTitle.Font = new System.Drawing.Font("Journal", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSyncCheckSubTitle.ForeColor = System.Drawing.Color.White;
+            this.labelSyncCheckSubTitle.Location = new System.Drawing.Point(30, 31);
+            this.labelSyncCheckSubTitle.Name = "labelSyncCheckSubTitle";
+            this.labelSyncCheckSubTitle.Size = new System.Drawing.Size(328, 49);
+            this.labelSyncCheckSubTitle.TabIndex = 1;
+            this.labelSyncCheckSubTitle.Text = "Which one do you want to keep?\r\n";
             // 
-            // button6
+            // labelDataTime1
             // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(516, 505);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(80, 32);
-            this.button6.TabIndex = 5;
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click_1);
+            this.labelDataTime1.Font = new System.Drawing.Font("Journal", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDataTime1.ForeColor = System.Drawing.Color.White;
+            this.labelDataTime1.Location = new System.Drawing.Point(47, 316);
+            this.labelDataTime1.Name = "labelDataTime1";
+            this.labelDataTime1.Size = new System.Drawing.Size(186, 43);
+            this.labelDataTime1.TabIndex = 6;
+            this.labelDataTime1.Text = "DateTime";
+            this.labelDataTime1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDataTime1.Visible = false;
             // 
-            // buttonReceive
+            // labelDataTime2
             // 
-            this.buttonReceive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.buttonReceive.FlatAppearance.BorderSize = 0;
-            this.buttonReceive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonReceive.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonReceive.ForeColor = System.Drawing.Color.White;
-            this.buttonReceive.Image = ((System.Drawing.Image)(resources.GetObject("buttonReceive.Image")));
-            this.buttonReceive.Location = new System.Drawing.Point(6, 140);
-            this.buttonReceive.Name = "buttonReceive";
-            this.buttonReceive.Size = new System.Drawing.Size(131, 32);
-            this.buttonReceive.TabIndex = 2;
-            this.buttonReceive.UseVisualStyleBackColor = false;
-            this.buttonReceive.Click += new System.EventHandler(this.buttonReceive_Click);
-            // 
-            // buttonCompose
-            // 
-            this.buttonCompose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.buttonCompose.FlatAppearance.BorderSize = 0;
-            this.buttonCompose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCompose.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCompose.ForeColor = System.Drawing.Color.White;
-            this.buttonCompose.Image = ((System.Drawing.Image)(resources.GetObject("buttonCompose.Image")));
-            this.buttonCompose.Location = new System.Drawing.Point(6, 100);
-            this.buttonCompose.Name = "buttonCompose";
-            this.buttonCompose.Size = new System.Drawing.Size(131, 32);
-            this.buttonCompose.TabIndex = 1;
-            this.buttonCompose.UseVisualStyleBackColor = false;
-            this.buttonCompose.Click += new System.EventHandler(this.buttonCompose_Click);
-            // 
-            // buttonPullLetters
-            // 
-            this.buttonPullLetters.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.buttonPullLetters.FlatAppearance.BorderSize = 0;
-            this.buttonPullLetters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPullLetters.Font = new System.Drawing.Font("Journal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPullLetters.ForeColor = System.Drawing.Color.White;
-            this.buttonPullLetters.Image = ((System.Drawing.Image)(resources.GetObject("buttonPullLetters.Image")));
-            this.buttonPullLetters.Location = new System.Drawing.Point(6, 60);
-            this.buttonPullLetters.Name = "buttonPullLetters";
-            this.buttonPullLetters.Size = new System.Drawing.Size(131, 32);
-            this.buttonPullLetters.TabIndex = 0;
-            this.buttonPullLetters.UseVisualStyleBackColor = false;
-            this.buttonPullLetters.Click += new System.EventHandler(this.buttonPullLetters_Click);
-            // 
-            // panelFloatDesktop
-            // 
-            this.panelFloatDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.panelFloatDesktop.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelFloatDesktop.BackgroundImage")));
-            this.panelFloatDesktop.Location = new System.Drawing.Point(3, 57);
-            this.panelFloatDesktop.Name = "panelFloatDesktop";
-            this.panelFloatDesktop.Size = new System.Drawing.Size(208, 142);
-            this.panelFloatDesktop.TabIndex = 15;
-            this.panelFloatDesktop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelFloatDesktop_MouseDown);
-            // 
-            // buttonScale
-            // 
-            this.buttonScale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonScale.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
-            this.buttonScale.FlatAppearance.BorderSize = 0;
-            this.buttonScale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonScale.Image = ((System.Drawing.Image)(resources.GetObject("buttonScale.Image")));
-            this.buttonScale.Location = new System.Drawing.Point(635, 470);
-            this.buttonScale.Name = "buttonScale";
-            this.buttonScale.Size = new System.Drawing.Size(42, 42);
-            this.buttonScale.TabIndex = 0;
-            this.buttonScale.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(19, 249);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(240, 40);
-            this.button5.TabIndex = 8;
-            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // buttonLogin
-            // 
-            this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
-            this.buttonLogin.FlatAppearance.BorderSize = 0;
-            this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogin.Font = new System.Drawing.Font("Journal", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLogin.ForeColor = System.Drawing.Color.Black;
-            this.buttonLogin.Image = ((System.Drawing.Image)(resources.GetObject("buttonLogin.Image")));
-            this.buttonLogin.Location = new System.Drawing.Point(19, 197);
-            this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(240, 40);
-            this.buttonLogin.TabIndex = 7;
-            this.buttonLogin.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonLogin.UseVisualStyleBackColor = false;
-            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
-            // 
-            // pictureBoxPassword
-            // 
-            this.pictureBoxPassword.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxPassword.Image")));
-            this.pictureBoxPassword.Location = new System.Drawing.Point(19, 158);
-            this.pictureBoxPassword.Name = "pictureBoxPassword";
-            this.pictureBoxPassword.Size = new System.Drawing.Size(24, 18);
-            this.pictureBoxPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxPassword.TabIndex = 2;
-            this.pictureBoxPassword.TabStop = false;
-            // 
-            // pictureBoxMail
-            // 
-            this.pictureBoxMail.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMail.Image")));
-            this.pictureBoxMail.Location = new System.Drawing.Point(19, 116);
-            this.pictureBoxMail.Name = "pictureBoxMail";
-            this.pictureBoxMail.Size = new System.Drawing.Size(24, 18);
-            this.pictureBoxMail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxMail.TabIndex = 1;
-            this.pictureBoxMail.TabStop = false;
-            // 
-            // button4
-            // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(0, 571);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(202, 54);
-            this.button4.TabIndex = 4;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(0, 265);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(202, 54);
-            this.button3.TabIndex = 3;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(0, 204);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(202, 54);
-            this.button2.TabIndex = 2;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(0, 143);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(202, 54);
-            this.button1.TabIndex = 1;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.Image")));
-            this.pictureBoxLogo.Location = new System.Drawing.Point(12, 11);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(180, 40);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBoxLogo.TabIndex = 0;
-            this.pictureBoxLogo.TabStop = false;
-            this.pictureBoxLogo.Click += new System.EventHandler(this.pictureBoxLogo_Click);
-            // 
-            // labelSizeOfData1
-            // 
-            this.labelSizeOfData1.Font = new System.Drawing.Font("Journal", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSizeOfData1.ForeColor = System.Drawing.Color.White;
-            this.labelSizeOfData1.Location = new System.Drawing.Point(48, 299);
-            this.labelSizeOfData1.Name = "labelSizeOfData1";
-            this.labelSizeOfData1.Size = new System.Drawing.Size(186, 43);
-            this.labelSizeOfData1.TabIndex = 4;
-            this.labelSizeOfData1.Text = "SizeOfData: ";
-            this.labelSizeOfData1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelSizeOfData2
-            // 
-            this.labelSizeOfData2.Font = new System.Drawing.Font("Journal", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSizeOfData2.ForeColor = System.Drawing.Color.White;
-            this.labelSizeOfData2.Location = new System.Drawing.Point(277, 299);
-            this.labelSizeOfData2.Name = "labelSizeOfData2";
-            this.labelSizeOfData2.Size = new System.Drawing.Size(185, 43);
-            this.labelSizeOfData2.TabIndex = 5;
-            this.labelSizeOfData2.Text = "SizeOfData: ";
-            this.labelSizeOfData2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDataTime2.Font = new System.Drawing.Font("Journal", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDataTime2.ForeColor = System.Drawing.Color.White;
+            this.labelDataTime2.Location = new System.Drawing.Point(271, 316);
+            this.labelDataTime2.Name = "labelDataTime2";
+            this.labelDataTime2.Size = new System.Drawing.Size(186, 43);
+            this.labelDataTime2.TabIndex = 7;
+            this.labelDataTime2.Text = "DateTime";
+            this.labelDataTime2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDataTime2.Visible = false;
             // 
             // Form1
             // 
@@ -2646,6 +2675,7 @@
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panelWeeklyRow.ResumeLayout(false);
             this.panelWeeklyRow.PerformLayout();
             this.panelTitle.ResumeLayout(false);
@@ -2671,12 +2701,11 @@
             this.panelPersonal.ResumeLayout(false);
             this.panelLogin.ResumeLayout(false);
             this.panelLogin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPassword)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMail)).EndInit();
             this.panelSyncCheck.ResumeLayout(false);
             this.panelSyncCheckCenter.ResumeLayout(false);
             this.panelSyncCheckCenter.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPassword)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2877,6 +2906,8 @@
         private System.Windows.Forms.Button buttonSyncFromServer;
         private System.Windows.Forms.Label labelSizeOfData2;
         private System.Windows.Forms.Label labelSizeOfData1;
+        private System.Windows.Forms.Label labelDataTime2;
+        private System.Windows.Forms.Label labelDataTime1;
     }
 }
 

@@ -565,7 +565,7 @@ namespace LifeCalendar
                 panelPulls[i].Size=new Size(flowLayoutPanelPull.Size.Width-10,panelPulls[i].Size.Height);    
             }
             AdjustPull();
-            panelSyncCheckCenter.Location = new Point(panelSyncCheck.Width/2-panelSyncCheckCenter.Width-2, panelSyncCheck.Height / 2 - panelSyncCheckCenter.Height - 2);
+            panelSyncCheckCenter.Location = new Point(panelSyncCheck.Width/2-panelSyncCheckCenter.Width/2, panelSyncCheck.Height / 2 - panelSyncCheckCenter.Height / 2);
         }
         private void AdjustPull()
         {
@@ -2069,13 +2069,18 @@ namespace LifeCalendar
             }
             else if (jsonLocal == jsonServer)
             {
+                str = jsonLocal;
             }
             else
             {
+                panelSyncCheck.BackColor = Color.FromArgb(46, 51, 73);
+                var data1= JsonConvert.DeserializeObject<AlterWeekly>(jsonServer);
+                var data2= JsonConvert.DeserializeObject<AlterWeekly>(jsonLocal);
+                labelSizeOfData1.Text = "SizeOfData: "+data1.count;
+                labelSizeOfData2.Text = "SizeOfData: "+data2.count;
                 panelSyncCheck.Visible = true;
                 panelSyncCheck.BringToFront();
-                
-
+                panelSyncCheck.Invalidate();
                 return;
             }
 
@@ -2373,7 +2378,18 @@ namespace LifeCalendar
                 }
             }
             //initializing many controls for letter. 
-            
+            labelVer.Text = nowDate.Year.ToString() + ".";
+            if (nowDate.Month.ToString().Length == 1)
+            {
+                labelVer.Text += "0";
+            }
+            labelVer.Text += nowDate.Month.ToString() + ".";
+            if (nowDate.Day.ToString().Length == 1)
+            {
+                labelVer.Text += "0";
+            }
+            labelVer.Text += nowDate.Day.ToString() + " ";
+            labelVer.Text += nowDate.ToString("ddd");
         }
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
