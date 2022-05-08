@@ -218,14 +218,14 @@
             this.timerSelectedColor = new System.Windows.Forms.Timer(this.components);
             this.panelSyncCheck = new System.Windows.Forms.Panel();
             this.panelSyncCheckCenter = new System.Windows.Forms.Panel();
-            this.labelSizeOfData2 = new System.Windows.Forms.Label();
-            this.labelSizeOfData1 = new System.Windows.Forms.Label();
+            this.labelDataTime2 = new System.Windows.Forms.Label();
+            this.labelDataTime1 = new System.Windows.Forms.Label();
             this.buttonSyncFromPC = new System.Windows.Forms.Button();
             this.buttonSyncFromServer = new System.Windows.Forms.Button();
+            this.labelSizeOfData2 = new System.Windows.Forms.Label();
+            this.labelSizeOfData1 = new System.Windows.Forms.Label();
             this.labelSyncCheckTitle = new System.Windows.Forms.Label();
             this.labelSyncCheckSubTitle = new System.Windows.Forms.Label();
-            this.labelDataTime1 = new System.Windows.Forms.Label();
-            this.labelDataTime2 = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
@@ -596,7 +596,7 @@
             this.buttonTest3.Name = "buttonTest3";
             this.buttonTest3.Size = new System.Drawing.Size(75, 23);
             this.buttonTest3.TabIndex = 8;
-            this.buttonTest3.Text = "buttonTest3";
+            this.buttonTest3.Text = "load";
             this.buttonTest3.UseVisualStyleBackColor = true;
             this.buttonTest3.Click += new System.EventHandler(this.buttonTest3_Click);
             // 
@@ -606,7 +606,7 @@
             this.buttonTest2.Name = "buttonTest2";
             this.buttonTest2.Size = new System.Drawing.Size(75, 23);
             this.buttonTest2.TabIndex = 7;
-            this.buttonTest2.Text = "buttonTest";
+            this.buttonTest2.Text = "Save";
             this.buttonTest2.UseVisualStyleBackColor = true;
             this.buttonTest2.Click += new System.EventHandler(this.buttonTest2_Click);
             // 
@@ -2561,27 +2561,29 @@
             this.panelSyncCheckCenter.Size = new System.Drawing.Size(508, 356);
             this.panelSyncCheckCenter.TabIndex = 0;
             // 
-            // labelSizeOfData2
+            // labelDataTime2
             // 
-            this.labelSizeOfData2.Font = new System.Drawing.Font("Journal", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSizeOfData2.ForeColor = System.Drawing.Color.White;
-            this.labelSizeOfData2.Location = new System.Drawing.Point(271, 282);
-            this.labelSizeOfData2.Name = "labelSizeOfData2";
-            this.labelSizeOfData2.Size = new System.Drawing.Size(185, 43);
-            this.labelSizeOfData2.TabIndex = 5;
-            this.labelSizeOfData2.Text = "SizeOfData: ";
-            this.labelSizeOfData2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDataTime2.Font = new System.Drawing.Font("Journal", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDataTime2.ForeColor = System.Drawing.Color.White;
+            this.labelDataTime2.Location = new System.Drawing.Point(271, 316);
+            this.labelDataTime2.Name = "labelDataTime2";
+            this.labelDataTime2.Size = new System.Drawing.Size(186, 43);
+            this.labelDataTime2.TabIndex = 7;
+            this.labelDataTime2.Text = "DateTime";
+            this.labelDataTime2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDataTime2.Visible = false;
             // 
-            // labelSizeOfData1
+            // labelDataTime1
             // 
-            this.labelSizeOfData1.Font = new System.Drawing.Font("Journal", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSizeOfData1.ForeColor = System.Drawing.Color.White;
-            this.labelSizeOfData1.Location = new System.Drawing.Point(47, 282);
-            this.labelSizeOfData1.Name = "labelSizeOfData1";
-            this.labelSizeOfData1.Size = new System.Drawing.Size(186, 43);
-            this.labelSizeOfData1.TabIndex = 4;
-            this.labelSizeOfData1.Text = "SizeOfData: ";
-            this.labelSizeOfData1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDataTime1.Font = new System.Drawing.Font("Journal", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDataTime1.ForeColor = System.Drawing.Color.White;
+            this.labelDataTime1.Location = new System.Drawing.Point(47, 316);
+            this.labelDataTime1.Name = "labelDataTime1";
+            this.labelDataTime1.Size = new System.Drawing.Size(186, 43);
+            this.labelDataTime1.TabIndex = 6;
+            this.labelDataTime1.Text = "DateTime";
+            this.labelDataTime1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDataTime1.Visible = false;
             // 
             // buttonSyncFromPC
             // 
@@ -2607,6 +2609,28 @@
             this.buttonSyncFromServer.TabIndex = 2;
             this.buttonSyncFromServer.UseVisualStyleBackColor = true;
             // 
+            // labelSizeOfData2
+            // 
+            this.labelSizeOfData2.Font = new System.Drawing.Font("Journal", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSizeOfData2.ForeColor = System.Drawing.Color.White;
+            this.labelSizeOfData2.Location = new System.Drawing.Point(271, 282);
+            this.labelSizeOfData2.Name = "labelSizeOfData2";
+            this.labelSizeOfData2.Size = new System.Drawing.Size(185, 43);
+            this.labelSizeOfData2.TabIndex = 5;
+            this.labelSizeOfData2.Text = "SizeOfData: ";
+            this.labelSizeOfData2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelSizeOfData1
+            // 
+            this.labelSizeOfData1.Font = new System.Drawing.Font("Journal", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSizeOfData1.ForeColor = System.Drawing.Color.White;
+            this.labelSizeOfData1.Location = new System.Drawing.Point(47, 282);
+            this.labelSizeOfData1.Name = "labelSizeOfData1";
+            this.labelSizeOfData1.Size = new System.Drawing.Size(186, 43);
+            this.labelSizeOfData1.TabIndex = 4;
+            this.labelSizeOfData1.Text = "SizeOfData: ";
+            this.labelSizeOfData1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // labelSyncCheckTitle
             // 
             this.labelSyncCheckTitle.AutoSize = true;
@@ -2629,40 +2653,16 @@
             this.labelSyncCheckSubTitle.TabIndex = 1;
             this.labelSyncCheckSubTitle.Text = "Which one do you want to keep?\r\n";
             // 
-            // labelDataTime1
-            // 
-            this.labelDataTime1.Font = new System.Drawing.Font("Journal", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDataTime1.ForeColor = System.Drawing.Color.White;
-            this.labelDataTime1.Location = new System.Drawing.Point(47, 316);
-            this.labelDataTime1.Name = "labelDataTime1";
-            this.labelDataTime1.Size = new System.Drawing.Size(186, 43);
-            this.labelDataTime1.TabIndex = 6;
-            this.labelDataTime1.Text = "DateTime";
-            this.labelDataTime1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelDataTime1.Visible = false;
-            // 
-            // labelDataTime2
-            // 
-            this.labelDataTime2.Font = new System.Drawing.Font("Journal", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDataTime2.ForeColor = System.Drawing.Color.White;
-            this.labelDataTime2.Location = new System.Drawing.Point(271, 316);
-            this.labelDataTime2.Name = "labelDataTime2";
-            this.labelDataTime2.Size = new System.Drawing.Size(186, 43);
-            this.labelDataTime2.TabIndex = 7;
-            this.labelDataTime2.Text = "DateTime";
-            this.labelDataTime2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelDataTime2.Visible = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(951, 625);
-            this.Controls.Add(this.panelSyncCheck);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panelMenu);
+            this.Controls.Add(this.panelSyncCheck);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
