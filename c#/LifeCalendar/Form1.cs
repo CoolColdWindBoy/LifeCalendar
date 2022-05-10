@@ -433,6 +433,35 @@ namespace LifeCalendar
         }
         private void buttonShut_Click(object sender, EventArgs e)
         {
+            if(loginStatus == 0)
+            {
+                alterWeekly.count = alterCount;
+                string output = "";
+                if (alterCount >= 100)
+                {
+                    output = JsonConvert.SerializeObject(alterWeekly);
+                }
+                else
+                {
+                    for (int i = 0; i < alterCount; i++)
+                    {
+                        alterWeekly100.count = alterWeekly.count;
+                        alterWeekly100.id[i] = alterWeekly.id[i];
+                        alterWeekly100.X[i] = alterWeekly.X[i];
+                        alterWeekly100.Y[i] = alterWeekly.Y[i];
+                        alterWeekly100.color[i] = alterWeekly.color[i];
+                    }
+                    output = JsonConvert.SerializeObject(alterWeekly100);
+                }
+
+                Properties.Settings.Default.json = output;
+                Properties.Settings.Default.alterCount = alterCount;
+                Properties.Settings.Default.Save();
+            }
+            else
+            {
+
+            }
             Application.Exit();
         }
         private void panelTitle_Paint(object sender, PaintEventArgs e)
@@ -569,6 +598,10 @@ namespace LifeCalendar
         }
         private void AdjustPull()
         {
+            if(this.WindowState == FormWindowState.Minimized)
+            {
+                return;
+            }
             flowLayoutPanelPull.Controls.Clear();
             int k = 0;
             for(int i = 1; i <= 20; i++)
@@ -1291,6 +1324,10 @@ namespace LifeCalendar
         }
         private void saveWeekly()
         {
+            if(this.WindowState == FormWindowState.Minimized)
+            {
+                return;
+            }
             Bitmap controlBitMap = new Bitmap(panelWeekly.Width, panelWeekly.Height);
             Graphics g = Graphics.FromImage(controlBitMap);
             g.CopyFromScreen(pointAdd(PointToScreen(panelWeekly.Parent.Location), panelWeekly.Location), new Point(0, 0), panelWeekly.Size);
