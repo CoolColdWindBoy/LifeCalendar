@@ -598,6 +598,7 @@
             this.buttonTest3.TabIndex = 8;
             this.buttonTest3.Text = "load";
             this.buttonTest3.UseVisualStyleBackColor = true;
+            this.buttonTest3.Visible = false;
             this.buttonTest3.Click += new System.EventHandler(this.buttonTest3_Click);
             // 
             // buttonTest2
@@ -608,6 +609,7 @@
             this.buttonTest2.TabIndex = 7;
             this.buttonTest2.Text = "Save";
             this.buttonTest2.UseVisualStyleBackColor = true;
+            this.buttonTest2.Visible = false;
             this.buttonTest2.Click += new System.EventHandler(this.buttonTest2_Click);
             // 
             // buttonFill
@@ -618,6 +620,7 @@
             this.buttonFill.TabIndex = 6;
             this.buttonFill.Text = "loginAsAdmin";
             this.buttonFill.UseVisualStyleBackColor = true;
+            this.buttonFill.Visible = false;
             this.buttonFill.Click += new System.EventHandler(this.buttonFill_Click);
             // 
             // labelTest
