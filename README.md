@@ -10,4 +10,4 @@ anything, ask admin@shitao.tech<br>
 thank you!<br>
 
 Preview: 
-![image](https://user-images.githubusercontent.com/63240127/164125386-c632ac74-f5c8-4619-87b9-8078cee62b68.png)
+![image](https://user-images.githubusercontent.com/63240127/167638396-bbd5d0a5-5370-4b3d-9421-c8f919a896d5.png)
